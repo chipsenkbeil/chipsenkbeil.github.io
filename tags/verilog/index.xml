@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verilog on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/verilog/</link>
+    <description>Recent content in Verilog on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <atom:link href="http://chipsenkbeil.com/tags/verilog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ECE4530 (Hardware/Software Codesign) - Main Project</title>
+      <link>http://chipsenkbeil.com/software/ece4530/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/software/ece4530/</guid>
+      <description>&lt;p&gt;Competition between classmates to create the fastest combination of hardware
+and software to perform collision detection for SHA-1 digests. Contains my
+design documents, drawings, source code (C/Verliog), and associated images.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

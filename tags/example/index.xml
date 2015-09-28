@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/example/</link>
+    <description>Recent content in Example on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <atom:link href="http://chipsenkbeil.com/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Keyboard state</title>
+      <link>http://chipsenkbeil.com/software/keyboard-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/software/keyboard-state/</guid>
+      <description>&lt;p&gt;Small program written to demonstrate capturing modifier key input on Linux
+using the raw keyboard input device.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

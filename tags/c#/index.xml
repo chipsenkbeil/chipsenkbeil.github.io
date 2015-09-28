@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/c/</link>
+    <description>Recent content in C# on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <atom:link href="http://chipsenkbeil.com/tags/c" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>File Patcher</title>
+      <link>http://chipsenkbeil.com/software/file-patcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/software/file-patcher/</guid>
+      <description>&lt;p&gt;Old program I wrote in C# for a game engine, no longer in development, that
+parses an XML file for a couple of commands with the intention of using it
+to download new game patches and apply them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

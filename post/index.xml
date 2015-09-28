@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Senkbeil</title>
+    <link>http://chipsenkbeil.com/post/</link>
+    <description>Recent content in Posts on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://chipsenkbeil.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Overview of the Spark Kernel Client Library</title>
+      <link>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
+      <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
+will focus on the client library, a Scala-based library used to interface with
+the Spark Kernel. This library enables Scala applications to quickly
+communicate with a Spark Kernel without needing to understand ZeroMQ or the
+IPython message protocol. Furthermore, using the client library, Scala
+applications are able to treat the Spark Kernel as a remote service, meaning
+that they can run separately from a Spark cluster and use the kernel as a
+remote connection into the cluster.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spark Kernel Architecture</title>
+      <link>http://chipsenkbeil.com/post/spark-kernel-architecture/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
+      <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
+with enabling interactive applications against Apache Spark and how the Spark
+Kernel solved this problem. This week, we will focus on the Spark Kernel’s
+architecture: how we achieve fault tolerance and scalability using Akka, why
+we chose ZeroMQ with the IPython/Jupyter message protocol, what the layers of
+functionality are in the kernel (see figure 1 below), and elaborate on an
+interactive API from IPython called the Comm API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to enable interactive applications against Apache Spark</title>
+      <link>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
+      <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
+      <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
+application focused on interactive usage of Apache Spark. This project
+addresses a problem we encountered when trying to migrate a Storm-based
+application to Apache Spark, “How do we enable interactive applications
+against Apache Spark?”&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>tmux with XMonad Bindings</title>
+      <link>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
+      <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
+      <description>
+
+&lt;h3 id=&#34;the-reason:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Reason&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been playing around with &lt;code&gt;tmux&lt;/code&gt; a lot lately and have come to like it
+quite a lot for the panes and windows - something I used quite a lot with my
+XMonad setup on my old Fujitsu laptop. The panes act as my individual
+terminals with which I can write code, read documentation, chat on IRC (using
+&lt;code&gt;weechat&lt;/code&gt; or &lt;code&gt;irssi&lt;/code&gt;), play music, etc. In other words, I do quite a lot from
+within terminals and being able to split up a terminal into panes (like XMonad
+launching tiled terminals) is quite nice. Furthermore, treating the windows
+as my workspaces lets me quickly organize myself just like with XMonad.&lt;/p&gt;
+
+&lt;p&gt;However, the main issue I have found with tmux is with its keyboard bindings.
+Everything in tmux is bound to a prefix (Ctrl-b) followed by a single keystroke
+or multiple keystrokes. For instance, splitting a window into two horizontal
+panes is the sequence &lt;code&gt;Ctrl-b &amp;quot;&lt;/code&gt; and splitting it horizontally is &lt;code&gt;Ctrl-b %&lt;/code&gt;.
+I pride myself in being able to pick up things like this quickly, but my mind
+continued to nag me about the need of a prefix as well as the use of keys like
+double quotes and percent. I was used to XMonad, where creating a new pane
+involved a single &lt;code&gt;Mod-Shift-Enter&lt;/code&gt; and navigating between tiles was a simple
+&lt;code&gt;Mod-Tab&lt;/code&gt;. Because of this, I began to look into ways to rebind tmux keys to
+be more like XMonad.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-process:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Process&lt;/h3&gt;
+
+&lt;p&gt;tmux provides multiple ways to rebind keys and perform startup actions. The
+first is to execute the actions from the terminal:&lt;/p&gt;
+tmux bind-key d kill-pane
+
+&lt;p&gt;Another option is to perform the task within a running tmux instance by
+entering &lt;code&gt;Ctrl-b :&lt;/code&gt;, which enters a command mode for you to enter tmux actions.&lt;/p&gt;
+
+&lt;p&gt;Of course, these methods were not what I needed. What I discovered was that
+tmux could source a file to get its bindings. You could have &lt;code&gt;.tmux.conf&lt;/code&gt;
+within your home directory or use&lt;/p&gt;
+tmux source my_tmux.conf
+
+&lt;p&gt;For me, I began to work with the default &lt;code&gt;.tmux.conf&lt;/code&gt; file. Keybindings were
+easy to rebind using &lt;code&gt;bind-key&lt;/code&gt; and &lt;code&gt;unbind-key&lt;/code&gt;. For instance, if I wanted
+to bind the space key to change the layout - XMonad uses &lt;code&gt;Mod-Space&lt;/code&gt; by
+default - I would use the following:&lt;/p&gt;
+bind-key Space next-layout
+
+&lt;p&gt;However, a simple &lt;code&gt;bind-key&lt;/code&gt; does not remove the prefix! This means that the
+above would actually be &lt;code&gt;Ctrl-b Space&lt;/code&gt; as the combination. Luckily, tmux
+provides a way to avoid the prefix when performing actions. The &lt;code&gt;-n&lt;/code&gt; switch
+indicates that no prefix should be used.&lt;/p&gt;
+bind-key -n C-Space next-layout
+
+&lt;p&gt;The above indicates that the series of keystrokes &lt;code&gt;Ctrl-Space&lt;/code&gt; should change
+the layout used in tmux, no prefix needed.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-issue:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Issue&lt;/h3&gt;
+
+&lt;p&gt;The issue I discovered was that modifier keys - Control, Shift, Function, Alt -
+were not fully supported in tmux. In fact, modifier keys are not fully
+supported in a lot of applications. Instead, you see certain keycodes appear
+when a modifier key is used in combination with a normal key. If you execute
+&lt;code&gt;xmodmap&lt;/code&gt; in your terminal, you should get a list of modifier keys in your
+computer. Entering &lt;code&gt;xmodmap -pk&lt;/code&gt; into your terminal yields the actual table
+containing the representations of each key without modifiers, with the shift
+key, with the mode switch key, with the shift and mode switch keys, with the
+alt key, and with the alt and shift keys. If you print this table, you&amp;rsquo;ll
+notice that quite a few keys do not have bindings for shift/mode switch keys.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, after looking at tmux&amp;rsquo;s source, it appears that only certain keys
+are checked for modifiers before passing the keystroke to the application
+running within tmux. Because of this, I cannot use a setup like
+&lt;code&gt;Ctrl-Shift-Return&lt;/code&gt; for creating a new terminal tile using standard tmux.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-potential-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Potential Solution&lt;/h3&gt;
+
+&lt;p&gt;At least, I did not believe that I could. I discovered that tmux provided even
+more functionality through the ability to not only launch shell programs but
+also check the return status of said programs!&lt;/p&gt;
+# Run command if system is Mac OS X
+if-shell &#39;test `uname` == &#34;DARWIN&#34;&#39; &lt;COMMAND&gt; [OPTIONAL COMMAND]
+
+&lt;p&gt;Because of this ability, I thought about having a small program that could be
+executed to indicate whether modifier keys like control and shift were
+currently being pressed down. Returning success indicates they were and
+returning failure indicates they were not.&lt;/p&gt;
+
+&lt;p&gt;The challenge appeared when I realized that modifier keys were mostly unable
+to be tracked in this manner. tmux itself was not at fault for this limitation;
+so, I had to dig deeper to find out how to retrieve this bindings. I had seen
+some utilities that could detect shift and control key presses, but they were
+bound in the X11 system, which I did not want to impose as a restriction for my
+setup. In fact, my hope was that this could be run very easily without an X11
+system. Furthermore, as a new owner of a Macbook Air - Linux will be put on it
+soon enough - I wanted this to be able to work on OS X as well.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-mac-os-x-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Mac OS X Solution&lt;/h3&gt;
+
+&lt;p&gt;Cocoa provides the functionality to directly check if modifier keys are
+pressed, which is incredibly useful. So, I simply wrote a small Cocoa
+application that returns success based on the state of modifier keys. The
+documentation indicates that Mac OS X v10.6+ is needed to use this
+functionality; so, this means my solution will only work for Snow Leopard or
+higher (sorry Leopard and Tiger).&lt;/p&gt;
+
+&lt;p&gt;You can find the small program bundled with the main project
+&lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-linux-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Linux Solution&lt;/h3&gt;
+
+&lt;p&gt;This took a little digging before I realized that I needed to access the
+keyboard interface directly, rather than accessing information from a
+program. This meant accessing &lt;code&gt;/dev/my_keyboard_interface&lt;/code&gt;, which would vary
+from computer to computer.&lt;/p&gt;
+
+&lt;p&gt;I wrote a small C program to demonstrate this functionality
+&lt;a href=&#34;http://chipsenkbeil.com/software/keyboard-state/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, after joining IBM in January of 2014, I was not able to
+continue pursuing this project.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-final-result:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Final Result&lt;/h3&gt;
+
+&lt;p&gt;Overall, the configuration combined with the modifier keys captured by an
+external program successfully produced a working replica of XMonad&amp;rsquo;s key
+bindings using tmux, giving me a more comfortable layout for moving
+panes and navigating.&lt;/p&gt;
+
+&lt;p&gt;You can find the project &lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design to Embrace Change</title>
+      <link>http://chipsenkbeil.com/post/design-to-embrace-change/</link>
+      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/design-to-embrace-change/</guid>
+      <description>
+
+&lt;p&gt;So, I&amp;rsquo;ve been reading &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C&#34;&gt;Practical Object-Oriented Design in Ruby&lt;/a&gt;&lt;/em&gt;
+while also watching the VT football game today, something I am beginning to
+regret. During my freshman and sophomore years at Virginia Tech, I was
+introduced to quite a few concepts regarding &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt;.
+Mostly, these related to simplistic encapsulation of data - writing setters
+and getters for any and all variables - as well as using inheritance mixed
+with interfaces.&lt;/p&gt;
+
+&lt;p&gt;In &lt;em&gt;Practical Object-Oriented Design in Ruby&lt;/em&gt;, the author has a chapter
+dedicated to writing code that embraces change. While I assumed I &amp;ldquo;knew the
+majority of these concepts,&amp;rdquo; I swiftly learned that - once again - my ego had
+blinded me from exploring many of the fascinating methodologies developed by
+people much more clever than myself.&lt;/p&gt;
+
+&lt;p&gt;The author focuses on behavior over data. When methods are defined, they
+should provide a behavior versus strict data manipulation. In addition, the
+author also claims that classes should hold a single responsibility to reduce
+complexity and ensure easy readability.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-encapsulation-via-method-wrappers:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1. Encapsulation via Method Wrappers&lt;/h3&gt;
+
+&lt;p&gt;The book begins by discussing abstraction in the form of encapsulation of data
+in Ruby using shorthands like &lt;em&gt;attr_reader&lt;/em&gt; to wrap field access. I was
+already familiar with this one from my Extreme Blue internship with IBM this
+past summer, where I had to quickly pick up and learn Ruby (1.9.3) to develop
+our prototype. Below you can see an example of a poor design choice and a
+better alternative - although not perfect, as you will see later.&lt;/p&gt;
+
+&lt;h4 id=&#34;1-a-poor-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.a Poor Design Choice&lt;/h4&gt;
+class Rectangle
+    def initialize(width, length)
+        @width = width
+        @length = length
+    end
+
+    def area
+        @width * @length    # &lt;-- poor design
+    end
+end
+
+&lt;h4 id=&#34;1-b-better-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.b Better Design Choice&lt;/h4&gt;
+class Rectangle
+    attr_reader :width, :length
+    def initialize(width, length)
+        @width = width
+        @length = length
+    end
+
+    def area
+        width * length      # &lt;-- better design
+    end
+end
+
+&lt;h4 id=&#34;why-is-this-better:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;Why is this better?&lt;/h4&gt;
+
+&lt;p&gt;The shorthand &lt;em&gt;attr_reader&lt;/em&gt; simply wraps the references to instance variables
+in getter methods with the same name. E.g.&lt;/p&gt;
+def width
+    @width
+end
+
+def length
+    @length
+end
+
+&lt;p&gt;You might ask why bother doing this? Well, for one, it saves you the headache
+in writing wrapper methods for getters and setters that merely reference
+variables without providing any alterations. However, in the future, you might
+decide to change the functionality of width or height. Not likely - this is
+an overly-simplistic example - but it could happen.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-leaky-abstractions:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2. Leaky Abstractions&lt;/h3&gt;
+
+&lt;p&gt;Enter the next section of the chapter, focusing on &lt;a href=&#34;http://en.wikipedia.org/wiki/Leaky_abstraction&#34;&gt;leaky abstractions&lt;/a&gt;.
+This was something that I believe I had touched on, but not worked with often.
+The reason being that I was taught (and learned from experiences at IBM) to not
+perform logical operations within class initialization. However, I am getting
+ahead of myself, let me first provide an example of a leaky abstraction.&lt;/p&gt;
+
+&lt;h4 id=&#34;2-a-leaky-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.a Leaky Abstraction&lt;/h4&gt;
+class ObscuringReferences
+    attr_reader :data
+    def initialize(data)
+        @data = data
+    end
+
+    def introduce_self
+        &#34;Hi, my name is #{data[0]} and I am #{data[1]}.&#34;
+    end
+end
+
+&lt;p&gt;The above poses a maintainability issue. The code is written where the
+&lt;em&gt;introduce_self&lt;/em&gt; method is aware of the contents and order of the array &lt;em&gt;data&lt;/em&gt;,
+which is not something any sane programmer should want. Why? Suppose, in the
+future, that the data array needs to be expanded such that it contains an
+age, name, and description in that order. The &lt;em&gt;introduce_self&lt;/em&gt; method would
+then need to be altered to match the data structure change.&lt;/p&gt;
+
+&lt;h4 id=&#34;2-b-fixed-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.b Fixed Abstraction&lt;/h4&gt;
+class RevealingReferences
+    attr_reader :person
+    def initialize(data)
+        @person = personalize(data)
+    end
+
+    def introduce_self
+        &#34;Hi, my name is #{person.name} and I am #{person.description}&#34;
+    end
+
+    # ...
+
+    Person = Struct.new(:name, :description)
+    def personalize(data)
+        Person.new(data[0], data[1])
+    end
+end
+
+&lt;p&gt;Now we have something neat! The author brings up &lt;em&gt;&lt;a href=&#34;http://www.ruby-doc.org/core-2.0.0/Struct.html&#34;&gt;Struct&lt;/a&gt;&lt;/em&gt;, a way to
+bundle fields together. Using it combined with a method dedicated to
+building the &lt;em&gt;Struct&lt;/em&gt;, the code can now be written where all methods using the
+data can be unaware of how it is provided. They just know what data they need
+to use.&lt;/p&gt;
+
+&lt;p&gt;This is an interesting concept to me. I still believe that logic that performs
+actions should absolutely &lt;em&gt;not&lt;/em&gt; be found in the constructor of a class;
+however, seeing this example of organizing input such that the class can
+recognize and appropriately handle it is so simple yet powerful. I&amp;rsquo;m curious
+if this falls under the normal &amp;ldquo;avoid at all cost&amp;rdquo; for those that advocate
+removing logic from constructors, or if this is frequently performed.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-reuse-code:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3. Reuse Code&lt;/h3&gt;
+
+&lt;p&gt;Okay, so, this one is incredibly obvious and has been drilled into the head of
+every student attending a university in the last decade. Simply put, if there
+is a segment of code that is used in multiple places, you should move it into
+its own function/method. With &lt;em&gt;C&lt;/em&gt;, you might inline the code or write a macro
+for it if the code was small enough. In &lt;em&gt;Ruby&lt;/em&gt;, you just move the code to a
+new method.&lt;/p&gt;
+
+&lt;p&gt;However, the author takes this a step further by indicating that not only
+should a class have a single responsibility but also each method should also
+only perform a single task.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-a-too-much-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.a Too Much Functionality&lt;/h4&gt;
+class RectangularPrism
+    attr_reader :width, :length, :height
+    def initialize(width, length, height)
+        @width = width
+        @length = length
+        @height = height
+    end
+
+    def volume
+        width * length * height
+    end
+end
+
+&lt;p&gt;I am fairly bad with examples - and I wanted to avoid using the book&amp;rsquo;s
+examples - so bare with the above. In this case, the &lt;em&gt;volume&lt;/em&gt; method is
+calculating the volume of a rectangular prism. The forumla can be given as
+&lt;em&gt;width x length x height&lt;/em&gt;. However, it can also be seen as &lt;em&gt;area x height&lt;/em&gt;.
+In other words, the volume method is performing a calculation of the area
+and the volume, which is too much functionality.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-b-separated-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.b Separated Functionality&lt;/h4&gt;
+class RectangularPrism
+    attr_reader :width, :length, :height
+    def initialize(width, length, height)
+        @width = width
+        @length = length
+        @height = height
+    end
+
+    def volume
+        area * height
+    end
+
+    def area
+        width * length
+    end
+end
+
+&lt;p&gt;Now we have separated the calculation of the area to its own method rather
+than having this handled in the same method as the volume. The author states
+that this provides the advantage of exposing additional functionality. Even
+with the better example provided in his text, I&amp;rsquo;d still argue that this might
+not be a great feature; however, I am fairly naive with dynamic languages like
+&lt;em&gt;Ruby&lt;/em&gt; - I prefer statically-typed languages (C, Java).&lt;/p&gt;
+
+&lt;h4 id=&#34;3-c-avoid-comments:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.c Avoid Comments&lt;/h4&gt;
+
+&lt;p&gt;What I did find interesting was an additional comment from the author in his
+list of benefits for this refactoring: avoid the need for comments. When I
+read this, a flag immediately went up. Avoid comments? But you normally want
+to properly document your code! Thinking back, I reference Linus Torvalds&amp;rsquo;
+thoughts on &lt;a href=&#34;https://www.kernel.org/doc/Documentation/CodingStyle&#34;&gt;coding style&lt;/a&gt;, where he describes commenting. Torvalds says
+that you should avoid over-commenting. My thoughts usually gravitate towards
+the naive &amp;ldquo;restate how your code is working&amp;rdquo; versus explaining &lt;em&gt;what&lt;/em&gt; your
+code does.&lt;/p&gt;
+
+&lt;p&gt;Torvalds says to put comments in front of your functions (methods in our case)
+to explain &lt;em&gt;what&lt;/em&gt; they do versus having to explain the internals. This ties in
+with his explanation of the length and complexity of functions. I&amp;rsquo;d recommend
+giving his coding style document a once-over. I&amp;rsquo;d also like to point out a
+similar document from &lt;a href=&#34;http://gamedev.allusion.net/softprj/kos/&#34;&gt;KOS&lt;/a&gt;, the Dreamcast development framework, where
+the original developer provides his own comments on &lt;a href=&#34;http://chipsenkbeil.com/docs/dreamcast_coding_style.txt&#34;&gt;coding style&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, I think both the author and Torvalds share a similar point of view in
+terms of over-commenting. Looking back, I find myself extra guilty of
+providing a plethura of comments within my functions/methods, many of which
+were written cleanly enough where no additional explanation was needed.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
