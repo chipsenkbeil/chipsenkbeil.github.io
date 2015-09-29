@@ -20,7 +20,9 @@
 computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
 didn&amp;rsquo;t care for the default output and found myself using this format:&lt;/p&gt;
-blkid -o list -c /dev/null
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://chipsenkbeil.com/img/note/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
 
@@ -35,14 +37,16 @@ it needs root permissions.&lt;/p&gt;
 
 &lt;p&gt;So, to make this as painless as possible, I wrote a very small wrapper script
 that does this task for me:&lt;/p&gt;
-#! /bin/sh
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#! /bin/sh
 
 if [[ $UID != 0]]; then
-    echo &#34;This script requires root privileges to run:&#34;
-    echo &#34;sudo $0 $*&#34;
+    echo &amp;quot;This script requires root privileges to run:&amp;quot;
+    echo &amp;quot;sudo $0 $*&amp;quot;
 fi
 
 blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Sticking that in the file list_devices.sh, giving it proper permissions for
 execution using chmod +x list_devices.sh, and sticking it in my /usr/bin

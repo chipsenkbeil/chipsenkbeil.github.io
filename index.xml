@@ -40,7 +40,8 @@ no way to order the page summaries dynamically such that the most recent
 summaries were at the top (from left to right) and older summaries were found
 further down. Instead, this resulted in the latest summary starting in the top
 left with older summaries going down the first column and into the second, etc.&lt;/p&gt;
-.page-summary-container {
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary-container {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
@@ -60,6 +61,7 @@ left with older summaries going down the first column and into the second, etc.&
     page-break-inside: avoid;           /* Theoretically FF 20+ */
     break-inside: avoid-column;         /* IE 11 */
 }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;using-flexbox:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using Flexbox&lt;/h3&gt;
 
@@ -75,7 +77,8 @@ which you can do in flexbox. Since the list page is using pagination (meaning
 that I can guarantee the total page summaries per page), ordering the elements
 was as simple as adding child selectors to break up the order based on the
 number of elements:&lt;/p&gt;
-.page-summary:nth-child(3n+1) {
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary:nth-child(3n+1) {
     order: 1;
 }
 
@@ -86,6 +89,7 @@ number of elements:&lt;/p&gt;
 .page-summary:nth-child(3n) {
     order: 3;
 }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Unfortunately, as I couldn&amp;rsquo;t provide a fixed-height container, the column
 approach did not work as all elements stayed in the first column. I could not

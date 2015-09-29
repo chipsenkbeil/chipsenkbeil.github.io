@@ -14,7 +14,7 @@
     <meta name="description" content="Your description">
     
     <meta name="generator" content="Hugo 0.15-DEV" />
-    <meta name="generation-date" content="2015-09-29 16:14:56.950317968 &#43;0000 UTC">
+    <meta name="generation-date" content="2015-09-29 16:19:04.214103825 &#43;0000 UTC">
     <title>Using blkid to get device information &middot; Senkbeil</title>
     <link rel="shortcut icon" href="http://chipsenkbeil.com/img/favicon.ico">
     <link rel="icon" href="http://chipsenkbeil.com/img/favicon.ico">
@@ -241,7 +241,9 @@
 computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
 didn&rsquo;t care for the default output and found myself using this format:</p>
-blkid -o list -c /dev/null
+
+<pre><code class="language-bash">blkid -o list -c /dev/null
+</code></pre>
 
 <p><img src="/img/note/blkid.jpg" alt="Example of usage" /></p>
 
@@ -256,14 +258,16 @@ it needs root permissions.</p>
 
 <p>So, to make this as painless as possible, I wrote a very small wrapper script
 that does this task for me:</p>
-#! /bin/sh
+
+<pre><code class="language-bash">#! /bin/sh
 
 if [[ $UID != 0]]; then
-    echo "This script requires root privileges to run:"
-    echo "sudo $0 $*"
+    echo &quot;This script requires root privileges to run:&quot;
+    echo &quot;sudo $0 $*&quot;
 fi
 
 blkid -o list -c /dev/null
+</code></pre>
 
 <p>Sticking that in the file list_devices.sh, giving it proper permissions for
 execution using chmod +x list_devices.sh, and sticking it in my /usr/bin

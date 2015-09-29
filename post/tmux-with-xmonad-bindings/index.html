@@ -14,7 +14,7 @@
     <meta name="description" content="Your description">
     
     <meta name="generator" content="Hugo 0.15-DEV" />
-    <meta name="generation-date" content="2015-09-29 16:14:56.94850216 &#43;0000 UTC">
+    <meta name="generation-date" content="2015-09-29 16:19:04.216786616 &#43;0000 UTC">
     <title>tmux with XMonad Bindings &middot; Senkbeil</title>
     <link rel="shortcut icon" href="http://chipsenkbeil.com/img/favicon.ico">
     <link rel="icon" href="http://chipsenkbeil.com/img/favicon.ico">
@@ -267,7 +267,9 @@ be more like XMonad.</p>
 
 <p>tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:</p>
-tmux bind-key d kill-pane
+
+<pre><code class="language-raw">tmux bind-key d kill-pane
+</code></pre>
 
 <p>Another option is to perform the task within a running tmux instance by
 entering <code>Ctrl-b :</code>, which enters a command mode for you to enter tmux actions.</p>
@@ -275,19 +277,25 @@ entering <code>Ctrl-b :</code>, which enters a command mode for you to enter tmu
 <p>Of course, these methods were not what I needed. What I discovered was that
 tmux could source a file to get its bindings. You could have <code>.tmux.conf</code>
 within your home directory or use</p>
-tmux source my_tmux.conf
+
+<pre><code class="language-raw">tmux source my_tmux.conf
+</code></pre>
 
 <p>For me, I began to work with the default <code>.tmux.conf</code> file. Keybindings were
 easy to rebind using <code>bind-key</code> and <code>unbind-key</code>. For instance, if I wanted
 to bind the space key to change the layout - XMonad uses <code>Mod-Space</code> by
 default - I would use the following:</p>
-bind-key Space next-layout
+
+<pre><code class="language-raw">bind-key Space next-layout
+</code></pre>
 
 <p>However, a simple <code>bind-key</code> does not remove the prefix! This means that the
 above would actually be <code>Ctrl-b Space</code> as the combination. Luckily, tmux
 provides a way to avoid the prefix when performing actions. The <code>-n</code> switch
 indicates that no prefix should be used.</p>
-bind-key -n C-Space next-layout
+
+<pre><code class="language-raw">bind-key -n C-Space next-layout
+</code></pre>
 
 <p>The above indicates that the series of keystrokes <code>Ctrl-Space</code> should change
 the layout used in tmux, no prefix needed.</p>
@@ -315,8 +323,10 @@ running within tmux. Because of this, I cannot use a setup like
 <p>At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
 also check the return status of said programs!</p>
-# Run command if system is Mac OS X
-if-shell 'test `uname` == "DARWIN"' <COMMAND> [OPTIONAL COMMAND]
+
+<pre><code class="language-raw"># Run command if system is Mac OS X
+if-shell 'test `uname` == &quot;DARWIN&quot;' &lt;COMMAND&gt; [OPTIONAL COMMAND]
+</code></pre>
 
 <p>Because of this ability, I thought about having a small program that could be
 executed to indicate whether modifier keys like control and shift were

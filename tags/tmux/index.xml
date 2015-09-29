@@ -44,7 +44,9 @@ be more like XMonad.&lt;/p&gt;
 
 &lt;p&gt;tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:&lt;/p&gt;
-tmux bind-key d kill-pane
+
+&lt;pre&gt;&lt;code class=&#34;language-raw&#34;&gt;tmux bind-key d kill-pane
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Another option is to perform the task within a running tmux instance by
 entering &lt;code&gt;Ctrl-b :&lt;/code&gt;, which enters a command mode for you to enter tmux actions.&lt;/p&gt;
@@ -52,19 +54,25 @@ entering &lt;code&gt;Ctrl-b :&lt;/code&gt;, which enters a command mode for you 
 &lt;p&gt;Of course, these methods were not what I needed. What I discovered was that
 tmux could source a file to get its bindings. You could have &lt;code&gt;.tmux.conf&lt;/code&gt;
 within your home directory or use&lt;/p&gt;
-tmux source my_tmux.conf
+
+&lt;pre&gt;&lt;code class=&#34;language-raw&#34;&gt;tmux source my_tmux.conf
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;For me, I began to work with the default &lt;code&gt;.tmux.conf&lt;/code&gt; file. Keybindings were
 easy to rebind using &lt;code&gt;bind-key&lt;/code&gt; and &lt;code&gt;unbind-key&lt;/code&gt;. For instance, if I wanted
 to bind the space key to change the layout - XMonad uses &lt;code&gt;Mod-Space&lt;/code&gt; by
 default - I would use the following:&lt;/p&gt;
-bind-key Space next-layout
+
+&lt;pre&gt;&lt;code class=&#34;language-raw&#34;&gt;bind-key Space next-layout
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;However, a simple &lt;code&gt;bind-key&lt;/code&gt; does not remove the prefix! This means that the
 above would actually be &lt;code&gt;Ctrl-b Space&lt;/code&gt; as the combination. Luckily, tmux
 provides a way to avoid the prefix when performing actions. The &lt;code&gt;-n&lt;/code&gt; switch
 indicates that no prefix should be used.&lt;/p&gt;
-bind-key -n C-Space next-layout
+
+&lt;pre&gt;&lt;code class=&#34;language-raw&#34;&gt;bind-key -n C-Space next-layout
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The above indicates that the series of keystrokes &lt;code&gt;Ctrl-Space&lt;/code&gt; should change
 the layout used in tmux, no prefix needed.&lt;/p&gt;
@@ -92,8 +100,10 @@ running within tmux. Because of this, I cannot use a setup like
 &lt;p&gt;At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
 also check the return status of said programs!&lt;/p&gt;
-# Run command if system is Mac OS X
-if-shell &#39;test `uname` == &#34;DARWIN&#34;&#39; &lt;COMMAND&gt; [OPTIONAL COMMAND]
+
+&lt;pre&gt;&lt;code class=&#34;language-raw&#34;&gt;# Run command if system is Mac OS X
+if-shell &#39;test `uname` == &amp;quot;DARWIN&amp;quot;&#39; &amp;lt;COMMAND&amp;gt; [OPTIONAL COMMAND]
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Because of this ability, I thought about having a small program that could be
 executed to indicate whether modifier keys like control and shift were

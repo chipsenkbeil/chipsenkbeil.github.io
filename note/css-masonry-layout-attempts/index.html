@@ -14,7 +14,7 @@
     <meta name="description" content="Your description">
     
     <meta name="generator" content="Hugo 0.15-DEV" />
-    <meta name="generation-date" content="2015-09-29 16:14:56.93298354 &#43;0000 UTC">
+    <meta name="generation-date" content="2015-09-29 16:19:04.197946508 &#43;0000 UTC">
     <title>CSS Masonry Layout Attempts &middot; Senkbeil</title>
     <link rel="shortcut icon" href="http://chipsenkbeil.com/img/favicon.ico">
     <link rel="icon" href="http://chipsenkbeil.com/img/favicon.ico">
@@ -252,7 +252,8 @@ no way to order the page summaries dynamically such that the most recent
 summaries were at the top (from left to right) and older summaries were found
 further down. Instead, this resulted in the latest summary starting in the top
 left with older summaries going down the first column and into the second, etc.</p>
-.page-summary-container {
+
+<pre><code class="language-css">.page-summary-container {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
@@ -272,6 +273,7 @@ left with older summaries going down the first column and into the second, etc.<
     page-break-inside: avoid;           /* Theoretically FF 20+ */
     break-inside: avoid-column;         /* IE 11 */
 }
+</code></pre>
 
 <h3 id="using-flexbox:a91a7d6dc4988411aae05fc3f68642cf">Using Flexbox</h3>
 
@@ -287,7 +289,8 @@ which you can do in flexbox. Since the list page is using pagination (meaning
 that I can guarantee the total page summaries per page), ordering the elements
 was as simple as adding child selectors to break up the order based on the
 number of elements:</p>
-.page-summary:nth-child(3n+1) {
+
+<pre><code class="language-css">.page-summary:nth-child(3n+1) {
     order: 1;
 }
 
@@ -298,6 +301,7 @@ number of elements:</p>
 .page-summary:nth-child(3n) {
     order: 3;
 }
+</code></pre>
 
 <p>Unfortunately, as I couldn&rsquo;t provide a fixed-height container, the column
 approach did not work as all elements stayed in the first column. I could not
