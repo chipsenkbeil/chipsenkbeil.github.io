@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/rust/</link>
+    <description>Recent content in Rust on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://chipsenkbeil.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why Rust?</title>
+      <link>http://chipsenkbeil.com/note/why-rust/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/why-rust/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

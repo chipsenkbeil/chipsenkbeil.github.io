@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <lastBuildDate>Sat, 12 Sep 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://chipsenkbeil.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Make a programmable mirror</title>
+      <link>http://chipsenkbeil.com/note/make-a-programmable-mirror/</link>
+      <pubDate>Sat, 12 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/make-a-programmable-mirror/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glitter - Dead-simple boilerplate for OpenGL</title>
+      <link>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</link>
+      <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CS 3114 (Data Structures 2) - Project 1</title>

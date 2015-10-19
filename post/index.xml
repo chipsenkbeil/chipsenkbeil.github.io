@@ -7,8 +7,93 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2015 16:52:27 -0500</lastBuildDate>
     <atom:link href="http://chipsenkbeil.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CSS Masonry Layout Attempts</title>
+      <link>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
+      <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
+      <description>
+
+&lt;p&gt;I spent two days investigating this and could not find a solution that worked.
+Eventually, I gave up and added the Masonry Javascript library. My two
+attempts were as follows:&lt;/p&gt;
+
+&lt;h3 id=&#34;using-css-columns:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using CSS Columns&lt;/h3&gt;
+
+&lt;p&gt;CSS Columns enabled an easy, powerful way to spread page summaries across
+multiple columns. Furthermore, you can prevent page summaries from being
+broken up in the middle by using &lt;code&gt;column-break-inside: avoid;&lt;/code&gt;. However, I had
+no way to order the page summaries dynamically such that the most recent
+summaries were at the top (from left to right) and older summaries were found
+further down. Instead, this resulted in the latest summary starting in the top
+left with older summaries going down the first column and into the second, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary-container {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+}
+
+.page-summary {
+    display: inline-block;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+    -moz-column-break-inside:avoid;
+    -o-column-break-inside:avoid;
+    -ms-column-break-inside:avoid;
+    column-break-inside:avoid;
+    page-break-inside: avoid;           /* Theoretically FF 20+ */
+    break-inside: avoid-column;         /* IE 11 */
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;using-flexbox:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using Flexbox&lt;/h3&gt;
+
+&lt;p&gt;This involved using flexbox to simulate a Masonry layout by using
+&lt;code&gt;flex-flow: column wrap&lt;/code&gt; to have items flow from top to bottom with no extra
+spacing (similar to Masonry). There were two issues with this approach: page
+summaries still flowed from top to bottom instead of left to right and
+I couldn&amp;rsquo;t control wrapping the column into the next column without providing
+a fixed-height container.&lt;/p&gt;
+
+&lt;p&gt;The first issue was able to be solved by swapping the order of the elements,
+which you can do in flexbox. Since the list page is using pagination (meaning
+that I can guarantee the total page summaries per page), ordering the elements
+was as simple as adding child selectors to break up the order based on the
+number of elements:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary:nth-child(3n+1) {
+    order: 1;
+}
+
+.page-summary:nth-child(3n+2) {
+    order: 2;
+}
+
+.page-summary:nth-child(3n) {
+    order: 3;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Unfortunately, as I couldn&amp;rsquo;t provide a fixed-height container, the column
+approach did not work as all elements stayed in the first column. I could not
+find any working way to forcefully wrap flexbox elements after a certain
+element when using &lt;em&gt;column&lt;/em&gt; as the flow instead of &lt;em&gt;row&lt;/em&gt; (where you can set
+the row item to a width of &lt;em&gt;100%&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;I could have forced a specific height for the page summaries as I know how big
+the text will be (roughly) if I use an ellipsis for overflow on the title (and
+the summary is always 70 words max). However, the optional image throws off my
+sizing estimates.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Overview of the Spark Kernel Client Library</title>
@@ -435,6 +520,51 @@ the original developer provides his own comments on &lt;a href=&#34;http://chips
 terms of over-commenting. Looking back, I find myself extra guilty of
 providing a plethura of comments within my functions/methods, many of which
 were written cleanly enough where no additional explanation was needed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using blkid to get device information</title>
+      <link>http://chipsenkbeil.com/post/blkid/</link>
+      <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
+      
+      <guid>http://chipsenkbeil.com/post/blkid/</guid>
+      <description>&lt;p&gt;Quite often, I find myself needing to remind myself of devices connected to my
+computer so that I know what to type for the pmount program, which is really
+handy to have! The program [i]blkid[/i] is capable of doing this; however, I
+didn&amp;rsquo;t care for the default output and found myself using this format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://chipsenkbeil.com/img/post/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What this does is tell the program to output the information in a user-friendly
+list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c
+/dev/null.&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, this is very annoying to type out each time. It is also
+annoying to include &amp;lsquo;sudo&amp;rsquo; in front of it when I am not the root user. The
+program will still output some information, but to display everything I want,
+it needs root permissions.&lt;/p&gt;
+
+&lt;p&gt;So, to make this as painless as possible, I wrote a very small wrapper script
+that does this task for me:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#! /bin/sh
+
+if [[ $UID != 0]]; then
+    echo &amp;quot;This script requires root privileges to run:&amp;quot;
+    echo &amp;quot;sudo $0 $*&amp;quot;
+fi
+
+blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sticking that in the file list_devices.sh, giving it proper permissions for
+execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
+directory did wonders for me. Hopefully it&amp;rsquo;ll help someone else out there as
+well!&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/blog/</link>
+    <description>Recent content in Blog on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <lastBuildDate>Sat, 17 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://chipsenkbeil.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Hostile Email Landscape</title>
+      <link>http://chipsenkbeil.com/note/the-hostile-email-landscape/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/the-hostile-email-landscape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dear tech giants, if you love someone set them free</title>
+      <link>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</link>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phoenix 1.0</title>
+      <link>http://chipsenkbeil.com/note/phoenix-1-0/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/phoenix-1-0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>State of the Common Lisp Ecosystem</title>
+      <link>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G is for Google</title>
+      <link>http://chipsenkbeil.com/note/g-is-for-google/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/g-is-for-google/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

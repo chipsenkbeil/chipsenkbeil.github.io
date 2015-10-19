@@ -7,8 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Sat, 12 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IBM gives the Chinese government access to software code</title>
+      <link>http://chipsenkbeil.com/note/ibm-gives-the-chinese-government-access-to-software-code/</link>
+      <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/ibm-gives-the-chinese-government-access-to-software-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Hostile Email Landscape</title>
+      <link>http://chipsenkbeil.com/note/the-hostile-email-landscape/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/the-hostile-email-landscape/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Larry Wall unveils Perl 6.0.0</title>
+      <link>http://chipsenkbeil.com/note/larry-wall-unveils-perl-6/</link>
+      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/larry-wall-unveils-perl-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dear tech giants, if you love someone set them free</title>
+      <link>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</link>
+      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keep Out - A WebGL Game</title>
+      <link>http://chipsenkbeil.com/note/keep-out-a-webgl-game/</link>
+      <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/keep-out-a-webgl-game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Make a programmable mirror</title>
+      <link>http://chipsenkbeil.com/note/make-a-programmable-mirror/</link>
+      <pubDate>Sat, 12 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/make-a-programmable-mirror/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Pepper&#39;s wonderful smile</title>
@@ -20,11 +74,38 @@
     </item>
     
     <item>
+      <title>Why Rust?</title>
+      <link>http://chipsenkbeil.com/note/why-rust/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/why-rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming R at native speed using Haskell</title>
+      <link>http://chipsenkbeil.com/note/programming-r-at-native-speed-using-haskell/</link>
+      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/programming-r-at-native-speed-using-haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Effects of Computer Programming on the Brain (2012)</title>
+      <link>http://chipsenkbeil.com/note/the-effects-of-computer-programming-on-the-brain/</link>
+      <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/the-effects-of-computer-programming-on-the-brain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CSS Masonry Layout Attempts</title>
-      <link>http://chipsenkbeil.com/note/css-masonry-layout-attempts/</link>
+      <link>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
       <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
       
-      <guid>http://chipsenkbeil.com/note/css-masonry-layout-attempts/</guid>
+      <guid>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
       <description>
 
 &lt;p&gt;I spent two days investigating this and could not find a solution that worked.
@@ -105,150 +186,38 @@ sizing estimates.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Overview of the Spark Kernel Client Library</title>
-      <link>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      <title>Glitter - Dead-simple boilerplate for OpenGL</title>
+      <link>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</link>
+      <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
-      <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
-will focus on the client library, a Scala-based library used to interface with
-the Spark Kernel. This library enables Scala applications to quickly
-communicate with a Spark Kernel without needing to understand ZeroMQ or the
-IPython message protocol. Furthermore, using the client library, Scala
-applications are able to treat the Spark Kernel as a remote service, meaning
-that they can run separately from a Spark cluster and use the kernel as a
-remote connection into the cluster.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Spark Kernel Architecture</title>
-      <link>http://chipsenkbeil.com/post/spark-kernel-architecture/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
-      <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
-with enabling interactive applications against Apache Spark and how the Spark
-Kernel solved this problem. This week, we will focus on the Spark Kernel’s
-architecture: how we achieve fault tolerance and scalability using Akka, why
-we chose ZeroMQ with the IPython/Jupyter message protocol, what the layers of
-functionality are in the kernel (see figure 1 below), and elaborate on an
-interactive API from IPython called the Comm API.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to enable interactive applications against Apache Spark</title>
-      <link>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
-      <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
-      <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
-application focused on interactive usage of Apache Spark. This project
-addresses a problem we encountered when trying to migrate a Storm-based
-application to Apache Spark, “How do we enable interactive applications
-against Apache Spark?”&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Spark Kernel - Meetup Talk</title>
-      <link>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
-      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
-      <description>&lt;div class=&#34;embed video-player&#34;&gt;
-    &lt;iframe class=&#34;youtube-player&#34; 
-            type=&#34;text/html&#34; 
-            width=&#34;640&#34; 
-            height=&#34;385&#34; 
-            src=&#34;http://www.youtube.com/embed/2AX6g0tK-us&#34; 
-            allowfullscreen 
-            frameborder=&#34;0&#34;&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Pepper in the bathtub</title>
-      <link>http://chipsenkbeil.com/pepper/2015/05/24/114745571/</link>
-      <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2015/05/24/114745571/</guid>
+      <guid>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pepper rolling in the grass</title>
-      <link>http://chipsenkbeil.com/pepper/2015/05/23/132236375/</link>
-      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
+      <title>Phoenix 1.0</title>
+      <link>http://chipsenkbeil.com/note/phoenix-1-0/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/pepper/2015/05/23/132236375/</guid>
+      <guid>http://chipsenkbeil.com/note/phoenix-1-0/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pepper with a tree limb</title>
-      <link>http://chipsenkbeil.com/pepper/2015/05/02/161726144/</link>
-      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
+      <title>State of the Common Lisp Ecosystem</title>
+      <link>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/pepper/2015/05/02/161726144/</guid>
+      <guid>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pepper settle in for a car ride</title>
-      <link>http://chipsenkbeil.com/pepper/2015/03/09/174803952/</link>
-      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+      <title>G is for Google</title>
+      <link>http://chipsenkbeil.com/note/g-is-for-google/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/pepper/2015/03/09/174803952/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper staring at the camera while resting</title>
-      <link>http://chipsenkbeil.com/pepper/2015/02/14/124613171/</link>
-      <pubDate>Sat, 14 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2015/02/14/124613171/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper close to the camera</title>
-      <link>http://chipsenkbeil.com/pepper/2015/02/08/151034786/</link>
-      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2015/02/08/151034786/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper tired after the dogpark</title>
-      <link>http://chipsenkbeil.com/pepper/2015/02/01/120930954/</link>
-      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2015/02/01/120930954/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper with a stick</title>
-      <link>http://chipsenkbeil.com/pepper/2014/11/28/175213579/</link>
-      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2014/11/28/175213579/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper in her Halloween costume</title>
-      <link>http://chipsenkbeil.com/pepper/2014/10/30/175432708/</link>
-      <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/pepper/2014/10/30/175432708/</guid>
+      <guid>http://chipsenkbeil.com/note/g-is-for-google/</guid>
       <description></description>
     </item>
     
