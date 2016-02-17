@@ -15,8 +15,8 @@
       <link href="http://chipsenkbeil.com/note/index.xml" rel="alternate" type="application/rss+xml" title="Senkbeil" />
       <link href="http://chipsenkbeil.com/note/index.xml" rel="feed" type="application/rss+xml" title="Senkbeil" />
     
-    <meta name="generator" content="Hugo 0.15-DEV" />
-    <meta name="generation-date" content="2015-10-19 17:41:51.019242831 &#43;0000 UTC">
+    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generation-date" content="2016-02-17 14:07:22.185722584 &#43;0000 UTC">
     <title>Notes &middot; Senkbeil</title>
     <link rel="shortcut icon" href="http://chipsenkbeil.com/img/favicon.ico">
     <link rel="icon" href="http://chipsenkbeil.com/img/favicon.ico">
@@ -53,7 +53,7 @@
 
 
 
-<body class="page-colors minimum-viewport-height">
+<body>
     
 
 <nav class="main-menu menu-colors">
@@ -196,697 +196,117 @@
 
 
 
+    
+    
+        
+    
+
+    
+        
+            
+        
+    
+
+    
+
     <section class="main-content">
-        
-
-    
-
-
-
-    
-        
-    
-
-
-
-
-<div class="masonry-flex-container infinite-scroll">
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/ibm-gives-the-chinese-government-access-to-software-code/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
+        <div class="masonry-flex-container infinite-scroll">
+            
+                
+                    <div class="flex-item">
                         
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">IBM gives the Chinese government access to software code</h4>
-                        
+<div class="page-item-container">
+    
+    <div class="page-item-content">
+        <header>
+            
+                <time class="page-item-date">Wed Feb 17, 2016</time>
+            
+            <h2 class="page-item-title">Fix for XMonad with XMobar</h2>
+        </header>
+        <p class="page-item-summary">When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar. E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum. Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig. -- My overall config that is used</p>
+        <a href="http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/" class="page-item-btn ">
+            Read More
+        </a>
+        <footer>
+            
 <ul class="categories">
     <li>
         <i class="fa fa-book"></i>
     </li>
     
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
+        <li><a href="http://chipsenkbeil.com/categories/snippet">snippet</a></li>
     
 </ul>
 
 
-                        <span class="separator">|</span>
-                        
+            <span class="separator">|</span>
+            
 <ul class="tags">
     <li>
         <i class="fa fa-tags"></i>
     </li>
     
-        <li><a href="http://chipsenkbeil.com/tags/article">article</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/ibm">ibm</a></li>
+        <li><a href="http://chipsenkbeil.com/tags/bug-fix">bug fix</a></li>
     
 </ul>
 
 
-                    </div>
-                </div>
-            </a>
-        </noscript>
+        </footer>
     </div>
 </div>
 
 
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/the-hostile-email-landscape/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
                     </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">The Hostile Email Landscape</h4>
+                
+                    <div class="flex-item">
                         
+<div class="page-item-container">
+    
+    <div class="page-item-content">
+        <header>
+            
+                <time class="page-item-date">Wed Mar 07, 2012</time>
+            
+            <h2 class="page-item-title">Using blkid to get device information</h2>
+        </header>
+        <p class="page-item-summary">Quite often, I find myself needing to remind myself of devices connected to my computer so that I know what to type for the pmount program, which is really handy to have! The program [i]blkid[/i] is capable of doing this; however, I didn&rsquo;t care for the default output and found myself using this format: blkid -o list -c /dev/null What this does is tell the program to output the information in a user-friendly list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c /dev/null.&rsquo; As you can imagine, this is very annoying to type out each time.</p>
+        <a href="http://chipsenkbeil.com/note/blkid/" class="page-item-btn ">
+            Read More
+        </a>
+        <footer>
+            
 <ul class="categories">
     <li>
         <i class="fa fa-book"></i>
     </li>
     
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
+        <li><a href="http://chipsenkbeil.com/categories/snippet">snippet</a></li>
     
 </ul>
 
 
-                        <span class="separator">|</span>
-                        
+            <span class="separator">|</span>
+            
 <ul class="tags">
     <li>
         <i class="fa fa-tags"></i>
     </li>
     
-        <li><a href="http://chipsenkbeil.com/tags/blog">blog</a></li>
+        <li><a href="http://chipsenkbeil.com/tags/utility">utility</a></li>
     
 </ul>
 
 
-                    </div>
-                </div>
-            </a>
-        </noscript>
+        </footer>
     </div>
 </div>
 
 
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/larry-wall-unveils-perl-6/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
                     </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Larry Wall unveils Perl 6.0.0</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/article">article</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/perl">perl</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/announcement">announcement</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Dear tech giants, if you love someone set them free</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/blog">blog</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/keep-out-a-webgl-game/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Keep Out - A WebGL Game</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/game">game</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/webgl">webgl</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/make-a-programmable-mirror/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Make a programmable mirror</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/project">project</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/why-rust/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Why Rust?</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/pdf">pdf</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/rust">rust</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/programming-r-at-native-speed-using-haskell/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Programming R at native speed using Haskell</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/article">article</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/r">r</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/haskell">haskell</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/the-effects-of-computer-programming-on-the-brain/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">The Effects of Computer Programming on the Brain (2012)</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/article">article</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Glitter - Dead-simple boilerplate for OpenGL</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/project">project</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/opengl">opengl</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/phoenix-1-0/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">Phoenix 1.0</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/blog">blog</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/elixir">elixir</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/phoenix">phoenix</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/announcement">announcement</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-        
-
-
-    
-
-
-
-
-
-
-<div class="flex-item flex-item-spacing no-line-height">
-    <div class="relative lazyload" data-noscript="">
-        <noscript>
-            <a href="http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/">
-                <div class="project-container rounded-corners z-depth-1">
-                    <div class="project-container-image rounded-corners-top">
-                        
-                            <img src="http://chipsenkbeil.com//img/note/hacker-news.jpg" class="fill-container-width rounded-corners-top" />
-                        
-                    </div>
-                    <div class="rounded-corners-bottom center-text project-container-title">
-                        <h4 class="white-text">State of the Common Lisp Ecosystem</h4>
-                        
-<ul class="categories">
-    <li>
-        <i class="fa fa-book"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/categories/hacker-news">hacker news</a></li>
-    
-</ul>
-
-
-                        <span class="separator">|</span>
-                        
-<ul class="tags">
-    <li>
-        <i class="fa fa-tags"></i>
-    </li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/blog">blog</a></li>
-    
-        <li><a href="http://chipsenkbeil.com/tags/lisp">lisp</a></li>
-    
-</ul>
-
-
-                    </div>
-                </div>
-            </a>
-        </noscript>
-    </div>
-</div>
-
-
-    
-</div>
-
-
+                
+            
+        </div>
         
 
     <ul class="pagination">
@@ -902,12 +322,8 @@
                     <a href="http://chipsenkbeil.com//note/">1</a>
                 </li>
             
-                <li class="waves-effect">
-                    <a href="http://chipsenkbeil.com//note/page/2/">2</a>
-                </li>
-            
-            <li class="waves-effect">
-                <a href="http://chipsenkbeil.com//note/page/2/">
+            <li class="disabled">
+                <a href="#!">
                     <i class="fa fa-angle-right"></i>
                 </a>
             </li>

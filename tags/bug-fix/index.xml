@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bug Fix on Senkbeil</title>
+    <link>http://chipsenkbeil.com/tags/bug-fix/</link>
+    <description>Recent content in Bug Fix on Senkbeil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
+    <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
+    <atom:link href="http://chipsenkbeil.com/tags/bug-fix/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fix for XMonad with XMobar</title>
+      <link>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
+      <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
+      
+      <guid>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
+      <description>&lt;p&gt;When I updated XMonad late last year (2015), I noticed a bug where any
+application that I opened on my first workspace would cover XMobar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;E.g. Opening a terminal or Vivaldi took up the entire screen.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The solution I found was, conveniently, located in a &lt;a href=&#34;https://bbs.archlinux.org/viewtopic.php?id=206890&#34;&gt;post on the ArchLinux
+forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Essentially, you just need to add a &lt;code&gt;handleEventHook&lt;/code&gt; with &lt;code&gt;docksEventHook&lt;/code&gt;
+and &lt;code&gt;handleEventHook defaultConfig&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;-- My overall config that is used elsewhere
+myConfig = defaultConfig
+    { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig
+    , layoutHook = avoidStruts $ layoutHook defaultConfig
+    , handleEventHook = mconcat
+                        [ docksEventHook
+                        , handleEventHook defaultConfig ]
+    , startupHook = setWMName &amp;quot;LG3D&amp;quot;
+    , terminal = &amp;quot;urxvtcd&amp;quot;
+    , modMask = mod1Mask
+    , borderWidth = 1
+    , focusedBorderColor = &amp;quot;blue&amp;quot;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

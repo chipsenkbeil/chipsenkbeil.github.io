@@ -523,50 +523,5 @@ were written cleanly enough where no additional explanation was needed.&lt;/p&gt
 </description>
     </item>
     
-    <item>
-      <title>Using blkid to get device information</title>
-      <link>http://chipsenkbeil.com/post/blkid/</link>
-      <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
-      
-      <guid>http://chipsenkbeil.com/post/blkid/</guid>
-      <description>&lt;p&gt;Quite often, I find myself needing to remind myself of devices connected to my
-computer so that I know what to type for the pmount program, which is really
-handy to have! The program [i]blkid[/i] is capable of doing this; however, I
-didn&amp;rsquo;t care for the default output and found myself using this format:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blkid -o list -c /dev/null
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://chipsenkbeil.com/img/post/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;What this does is tell the program to output the information in a user-friendly
-list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c
-/dev/null.&amp;rsquo;&lt;/p&gt;
-
-&lt;p&gt;As you can imagine, this is very annoying to type out each time. It is also
-annoying to include &amp;lsquo;sudo&amp;rsquo; in front of it when I am not the root user. The
-program will still output some information, but to display everything I want,
-it needs root permissions.&lt;/p&gt;
-
-&lt;p&gt;So, to make this as painless as possible, I wrote a very small wrapper script
-that does this task for me:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#! /bin/sh
-
-if [[ $UID != 0]]; then
-    echo &amp;quot;This script requires root privileges to run:&amp;quot;
-    echo &amp;quot;sudo $0 $*&amp;quot;
-fi
-
-blkid -o list -c /dev/null
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Sticking that in the file list_devices.sh, giving it proper permissions for
-execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
-directory did wonders for me. Hopefully it&amp;rsquo;ll help someone else out there as
-well!&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

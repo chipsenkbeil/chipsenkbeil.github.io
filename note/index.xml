@@ -7,142 +7,87 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Sun, 18 Oct 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
     <atom:link href="http://chipsenkbeil.com/note/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>IBM gives the Chinese government access to software code</title>
-      <link>http://chipsenkbeil.com/note/ibm-gives-the-chinese-government-access-to-software-code/</link>
-      <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
+      <title>Fix for XMonad with XMobar</title>
+      <link>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
+      <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
       
-      <guid>http://chipsenkbeil.com/note/ibm-gives-the-chinese-government-access-to-software-code/</guid>
-      <description></description>
+      <guid>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
+      <description>&lt;p&gt;When I updated XMonad late last year (2015), I noticed a bug where any
+application that I opened on my first workspace would cover XMobar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;E.g. Opening a terminal or Vivaldi took up the entire screen.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The solution I found was, conveniently, located in a &lt;a href=&#34;https://bbs.archlinux.org/viewtopic.php?id=206890&#34;&gt;post on the ArchLinux
+forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Essentially, you just need to add a &lt;code&gt;handleEventHook&lt;/code&gt; with &lt;code&gt;docksEventHook&lt;/code&gt;
+and &lt;code&gt;handleEventHook defaultConfig&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;-- My overall config that is used elsewhere
+myConfig = defaultConfig
+    { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig
+    , layoutHook = avoidStruts $ layoutHook defaultConfig
+    , handleEventHook = mconcat
+                        [ docksEventHook
+                        , handleEventHook defaultConfig ]
+    , startupHook = setWMName &amp;quot;LG3D&amp;quot;
+    , terminal = &amp;quot;urxvtcd&amp;quot;
+    , modMask = mod1Mask
+    , borderWidth = 1
+    , focusedBorderColor = &amp;quot;blue&amp;quot;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
-      <title>The Hostile Email Landscape</title>
-      <link>http://chipsenkbeil.com/note/the-hostile-email-landscape/</link>
-      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      <title>Using blkid to get device information</title>
+      <link>http://chipsenkbeil.com/note/blkid/</link>
+      <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
       
-      <guid>http://chipsenkbeil.com/note/the-hostile-email-landscape/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Larry Wall unveils Perl 6.0.0</title>
-      <link>http://chipsenkbeil.com/note/larry-wall-unveils-perl-6/</link>
-      <pubDate>Wed, 07 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/larry-wall-unveils-perl-6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dear tech giants, if you love someone set them free</title>
-      <link>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</link>
-      <pubDate>Fri, 25 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/dear-tech-giants-if-you-love-someone-set-them-free/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Keep Out - A WebGL Game</title>
-      <link>http://chipsenkbeil.com/note/keep-out-a-webgl-game/</link>
-      <pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/keep-out-a-webgl-game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Make a programmable mirror</title>
-      <link>http://chipsenkbeil.com/note/make-a-programmable-mirror/</link>
-      <pubDate>Sat, 12 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/make-a-programmable-mirror/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Why Rust?</title>
-      <link>http://chipsenkbeil.com/note/why-rust/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/why-rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming R at native speed using Haskell</title>
-      <link>http://chipsenkbeil.com/note/programming-r-at-native-speed-using-haskell/</link>
-      <pubDate>Mon, 07 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/programming-r-at-native-speed-using-haskell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Effects of Computer Programming on the Brain (2012)</title>
-      <link>http://chipsenkbeil.com/note/the-effects-of-computer-programming-on-the-brain/</link>
-      <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/the-effects-of-computer-programming-on-the-brain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Glitter - Dead-simple boilerplate for OpenGL</title>
-      <link>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</link>
-      <pubDate>Sat, 29 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/glitter-dead-simple-boilderplate-for-opengl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phoenix 1.0</title>
-      <link>http://chipsenkbeil.com/note/phoenix-1-0/</link>
-      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/phoenix-1-0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>State of the Common Lisp Ecosystem</title>
-      <link>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</link>
-      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/state-of-the-common-lisp-ecosystem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>G is for Google</title>
-      <link>http://chipsenkbeil.com/note/g-is-for-google/</link>
-      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/g-is-for-google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ShaderFrog - Create and compose shaders in your browser</title>
-      <link>http://chipsenkbeil.com/note/shaderfrog-create-and-compose-shaders-in-your-browser/</link>
-      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/shaderfrog-create-and-compose-shaders-in-your-browser/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Erlang and Elixir Links</title>
-      <link>http://chipsenkbeil.com/note/erlang-and-elixir-links/</link>
-      <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://chipsenkbeil.com/note/erlang-and-elixir-links/</guid>
-      <description></description>
+      <guid>http://chipsenkbeil.com/note/blkid/</guid>
+      <description>&lt;p&gt;Quite often, I find myself needing to remind myself of devices connected to my
+computer so that I know what to type for the pmount program, which is really
+handy to have! The program [i]blkid[/i] is capable of doing this; however, I
+didn&amp;rsquo;t care for the default output and found myself using this format:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://chipsenkbeil.com/img/post/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What this does is tell the program to output the information in a user-friendly
+list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c
+/dev/null.&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, this is very annoying to type out each time. It is also
+annoying to include &amp;lsquo;sudo&amp;rsquo; in front of it when I am not the root user. The
+program will still output some information, but to display everything I want,
+it needs root permissions.&lt;/p&gt;
+
+&lt;p&gt;So, to make this as painless as possible, I wrote a very small wrapper script
+that does this task for me:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#! /bin/sh
+
+if [[ $UID != 0]]; then
+    echo &amp;quot;This script requires root privileges to run:&amp;quot;
+    echo &amp;quot;sudo $0 $*&amp;quot;
+fi
+
+blkid -o list -c /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sticking that in the file list_devices.sh, giving it proper permissions for
+execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
+directory did wonders for me. Hopefully it&amp;rsquo;ll help someone else out there as
+well!&lt;/p&gt;
+</description>
     </item>
     
   </channel>

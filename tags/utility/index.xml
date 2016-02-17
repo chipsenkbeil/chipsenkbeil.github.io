@@ -12,10 +12,10 @@
     
     <item>
       <title>Using blkid to get device information</title>
-      <link>http://chipsenkbeil.com/post/blkid/</link>
+      <link>http://chipsenkbeil.com/note/blkid/</link>
       <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/blkid/</guid>
+      <guid>http://chipsenkbeil.com/note/blkid/</guid>
       <description>&lt;p&gt;Quite often, I find myself needing to remind myself of devices connected to my
 computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
