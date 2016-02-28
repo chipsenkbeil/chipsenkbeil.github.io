@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akka on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/akka/</link>
+    <link>https://chipsenkbeil.com/tags/akka/</link>
     <description>Recent content in Akka on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="http://chipsenkbeil.com/tags/akka/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/akka/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Scala Debugger Akka Extension</title>
-      <link>http://chipsenkbeil.com/software/scala-debugger-akka/</link>
+      <link>https://chipsenkbeil.com/software/scala-debugger-akka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/scala-debugger-akka/</guid>
+      <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
       <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Spark Kernel</title>
-      <link>http://chipsenkbeil.com/software/spark-kernel/</link>
+      <link>https://chipsenkbeil.com/software/spark-kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/spark-kernel/</guid>
+      <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
       <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
 </description>
     </item>

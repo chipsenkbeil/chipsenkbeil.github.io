@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tool on Senkbeil</title>
-    <link>http://chipsenkbeil.com/categories/tool/</link>
+    <link>https://chipsenkbeil.com/categories/tool/</link>
     <description>Recent content in Tool on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Tue, 24 Dec 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/categories/tool/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>tmux with XMonad Bindings</title>
-      <link>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
+      <link>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
       <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
+      <guid>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
       <description>
 
 &lt;h3 id=&#34;the-reason:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Reason&lt;/h3&gt;
@@ -129,7 +129,7 @@ functionality; so, this means my solution will only work for Snow Leopard or
 higher (sorry Leopard and Tiger).&lt;/p&gt;
 
 &lt;p&gt;You can find the small program bundled with the main project
-&lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;the-linux-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Linux Solution&lt;/h3&gt;
 
@@ -139,7 +139,7 @@ program. This meant accessing &lt;code&gt;/dev/my_keyboard_interface&lt;/code&gt
 from computer to computer.&lt;/p&gt;
 
 &lt;p&gt;I wrote a small C program to demonstrate this functionality
-&lt;a href=&#34;http://chipsenkbeil.com/software/keyboard-state/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://chipsenkbeil.com/software/keyboard-state/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, after joining IBM in January of 2014, I was not able to
 continue pursuing this project.&lt;/p&gt;
@@ -151,7 +151,7 @@ external program successfully produced a working replica of XMonad&amp;rsquo;s k
 bindings using tmux, giving me a more comfortable layout for moving
 panes and navigating.&lt;/p&gt;
 
-&lt;p&gt;You can find the project &lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the project &lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

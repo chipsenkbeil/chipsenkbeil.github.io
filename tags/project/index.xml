@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/project/</link>
+    <link>https://chipsenkbeil.com/tags/project/</link>
     <description>Recent content in Project on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="http://chipsenkbeil.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CS 3114 (Data Structures 2) - Project 1</title>
-      <link>http://chipsenkbeil.com/software/cs3114-project-1/</link>
+      <link>https://chipsenkbeil.com/software/cs3114-project-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs3114-project-1/</guid>
+      <guid>https://chipsenkbeil.com/software/cs3114-project-1/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of memory
 management within a buffer. In the case of this assignment, least recently used
 (LRU) was the implementation for swapping blocks.&lt;/p&gt;
@@ -27,10 +27,10 @@ corrected in project 4, which reused this project.&lt;/p&gt;
     
     <item>
       <title>CS 3114 (Data Structures 2) - Project 2</title>
-      <link>http://chipsenkbeil.com/software/cs3114-project-2/</link>
+      <link>https://chipsenkbeil.com/software/cs3114-project-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs3114-project-2/</guid>
+      <guid>https://chipsenkbeil.com/software/cs3114-project-2/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
 multiple data structures being used together to provided different methods of
 traversing data. In this implementation, a quadtree and a binary search tree
@@ -44,10 +44,10 @@ corrected in project 4, which used this project.&lt;/p&gt;
     
     <item>
       <title>CS 3114 (Data Structures 2) - Project 3</title>
-      <link>http://chipsenkbeil.com/software/cs3114-project-3/</link>
+      <link>https://chipsenkbeil.com/software/cs3114-project-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs3114-project-3/</guid>
+      <guid>https://chipsenkbeil.com/software/cs3114-project-3/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
 external sorting by implementing heapsort externally and was tested with
 academically-provided data.&lt;/p&gt;
@@ -61,10 +61,10 @@ to be stable.&lt;/p&gt;
     
     <item>
       <title>CS 3114 (Data Structures 2) - Project 4</title>
-      <link>http://chipsenkbeil.com/software/cs3114-project-4/</link>
+      <link>https://chipsenkbeil.com/software/cs3114-project-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs3114-project-4/</guid>
+      <guid>https://chipsenkbeil.com/software/cs3114-project-4/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate an understanding of how
 different programming concepts such as the use of data structures for specific
 situations as well as sorting implementations and how to adapt them for
@@ -82,10 +82,10 @@ cases to not be executed correctly.&lt;/p&gt;
     
     <item>
       <title>CS 4204 (Computer Graphics) - Project 1</title>
-      <link>http://chipsenkbeil.com/software/cs4204-project-1/</link>
+      <link>https://chipsenkbeil.com/software/cs4204-project-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs4204-project-1/</guid>
+      <guid>https://chipsenkbeil.com/software/cs4204-project-1/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
 tree-based modeling by connecting various parts of a robot together and
 providing a method to move different parts of the body and witness changes in
@@ -95,10 +95,10 @@ one part affect its children.&lt;/p&gt;
     
     <item>
       <title>CS 4204 (Computer Graphics) - Project 2</title>
-      <link>http://chipsenkbeil.com/software/cs4204-project-2/</link>
+      <link>https://chipsenkbeil.com/software/cs4204-project-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs4204-project-2/</guid>
+      <guid>https://chipsenkbeil.com/software/cs4204-project-2/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of texture
 mapping, lightining, and material properties available through OpenGL and apply
 them to our robot. Based off of previous code written for project 1 (revamped
@@ -108,10 +108,10 @@ to work better with lighting).&lt;/p&gt;
     
     <item>
       <title>CS 4204 (Computer Graphics) - Project 3</title>
-      <link>http://chipsenkbeil.com/software/cs4204-project-3/</link>
+      <link>https://chipsenkbeil.com/software/cs4204-project-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs4204-project-3/</guid>
+      <guid>https://chipsenkbeil.com/software/cs4204-project-3/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
 keyframes, animation, and interpolation. Based off of previous code written for
 project 2 (revamped to work better with animation).&lt;/p&gt;
@@ -120,10 +120,10 @@ project 2 (revamped to work better with animation).&lt;/p&gt;
     
     <item>
       <title>CS 4204 (Computer Graphics) - Project 4</title>
-      <link>http://chipsenkbeil.com/software/cs4204-project-4/</link>
+      <link>https://chipsenkbeil.com/software/cs4204-project-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/cs4204-project-4/</guid>
+      <guid>https://chipsenkbeil.com/software/cs4204-project-4/</guid>
       <description>&lt;p&gt;The goal of this assignment was to demonstrate an understanding of vertex and
 fragment shaders by using some reference code provided by the professor and
 writing our own vertex and fragment shader code in two external files.&lt;/p&gt;
@@ -136,10 +136,10 @@ textures onto the base texture.&lt;/p&gt;
     
     <item>
       <title>ECE 4534 (Embedded Systems) - Main Project</title>
-      <link>http://chipsenkbeil.com/software/ece4534/</link>
+      <link>https://chipsenkbeil.com/software/ece4534/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/ece4534/</guid>
+      <guid>https://chipsenkbeil.com/software/ece4534/</guid>
       <description>&lt;p&gt;Contains the PIC microcontroller C code used to control our rover through
 a maze. Does not contain the ARM code as that was written by another classmate.&lt;/p&gt;
 </description>
@@ -147,10 +147,10 @@ a maze. Does not contain the ARM code as that was written by another classmate.&
     
     <item>
       <title>ECE4530 (Hardware/Software Codesign) - Main Project</title>
-      <link>http://chipsenkbeil.com/software/ece4530/</link>
+      <link>https://chipsenkbeil.com/software/ece4530/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/ece4530/</guid>
+      <guid>https://chipsenkbeil.com/software/ece4530/</guid>
       <description>&lt;p&gt;Competition between classmates to create the fastest combination of hardware
 and software to perform collision detection for SHA-1 digests. Contains my
 design documents, drawings, source code (C/Verliog), and associated images.&lt;/p&gt;

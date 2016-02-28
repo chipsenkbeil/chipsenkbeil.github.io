@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/hugo/</link>
+    <link>https://chipsenkbeil.com/tags/hugo/</link>
     <description>Recent content in Hugo on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="http://chipsenkbeil.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>GridSide</title>
-      <link>http://chipsenkbeil.com/software/grid-side/</link>
+      <link>https://chipsenkbeil.com/software/grid-side/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/grid-side/</guid>
+      <guid>https://chipsenkbeil.com/software/grid-side/</guid>
       <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
 generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
 </description>

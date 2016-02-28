@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/ruby/</link>
+    <link>https://chipsenkbeil.com/tags/ruby/</link>
     <description>Recent content in Ruby on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Sat, 26 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Design to Embrace Change</title>
-      <link>http://chipsenkbeil.com/post/design-to-embrace-change/</link>
+      <link>https://chipsenkbeil.com/post/design-to-embrace-change/</link>
       <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/design-to-embrace-change/</guid>
+      <guid>https://chipsenkbeil.com/post/design-to-embrace-change/</guid>
       <description>
 
 &lt;p&gt;So, I&amp;rsquo;ve been reading &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C&#34;&gt;Practical Object-Oriented Design in Ruby&lt;/a&gt;&lt;/em&gt;
@@ -237,7 +237,7 @@ to explain &lt;em&gt;what&lt;/em&gt; they do versus having to explain the intern
 with his explanation of the length and complexity of functions. I&amp;rsquo;d recommend
 giving his coding style document a once-over. I&amp;rsquo;d also like to point out a
 similar document from &lt;a href=&#34;http://gamedev.allusion.net/softprj/kos/&#34;&gt;KOS&lt;/a&gt;, the Dreamcast development framework, where
-the original developer provides his own comments on &lt;a href=&#34;http://chipsenkbeil.com/docs/dreamcast_coding_style.txt&#34;&gt;coding style&lt;/a&gt;.&lt;/p&gt;
+the original developer provides his own comments on &lt;a href=&#34;https://chipsenkbeil.com/docs/dreamcast_coding_style.txt&#34;&gt;coding style&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;So, I think both the author and Torvalds share a similar point of view in
 terms of over-commenting. Looking back, I find myself extra guilty of

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meetup on Senkbeil</title>
-    <link>http://chipsenkbeil.com/categories/meetup/</link>
+    <link>https://chipsenkbeil.com/categories/meetup/</link>
     <description>Recent content in Meetup on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Mon, 06 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Spark Kernel - Meetup Talk</title>
-      <link>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
+      <link>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
       <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
+      <guid>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
       <description>&lt;div class=&#34;embed video-player&#34;&gt;
     &lt;iframe class=&#34;youtube-player&#34; 
             type=&#34;text/html&#34; 

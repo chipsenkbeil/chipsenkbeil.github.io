@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Senkbeil</title>
-    <link>http://chipsenkbeil.com/post/</link>
+    <link>https://chipsenkbeil.com/post/</link>
     <description>Recent content in Posts on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 02 Sep 2015 16:52:27 -0500</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>CSS Masonry Layout Attempts</title>
-      <link>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
+      <link>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
       <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
+      <guid>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
       <description>
 
 &lt;p&gt;I spent two days investigating this and could not find a solution that worked.
@@ -97,10 +97,10 @@ sizing estimates.&lt;/p&gt;
     
     <item>
       <title>Overview of the Spark Kernel Client Library</title>
-      <link>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
+      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
       <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
+      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
       <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
 will focus on the client library, a Scala-based library used to interface with
 the Spark Kernel. This library enables Scala applications to quickly
@@ -114,10 +114,10 @@ remote connection into the cluster.&lt;/p&gt;
     
     <item>
       <title>Spark Kernel Architecture</title>
-      <link>http://chipsenkbeil.com/post/spark-kernel-architecture/</link>
+      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
       <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
+      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
       <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
 with enabling interactive applications against Apache Spark and how the Spark
 Kernel solved this problem. This week, we will focus on the Spark Kernel’s
@@ -130,10 +130,10 @@ interactive API from IPython called the Comm API.&lt;/p&gt;
     
     <item>
       <title>How to enable interactive applications against Apache Spark</title>
-      <link>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
+      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
+      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
       <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
 application focused on interactive usage of Apache Spark. This project
 addresses a problem we encountered when trying to migrate a Storm-based
@@ -144,10 +144,10 @@ against Apache Spark?”&lt;/p&gt;
     
     <item>
       <title>tmux with XMonad Bindings</title>
-      <link>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
+      <link>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
       <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
+      <guid>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
       <description>
 
 &lt;h3 id=&#34;the-reason:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Reason&lt;/h3&gt;
@@ -261,7 +261,7 @@ functionality; so, this means my solution will only work for Snow Leopard or
 higher (sorry Leopard and Tiger).&lt;/p&gt;
 
 &lt;p&gt;You can find the small program bundled with the main project
-&lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;the-linux-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Linux Solution&lt;/h3&gt;
 
@@ -271,7 +271,7 @@ program. This meant accessing &lt;code&gt;/dev/my_keyboard_interface&lt;/code&gt
 from computer to computer.&lt;/p&gt;
 
 &lt;p&gt;I wrote a small C program to demonstrate this functionality
-&lt;a href=&#34;http://chipsenkbeil.com/software/keyboard-state/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://chipsenkbeil.com/software/keyboard-state/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, after joining IBM in January of 2014, I was not able to
 continue pursuing this project.&lt;/p&gt;
@@ -283,16 +283,16 @@ external program successfully produced a working replica of XMonad&amp;rsquo;s k
 bindings using tmux, giving me a more comfortable layout for moving
 panes and navigating.&lt;/p&gt;
 
-&lt;p&gt;You can find the project &lt;a href=&#34;http://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the project &lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Design to Embrace Change</title>
-      <link>http://chipsenkbeil.com/post/design-to-embrace-change/</link>
+      <link>https://chipsenkbeil.com/post/design-to-embrace-change/</link>
       <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/design-to-embrace-change/</guid>
+      <guid>https://chipsenkbeil.com/post/design-to-embrace-change/</guid>
       <description>
 
 &lt;p&gt;So, I&amp;rsquo;ve been reading &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Practical-Object-Oriented-Design-Ruby-Addison-Wesley-ebook/dp/B0096BYG7C&#34;&gt;Practical Object-Oriented Design in Ruby&lt;/a&gt;&lt;/em&gt;
@@ -514,7 +514,7 @@ to explain &lt;em&gt;what&lt;/em&gt; they do versus having to explain the intern
 with his explanation of the length and complexity of functions. I&amp;rsquo;d recommend
 giving his coding style document a once-over. I&amp;rsquo;d also like to point out a
 similar document from &lt;a href=&#34;http://gamedev.allusion.net/softprj/kos/&#34;&gt;KOS&lt;/a&gt;, the Dreamcast development framework, where
-the original developer provides his own comments on &lt;a href=&#34;http://chipsenkbeil.com/docs/dreamcast_coding_style.txt&#34;&gt;coding style&lt;/a&gt;.&lt;/p&gt;
+the original developer provides his own comments on &lt;a href=&#34;https://chipsenkbeil.com/docs/dreamcast_coding_style.txt&#34;&gt;coding style&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;So, I think both the author and Torvalds share a similar point of view in
 terms of over-commenting. Looking back, I find myself extra guilty of

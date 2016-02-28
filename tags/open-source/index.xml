@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/open-source/</link>
+    <link>https://chipsenkbeil.com/tags/open-source/</link>
     <description>Recent content in Open Source on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Overview of the Spark Kernel Client Library</title>
-      <link>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
+      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
       <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
+      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
       <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
 will focus on the client library, a Scala-based library used to interface with
 the Spark Kernel. This library enables Scala applications to quickly
@@ -29,10 +29,10 @@ remote connection into the cluster.&lt;/p&gt;
     
     <item>
       <title>Spark Kernel Architecture</title>
-      <link>http://chipsenkbeil.com/post/spark-kernel-architecture/</link>
+      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
       <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
+      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
       <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
 with enabling interactive applications against Apache Spark and how the Spark
 Kernel solved this problem. This week, we will focus on the Spark Kernel’s
@@ -45,10 +45,10 @@ interactive API from IPython called the Comm API.&lt;/p&gt;
     
     <item>
       <title>How to enable interactive applications against Apache Spark</title>
-      <link>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
+      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
+      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
       <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
 application focused on interactive usage of Apache Spark. This project
 addresses a problem we encountered when trying to migrate a Storm-based
@@ -59,20 +59,20 @@ against Apache Spark?”&lt;/p&gt;
     
     <item>
       <title>Dot files</title>
-      <link>http://chipsenkbeil.com/software/dotfiles/</link>
+      <link>https://chipsenkbeil.com/software/dotfiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/dotfiles/</guid>
+      <guid>https://chipsenkbeil.com/software/dotfiles/</guid>
       <description>&lt;p&gt;My own personal collection of hidden configuration files, extra binaries, etc.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>File Patcher</title>
-      <link>http://chipsenkbeil.com/software/file-patcher/</link>
+      <link>https://chipsenkbeil.com/software/file-patcher/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/file-patcher/</guid>
+      <guid>https://chipsenkbeil.com/software/file-patcher/</guid>
       <description>&lt;p&gt;Old program I wrote in C# for a game engine, no longer in development, that
 parses an XML file for a couple of commands with the intention of using it
 to download new game patches and apply them.&lt;/p&gt;
@@ -81,10 +81,10 @@ to download new game patches and apply them.&lt;/p&gt;
     
     <item>
       <title>GridSide</title>
-      <link>http://chipsenkbeil.com/software/grid-side/</link>
+      <link>https://chipsenkbeil.com/software/grid-side/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/grid-side/</guid>
+      <guid>https://chipsenkbeil.com/software/grid-side/</guid>
       <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
 generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -92,10 +92,10 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
     
     <item>
       <title>Keyboard state</title>
-      <link>http://chipsenkbeil.com/software/keyboard-state/</link>
+      <link>https://chipsenkbeil.com/software/keyboard-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/keyboard-state/</guid>
+      <guid>https://chipsenkbeil.com/software/keyboard-state/</guid>
       <description>&lt;p&gt;Small program written to demonstrate capturing modifier key input on Linux
 using the raw keyboard input device.&lt;/p&gt;
 </description>
@@ -103,10 +103,10 @@ using the raw keyboard input device.&lt;/p&gt;
     
     <item>
       <title>RealFeel Game Engine</title>
-      <link>http://chipsenkbeil.com/software/realfeel-game-engine/</link>
+      <link>https://chipsenkbeil.com/software/realfeel-game-engine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/realfeel-game-engine/</guid>
+      <guid>https://chipsenkbeil.com/software/realfeel-game-engine/</guid>
       <description>&lt;p&gt;Really old fork of &lt;em&gt;Mirage Source&lt;/em&gt; VB6 game engine using DirectX7 and WinSock
 to create a 2D MMORPG.&lt;/p&gt;
 </description>
@@ -114,10 +114,10 @@ to create a 2D MMORPG.&lt;/p&gt;
     
     <item>
       <title>Resume</title>
-      <link>http://chipsenkbeil.com/software/resume/</link>
+      <link>https://chipsenkbeil.com/software/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/resume/</guid>
+      <guid>https://chipsenkbeil.com/software/resume/</guid>
       <description>&lt;p&gt;My work and academic resumes, written in LaTeX. Contains utility functions
 to write your own resume easily in the same format.&lt;/p&gt;
 </description>
@@ -125,40 +125,40 @@ to write your own resume easily in the same format.&lt;/p&gt;
     
     <item>
       <title>Scala Debugger</title>
-      <link>http://chipsenkbeil.com/software/scala-debugger/</link>
+      <link>https://chipsenkbeil.com/software/scala-debugger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/scala-debugger/</guid>
+      <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
       <description>&lt;p&gt;A Scala wrapper library around the JDI (Java Debugger Interface).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Scala Debugger Akka Extension</title>
-      <link>http://chipsenkbeil.com/software/scala-debugger-akka/</link>
+      <link>https://chipsenkbeil.com/software/scala-debugger-akka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/scala-debugger-akka/</guid>
+      <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
       <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Spark Kernel</title>
-      <link>http://chipsenkbeil.com/software/spark-kernel/</link>
+      <link>https://chipsenkbeil.com/software/spark-kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/spark-kernel/</guid>
+      <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
       <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>tmux XMonad bindings</title>
-      <link>http://chipsenkbeil.com/software/tmux-xmonad-bindings/</link>
+      <link>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
+      <guid>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
       <description>&lt;p&gt;Contains a tmux configuration script to provide XMonad-like keyboard bindings.
 Also contains necessary utility functions to capture modifier keys (like shift)
 needed for XMonad.&lt;/p&gt;

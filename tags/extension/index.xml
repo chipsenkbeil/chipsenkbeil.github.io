@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extension on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/extension/</link>
+    <link>https://chipsenkbeil.com/tags/extension/</link>
     <description>Recent content in Extension on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="http://chipsenkbeil.com/tags/extension/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/extension/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Scala Debugger Akka Extension</title>
-      <link>http://chipsenkbeil.com/software/scala-debugger-akka/</link>
+      <link>https://chipsenkbeil.com/software/scala-debugger-akka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/scala-debugger-akka/</guid>
+      <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
       <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
 </description>
     </item>

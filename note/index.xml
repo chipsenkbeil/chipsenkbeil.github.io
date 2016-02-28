@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Senkbeil</title>
-    <link>http://chipsenkbeil.com/note/</link>
+    <link>https://chipsenkbeil.com/note/</link>
     <description>Recent content in Notes on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/note/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/note/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fix for XMonad with XMobar</title>
-      <link>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
+      <link>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
       <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
       
-      <guid>http://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
+      <guid>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
       <description>&lt;p&gt;When I updated XMonad late last year (2015), I noticed a bug where any
 application that I opened on my first workspace would cover XMobar.&lt;/p&gt;
 
@@ -47,10 +47,10 @@ myConfig = defaultConfig
     
     <item>
       <title>Using blkid to get device information</title>
-      <link>http://chipsenkbeil.com/note/blkid/</link>
+      <link>https://chipsenkbeil.com/note/blkid/</link>
       <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
       
-      <guid>http://chipsenkbeil.com/note/blkid/</guid>
+      <guid>https://chipsenkbeil.com/note/blkid/</guid>
       <description>&lt;p&gt;Quite often, I find myself needing to remind myself of devices connected to my
 computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
@@ -59,7 +59,7 @@ didn&amp;rsquo;t care for the default output and found myself using this format:
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blkid -o list -c /dev/null
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://chipsenkbeil.com/img/post/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://chipsenkbeil.com/img/post/blkid.jpg&#34; alt=&#34;Example of usage&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;What this does is tell the program to output the information in a user-friendly
 list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c

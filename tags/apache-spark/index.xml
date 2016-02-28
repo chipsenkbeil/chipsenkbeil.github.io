@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apache Spark on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/apache-spark/</link>
+    <link>https://chipsenkbeil.com/tags/apache-spark/</link>
     <description>Recent content in Apache Spark on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://chipsenkbeil.com/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/apache-spark/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Overview of the Spark Kernel Client Library</title>
-      <link>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
+      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
       <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
+      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
       <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
 will focus on the client library, a Scala-based library used to interface with
 the Spark Kernel. This library enables Scala applications to quickly
@@ -29,10 +29,10 @@ remote connection into the cluster.&lt;/p&gt;
     
     <item>
       <title>Spark Kernel Architecture</title>
-      <link>http://chipsenkbeil.com/post/spark-kernel-architecture/</link>
+      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
       <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
+      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
       <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
 with enabling interactive applications against Apache Spark and how the Spark
 Kernel solved this problem. This week, we will focus on the Spark Kernel’s
@@ -45,10 +45,10 @@ interactive API from IPython called the Comm API.&lt;/p&gt;
     
     <item>
       <title>How to enable interactive applications against Apache Spark</title>
-      <link>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
+      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
       <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
+      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
       <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
 application focused on interactive usage of Apache Spark. This project
 addresses a problem we encountered when trying to migrate a Storm-based
@@ -59,10 +59,10 @@ against Apache Spark?”&lt;/p&gt;
     
     <item>
       <title>The Spark Kernel - Meetup Talk</title>
-      <link>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
+      <link>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
       <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
+      <guid>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
       <description>&lt;div class=&#34;embed video-player&#34;&gt;
     &lt;iframe class=&#34;youtube-player&#34; 
             type=&#34;text/html&#34; 
@@ -79,10 +79,10 @@ against Apache Spark?”&lt;/p&gt;
     
     <item>
       <title>Spark Kernel</title>
-      <link>http://chipsenkbeil.com/software/spark-kernel/</link>
+      <link>https://chipsenkbeil.com/software/spark-kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/spark-kernel/</guid>
+      <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
       <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
 </description>
     </item>

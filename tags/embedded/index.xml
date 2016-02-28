@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embedded on Senkbeil</title>
-    <link>http://chipsenkbeil.com/tags/embedded/</link>
+    <link>https://chipsenkbeil.com/tags/embedded/</link>
     <description>Recent content in Embedded on Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="http://chipsenkbeil.com/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://chipsenkbeil.com/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ECE 4534 (Embedded Systems) - Main Project</title>
-      <link>http://chipsenkbeil.com/software/ece4534/</link>
+      <link>https://chipsenkbeil.com/software/ece4534/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://chipsenkbeil.com/software/ece4534/</guid>
+      <guid>https://chipsenkbeil.com/software/ece4534/</guid>
       <description>&lt;p&gt;Contains the PIC microcontroller C code used to control our rover through
 a maze. Does not contain the ARM code as that was written by another classmate.&lt;/p&gt;
 </description>
