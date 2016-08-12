@@ -37,7 +37,7 @@ should provide a behavior versus strict data manipulation. In addition, the
 author also claims that classes should hold a single responsibility to reduce
 complexity and ensure easy readability.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-encapsulation-via-method-wrappers:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1. Encapsulation via Method Wrappers&lt;/h3&gt;
+&lt;h3 id=&#34;1-encapsulation-via-method-wrappers&#34;&gt;1. Encapsulation via Method Wrappers&lt;/h3&gt;
 
 &lt;p&gt;The book begins by discussing abstraction in the form of encapsulation of data
 in Ruby using shorthands like &lt;em&gt;attr_reader&lt;/em&gt; to wrap field access. I was
@@ -46,7 +46,7 @@ past summer, where I had to quickly pick up and learn Ruby (1.9.3) to develop
 our prototype. Below you can see an example of a poor design choice and a
 better alternative - although not perfect, as you will see later.&lt;/p&gt;
 
-&lt;h4 id=&#34;1-a-poor-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.a Poor Design Choice&lt;/h4&gt;
+&lt;h4 id=&#34;1-a-poor-design-choice&#34;&gt;1.a Poor Design Choice&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Rectangle
     def initialize(width, length)
@@ -60,7 +60,7 @@ better alternative - although not perfect, as you will see later.&lt;/p&gt;
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;1-b-better-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.b Better Design Choice&lt;/h4&gt;
+&lt;h4 id=&#34;1-b-better-design-choice&#34;&gt;1.b Better Design Choice&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Rectangle
     attr_reader :width, :length
@@ -75,7 +75,7 @@ end
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;why-is-this-better:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;Why is this better?&lt;/h4&gt;
+&lt;h4 id=&#34;why-is-this-better&#34;&gt;Why is this better?&lt;/h4&gt;
 
 &lt;p&gt;The shorthand &lt;em&gt;attr_reader&lt;/em&gt; simply wraps the references to instance variables
 in getter methods with the same name. E.g.&lt;/p&gt;
@@ -95,7 +95,7 @@ variables without providing any alterations. However, in the future, you might
 decide to change the functionality of width or height. Not likely - this is
 an overly-simplistic example - but it could happen.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-leaky-abstractions:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2. Leaky Abstractions&lt;/h3&gt;
+&lt;h3 id=&#34;2-leaky-abstractions&#34;&gt;2. Leaky Abstractions&lt;/h3&gt;
 
 &lt;p&gt;Enter the next section of the chapter, focusing on &lt;a href=&#34;http://en.wikipedia.org/wiki/Leaky_abstraction&#34;&gt;leaky abstractions&lt;/a&gt;.
 This was something that I believe I had touched on, but not worked with often.
@@ -103,7 +103,7 @@ The reason being that I was taught (and learned from experiences at IBM) to not
 perform logical operations within class initialization. However, I am getting
 ahead of myself, let me first provide an example of a leaky abstraction.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-a-leaky-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.a Leaky Abstraction&lt;/h4&gt;
+&lt;h4 id=&#34;2-a-leaky-abstraction&#34;&gt;2.a Leaky Abstraction&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ObscuringReferences
     attr_reader :data
@@ -124,7 +124,7 @@ future, that the data array needs to be expanded such that it contains an
 age, name, and description in that order. The &lt;em&gt;introduce_self&lt;/em&gt; method would
 then need to be altered to match the data structure change.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-b-fixed-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.b Fixed Abstraction&lt;/h4&gt;
+&lt;h4 id=&#34;2-b-fixed-abstraction&#34;&gt;2.b Fixed Abstraction&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RevealingReferences
     attr_reader :person
@@ -158,7 +158,7 @@ recognize and appropriately handle it is so simple yet powerful. I&amp;rsquo;m c
 if this falls under the normal &amp;ldquo;avoid at all cost&amp;rdquo; for those that advocate
 removing logic from constructors, or if this is frequently performed.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-reuse-code:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3. Reuse Code&lt;/h3&gt;
+&lt;h3 id=&#34;3-reuse-code&#34;&gt;3. Reuse Code&lt;/h3&gt;
 
 &lt;p&gt;Okay, so, this one is incredibly obvious and has been drilled into the head of
 every student attending a university in the last decade. Simply put, if there
@@ -171,7 +171,7 @@ new method.&lt;/p&gt;
 should a class have a single responsibility but also each method should also
 only perform a single task.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-a-too-much-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.a Too Much Functionality&lt;/h4&gt;
+&lt;h4 id=&#34;3-a-too-much-functionality&#34;&gt;3.a Too Much Functionality&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RectangularPrism
     attr_reader :width, :length, :height
@@ -194,7 +194,7 @@ calculating the volume of a rectangular prism. The forumla can be given as
 In other words, the volume method is performing a calculation of the area
 and the volume, which is too much functionality.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-b-separated-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.b Separated Functionality&lt;/h4&gt;
+&lt;h4 id=&#34;3-b-separated-functionality&#34;&gt;3.b Separated Functionality&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RectangularPrism
     attr_reader :width, :length, :height
@@ -221,7 +221,7 @@ with the better example provided in his text, I&amp;rsquo;d still argue that thi
 not be a great feature; however, I am fairly naive with dynamic languages like
 &lt;em&gt;Ruby&lt;/em&gt; - I prefer statically-typed languages (C, Java).&lt;/p&gt;
 
-&lt;h4 id=&#34;3-c-avoid-comments:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.c Avoid Comments&lt;/h4&gt;
+&lt;h4 id=&#34;3-c-avoid-comments&#34;&gt;3.c Avoid Comments&lt;/h4&gt;
 
 &lt;p&gt;What I did find interesting was an additional comment from the author in his
 list of benefits for this refactoring: avoid the need for comments. When I

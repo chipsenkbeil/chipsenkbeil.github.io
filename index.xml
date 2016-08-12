@@ -7,8 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 12 Aug 2016 09:36:18 -0500</lastBuildDate>
     <atom:link href="https://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Toggle Dvorak</title>
+      <link>https://chipsenkbeil.com/note/toggle-dvorak/</link>
+      <pubDate>Fri, 12 Aug 2016 09:36:18 -0500</pubDate>
+      
+      <guid>https://chipsenkbeil.com/note/toggle-dvorak/</guid>
+      <description>
+
+&lt;p&gt;In my ArchLinux setup with XMonad, I&amp;rsquo;ve found myself wanting to swap
+between &lt;em&gt;QWERTY&lt;/em&gt; and &lt;em&gt;Dvorak&lt;/em&gt; keyboard layouts when practicing
+&lt;em&gt;Dvorak&lt;/em&gt;. While my &lt;em&gt;Kinesis Advantage&lt;/em&gt; keyboard allows me to swap
+layouts at the hardware level (I&amp;rsquo;m assuming by simulating Dvorak
+on top of Qwerty), I also found a keyboard-agnostic way to do this.&lt;/p&gt;
+
+&lt;h3 id=&#34;configuring-keypress-toggle&#34;&gt;Configuring Keypress Toggle&lt;/h3&gt;
+
+&lt;p&gt;For X11, create the following configuration at
+&lt;code&gt;/etc/X11/xorg.conf.d/00-keyboard.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Read and parsed by systemd-localed. It&#39;s probably wise not to edit this file
+# manually too freely.
+Section &amp;quot;InputClass&amp;quot;
+    Identifier &amp;quot;system-keyboard&amp;quot;
+    MatchIsKeyboard &amp;quot;on&amp;quot;
+    Option &amp;quot;XkbLayout&amp;quot; &amp;quot;us,us&amp;quot;
+    Option &amp;quot;XkbModel&amp;quot; &amp;quot;,&amp;quot;
+    Option &amp;quot;XkbVariant&amp;quot; &amp;quot;,dvorak&amp;quot;
+    Option &amp;quot;XkbOptions&amp;quot; &amp;quot;grp:toggle&amp;quot;
+EndSection
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This enables toggling Dvorak via &lt;code&gt;Right-Alt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;configuring-visual-indicator-with-xmobar&#34;&gt;Configuring Visual Indicator with Xmobar&lt;/h3&gt;
+
+&lt;p&gt;So, along with XMonad, I use Xmobar to display useful information such
+as my current workspace, battery charge, and time. To avoid confusing
+myself when switching between keyboard layouts, I added a visual
+indicator in the right corner of Xmobar via the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;-- Display of Xmobar information
+, template = &amp;quot;%StdinReader%  }{ %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %KAUS% | %date% || %kbd% &amp;quot;
+
+, commands =
+    [
+    -- Series of commands to run on Xmobar
+    -- ...
+
+    -- keyboard layout indicator
+    , Run Kbd            [ (&amp;quot;us(dvorak)&amp;quot; , &amp;quot;&amp;lt;fc=#00008B&amp;gt;DV&amp;lt;/fc&amp;gt;&amp;quot;)
+                         , (&amp;quot;us&amp;quot;         , &amp;quot;&amp;lt;fc=#8B0000&amp;gt;US&amp;lt;/fc&amp;gt;&amp;quot;)
+                         ]
+    ]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Fix for XMonad with XMobar</title>
@@ -66,7 +123,7 @@ myConfig = defaultConfig
 Eventually, I gave up and added the Masonry Javascript library. My two
 attempts were as follows:&lt;/p&gt;
 
-&lt;h3 id=&#34;using-css-columns:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using CSS Columns&lt;/h3&gt;
+&lt;h3 id=&#34;using-css-columns&#34;&gt;Using CSS Columns&lt;/h3&gt;
 
 &lt;p&gt;CSS Columns enabled an easy, powerful way to spread page summaries across
 multiple columns. Furthermore, you can prevent page summaries from being
@@ -98,7 +155,7 @@ left with older summaries going down the first column and into the second, etc.&
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;using-flexbox:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using Flexbox&lt;/h3&gt;
+&lt;h3 id=&#34;using-flexbox&#34;&gt;Using Flexbox&lt;/h3&gt;
 
 &lt;p&gt;This involved using flexbox to simulate a Masonry layout by using
 &lt;code&gt;flex-flow: column wrap&lt;/code&gt; to have items flow from top to bottom with no extra
@@ -266,15 +323,6 @@ against Apache Spark?”&lt;/p&gt;
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/pepper/2015/02/01/120930954/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper with a stick</title>
-      <link>https://chipsenkbeil.com/pepper/2014/11/28/175213579/</link>
-      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/11/28/175213579/</guid>
       <description></description>
     </item>
     

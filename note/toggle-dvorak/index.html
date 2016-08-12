@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html 
+    lang="en-us"
+    class="no-js"
+>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    
+    <meta name="generator" content="Hugo 0.17-DEV" />
+    <meta name="generation-date" content="2016-08-12 14:50:37.784539768 &#43;0000 UTC">
+    <title>Toggle Dvorak &middot; Senkbeil</title>
+    <link rel="shortcut icon" href="https://chipsenkbeil.com/img/favicon.ico">
+    <link rel="icon" href="https://chipsenkbeil.com/img/favicon.ico">
+    
+<link rel="stylesheet" href="https://chipsenkbeil.com/css/materialize.min.css">
+
+
+<link rel="stylesheet" href="https://chipsenkbeil.com/css/font-awesome.min.css">
+
+
+    
+    <link rel="stylesheet" href="https://chipsenkbeil.com/css/styles/railscasts.css">
+
+
+
+<link rel="stylesheet" href="https://chipsenkbeil.com/css/lightbox.css">
+
+
+<link rel="stylesheet" href="https://chipsenkbeil.com/css/main.css">
+
+
+    <script src="https://chipsenkbeil.com/js/modernizr-latest.js"></script>
+    <script src="https://chipsenkbeil.com/js/lazysizes.min.js"></script>
+    <script src="https://chipsenkbeil.com/js/ls.noscript.min.js"></script>
+
+    <script>
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        lazySizesConfig.addClasses = true;
+        lazySizesConfig.loadMode = 2;
+    </script>
+
+    
+</head>
+
+
+
+<body class="page-colors minimum-viewport-height">
+    
+
+<nav class="main-menu menu-colors">
+    <ul class="menu menu-colors no-list-float">
+        <li><a href="https://chipsenkbeil.com/"><i class="fa fa-home fa-2x"></i></a></li>
+        <li>
+            <a href="#!"><i class="fa fa-bars fa-2x"></i></a>
+
+            
+            <ul class="menu flexible-width menu-colors no-list-float">
+                
+                
+                    <li >
+                    
+                        <a href="#!">
+                            
+                            <span>About</span>
+                            <span class="drop-right"></span>
+                            
+                        </a>
+                        <ul class="menu flexible-width menu-colors no-list-float">
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/pepper/">Pepper</a>
+                                </li>
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/resume/">Resume</a>
+                                </li>
+                            
+                        </ul>
+                    
+                    </li>
+                
+                    <li >
+                    
+                        <a href="#!">
+                            
+                            <span>Blog</span>
+                            <span class="drop-right"></span>
+                            
+                        </a>
+                        <ul class="menu flexible-width menu-colors no-list-float">
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/note/">Notes</a>
+                                </li>
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/post/">Posts</a>
+                                </li>
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/talk/">Talks</a>
+                                </li>
+                            
+                        </ul>
+                    
+                    </li>
+                
+                    <li >
+                    
+                        <a href="#!">
+                            
+                            <span>Projects</span>
+                            <span class="drop-right"></span>
+                            
+                        </a>
+                        <ul class="menu flexible-width menu-colors no-list-float">
+                            
+                                <li >
+                                    <a href="https://chipsenkbeil.com/software/">Software</a>
+                                </li>
+                            
+                        </ul>
+                    
+                    </li>
+                
+            </ul>
+        </li>
+        <li><a href="#!" data-lightbox-id="searchbox"><i class="fa fa-search fa-2x"></i></a></li>
+        
+            <li class="blue-grey-text" style="border-top: 1px solid;"></li>
+            
+                <li>
+                    <a href="https://twitter.com/ChipSenkbeil">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.linkedin.com/in/robertsenkbeil">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.google.com/&#43;ChipSenkbeil">
+                        <i class="fa fa-google-plus fa-2x"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.github.com/chipsenkbeil">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="blue-grey-text" style="border-top: 1px solid;"></li>
+        <li>
+            <a href="" type="application/rss+xml" target="_blank">
+                <i class="fa fa-rss fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="searchbox" class="no-display">
+    <div class="valign-wrapper fill-container">
+        <div class="valign large-form horizontal-center-hack">
+            <form method="get" id="search" action="http://duckduckgo.com/">
+    <input type="hidden" name="sites"value="https://chipsenkbeil.com/"/>
+    <input type="hidden" name="ka" value="h"/>
+    <input type="hidden" name="k7" value="#fafafa"/>
+    <input type="hidden" name="kj" value="#3f3f3f"/>
+    <input type="hidden" name="ky" value="#fafafa"/>
+    <input type="hidden" name="kx" value="b"/>
+    <input type="hidden" name="kt" value="Helvetica"/>
+    <input type="text" name="q" maxlength="255" placeholder="Search"/>
+    <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="main-content">
+        <div class="center-space">
+            <div class="article-colors">
+                
+                <article>
+                    <header>
+                        <h1 class="article-title">Toggle Dvorak</h1>
+                        <time class="date-color">Fri Aug 12, 2016</time>
+                        <span class="separator">|</span>
+                        
+<ul class="categories">
+    <li>
+        <i class="fa fa-book"></i>
+    </li>
+    
+        <li><a href="https://chipsenkbeil.com/categories/snippet">snippet</a></li>
+    
+</ul>
+
+
+                        <span class="separator">|</span>
+                        
+<ul class="tags">
+    <li>
+        <i class="fa fa-tags"></i>
+    </li>
+    
+        <li><a href="https://chipsenkbeil.com/tags/utility">utility</a></li>
+    
+</ul>
+
+
+                    </header>
+
+                    <hr>
+
+                    <section>
+                        
+                            
+
+<p>In my ArchLinux setup with XMonad, I&rsquo;ve found myself wanting to swap
+between <em>QWERTY</em> and <em>Dvorak</em> keyboard layouts when practicing
+<em>Dvorak</em>. While my <em>Kinesis Advantage</em> keyboard allows me to swap
+layouts at the hardware level (I&rsquo;m assuming by simulating Dvorak
+on top of Qwerty), I also found a keyboard-agnostic way to do this.</p>
+
+<h3 id="configuring-keypress-toggle">Configuring Keypress Toggle</h3>
+
+<p>For X11, create the following configuration at
+<code>/etc/X11/xorg.conf.d/00-keyboard.conf</code>:</p>
+
+<pre><code class="language-bash"># Read and parsed by systemd-localed. It's probably wise not to edit this file
+# manually too freely.
+Section &quot;InputClass&quot;
+    Identifier &quot;system-keyboard&quot;
+    MatchIsKeyboard &quot;on&quot;
+    Option &quot;XkbLayout&quot; &quot;us,us&quot;
+    Option &quot;XkbModel&quot; &quot;,&quot;
+    Option &quot;XkbVariant&quot; &quot;,dvorak&quot;
+    Option &quot;XkbOptions&quot; &quot;grp:toggle&quot;
+EndSection
+</code></pre>
+
+<p>This enables toggling Dvorak via <code>Right-Alt</code>.</p>
+
+<h3 id="configuring-visual-indicator-with-xmobar">Configuring Visual Indicator with Xmobar</h3>
+
+<p>So, along with XMonad, I use Xmobar to display useful information such
+as my current workspace, battery charge, and time. To avoid confusing
+myself when switching between keyboard layouts, I added a visual
+indicator in the right corner of Xmobar via the following:</p>
+
+<pre><code class="language-haskell">-- Display of Xmobar information
+, template = &quot;%StdinReader%  }{ %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %KAUS% | %date% || %kbd% &quot;
+
+, commands =
+    [
+    -- Series of commands to run on Xmobar
+    -- ...
+
+    -- keyboard layout indicator
+    , Run Kbd            [ (&quot;us(dvorak)&quot; , &quot;&lt;fc=#00008B&gt;DV&lt;/fc&gt;&quot;)
+                         , (&quot;us&quot;         , &quot;&lt;fc=#8B0000&gt;US&lt;/fc&gt;&quot;)
+                         ]
+    ]
+</code></pre>
+
+                        
+                    </section>
+
+                    <footer class="right-align">
+                        <p><small>Copyright &#169; by Chip Senkbeil</small></p>
+                    </footer>
+
+                    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'chipsenkbeil';
+        var disqus_identifier = 'https:\/\/chipsenkbeil.com\/note\/toggle-dvorak\/';
+        var disqus_title = 'Toggle Dvorak';
+        var disqus_url = 'https:\/\/chipsenkbeil.com\/note\/toggle-dvorak\/';
+        (function() {
+            
+            if (window.location.hostname === "localhost") {
+                return;
+            }
+
+            var dsq = document.createElement('script'); 
+            dsq.type = 'text/javascript'; 
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+            (document.getElementsByTagName('head')[0] || 
+                document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+                </article>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="https://chipsenkbeil.com/js/jquery-2.1.4.min.js"></script>
+
+
+<script src="https://chipsenkbeil.com/js/materialize.min.js"></script>
+
+
+<script src="https://chipsenkbeil.com/js/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://chipsenkbeil.com/js/masonry.pkgd.min.js"></script>
+
+
+    
+    <script src="https://chipsenkbeil.com/js/highlight.pack.js"></script>
+
+
+
+<script src="https://chipsenkbeil.com/js/lightbox.min.js"></script>
+
+
+<script src="https://chipsenkbeil.com/js/jquery.infinitescroll.min.js"></script>
+
+
+<script src="https://chipsenkbeil.com/js/main.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+

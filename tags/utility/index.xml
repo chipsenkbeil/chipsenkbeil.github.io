@@ -7,8 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Wed, 07 Mar 2012 12:31:47 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 12 Aug 2016 09:36:18 -0500</lastBuildDate>
     <atom:link href="https://chipsenkbeil.com/tags/utility/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Toggle Dvorak</title>
+      <link>https://chipsenkbeil.com/note/toggle-dvorak/</link>
+      <pubDate>Fri, 12 Aug 2016 09:36:18 -0500</pubDate>
+      
+      <guid>https://chipsenkbeil.com/note/toggle-dvorak/</guid>
+      <description>
+
+&lt;p&gt;In my ArchLinux setup with XMonad, I&amp;rsquo;ve found myself wanting to swap
+between &lt;em&gt;QWERTY&lt;/em&gt; and &lt;em&gt;Dvorak&lt;/em&gt; keyboard layouts when practicing
+&lt;em&gt;Dvorak&lt;/em&gt;. While my &lt;em&gt;Kinesis Advantage&lt;/em&gt; keyboard allows me to swap
+layouts at the hardware level (I&amp;rsquo;m assuming by simulating Dvorak
+on top of Qwerty), I also found a keyboard-agnostic way to do this.&lt;/p&gt;
+
+&lt;h3 id=&#34;configuring-keypress-toggle&#34;&gt;Configuring Keypress Toggle&lt;/h3&gt;
+
+&lt;p&gt;For X11, create the following configuration at
+&lt;code&gt;/etc/X11/xorg.conf.d/00-keyboard.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# Read and parsed by systemd-localed. It&#39;s probably wise not to edit this file
+# manually too freely.
+Section &amp;quot;InputClass&amp;quot;
+    Identifier &amp;quot;system-keyboard&amp;quot;
+    MatchIsKeyboard &amp;quot;on&amp;quot;
+    Option &amp;quot;XkbLayout&amp;quot; &amp;quot;us,us&amp;quot;
+    Option &amp;quot;XkbModel&amp;quot; &amp;quot;,&amp;quot;
+    Option &amp;quot;XkbVariant&amp;quot; &amp;quot;,dvorak&amp;quot;
+    Option &amp;quot;XkbOptions&amp;quot; &amp;quot;grp:toggle&amp;quot;
+EndSection
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This enables toggling Dvorak via &lt;code&gt;Right-Alt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;configuring-visual-indicator-with-xmobar&#34;&gt;Configuring Visual Indicator with Xmobar&lt;/h3&gt;
+
+&lt;p&gt;So, along with XMonad, I use Xmobar to display useful information such
+as my current workspace, battery charge, and time. To avoid confusing
+myself when switching between keyboard layouts, I added a visual
+indicator in the right corner of Xmobar via the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;-- Display of Xmobar information
+, template = &amp;quot;%StdinReader%  }{ %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %KAUS% | %date% || %kbd% &amp;quot;
+
+, commands =
+    [
+    -- Series of commands to run on Xmobar
+    -- ...
+
+    -- keyboard layout indicator
+    , Run Kbd            [ (&amp;quot;us(dvorak)&amp;quot; , &amp;quot;&amp;lt;fc=#00008B&amp;gt;DV&amp;lt;/fc&amp;gt;&amp;quot;)
+                         , (&amp;quot;us&amp;quot;         , &amp;quot;&amp;lt;fc=#8B0000&amp;gt;US&amp;lt;/fc&amp;gt;&amp;quot;)
+                         ]
+    ]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Using blkid to get device information</title>

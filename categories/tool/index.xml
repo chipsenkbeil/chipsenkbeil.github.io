@@ -18,7 +18,7 @@
       <guid>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
       <description>
 
-&lt;h3 id=&#34;the-reason:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Reason&lt;/h3&gt;
+&lt;h3 id=&#34;the-reason&#34;&gt;The Reason&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been playing around with &lt;code&gt;tmux&lt;/code&gt; a lot lately and have come to like it
 quite a lot for the panes and windows - something I used quite a lot with my
@@ -40,7 +40,7 @@ involved a single &lt;code&gt;Mod-Shift-Enter&lt;/code&gt; and navigating betwee
 &lt;code&gt;Mod-Tab&lt;/code&gt;. Because of this, I began to look into ways to rebind tmux keys to
 be more like XMonad.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-process:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Process&lt;/h3&gt;
+&lt;h3 id=&#34;the-process&#34;&gt;The Process&lt;/h3&gt;
 
 &lt;p&gt;tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:&lt;/p&gt;
@@ -77,7 +77,7 @@ indicates that no prefix should be used.&lt;/p&gt;
 &lt;p&gt;The above indicates that the series of keystrokes &lt;code&gt;Ctrl-Space&lt;/code&gt; should change
 the layout used in tmux, no prefix needed.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-issue:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Issue&lt;/h3&gt;
+&lt;h3 id=&#34;the-issue&#34;&gt;The Issue&lt;/h3&gt;
 
 &lt;p&gt;The issue I discovered was that modifier keys - Control, Shift, Function, Alt -
 were not fully supported in tmux. In fact, modifier keys are not fully
@@ -95,7 +95,7 @@ are checked for modifiers before passing the keystroke to the application
 running within tmux. Because of this, I cannot use a setup like
 &lt;code&gt;Ctrl-Shift-Return&lt;/code&gt; for creating a new terminal tile using standard tmux.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-potential-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Potential Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-potential-solution&#34;&gt;The Potential Solution&lt;/h3&gt;
 
 &lt;p&gt;At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
@@ -119,7 +119,7 @@ setup. In fact, my hope was that this could be run very easily without an X11
 system. Furthermore, as a new owner of a Macbook Air - Linux will be put on it
 soon enough - I wanted this to be able to work on OS X as well.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-mac-os-x-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Mac OS X Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-mac-os-x-solution&#34;&gt;The Mac OS X Solution&lt;/h3&gt;
 
 &lt;p&gt;Cocoa provides the functionality to directly check if modifier keys are
 pressed, which is incredibly useful. So, I simply wrote a small Cocoa
@@ -131,7 +131,7 @@ higher (sorry Leopard and Tiger).&lt;/p&gt;
 &lt;p&gt;You can find the small program bundled with the main project
 &lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-linux-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Linux Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-linux-solution&#34;&gt;The Linux Solution&lt;/h3&gt;
 
 &lt;p&gt;This took a little digging before I realized that I needed to access the
 keyboard interface directly, rather than accessing information from a
@@ -144,7 +144,7 @@ from computer to computer.&lt;/p&gt;
 &lt;p&gt;Unfortunately, after joining IBM in January of 2014, I was not able to
 continue pursuing this project.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-final-result:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Final Result&lt;/h3&gt;
+&lt;h3 id=&#34;the-final-result&#34;&gt;The Final Result&lt;/h3&gt;
 
 &lt;p&gt;Overall, the configuration combined with the modifier keys captured by an
 external program successfully produced a working replica of XMonad&amp;rsquo;s key

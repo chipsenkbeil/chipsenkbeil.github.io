@@ -22,7 +22,7 @@
 Eventually, I gave up and added the Masonry Javascript library. My two
 attempts were as follows:&lt;/p&gt;
 
-&lt;h3 id=&#34;using-css-columns:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using CSS Columns&lt;/h3&gt;
+&lt;h3 id=&#34;using-css-columns&#34;&gt;Using CSS Columns&lt;/h3&gt;
 
 &lt;p&gt;CSS Columns enabled an easy, powerful way to spread page summaries across
 multiple columns. Furthermore, you can prevent page summaries from being
@@ -54,7 +54,7 @@ left with older summaries going down the first column and into the second, etc.&
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;using-flexbox:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using Flexbox&lt;/h3&gt;
+&lt;h3 id=&#34;using-flexbox&#34;&gt;Using Flexbox&lt;/h3&gt;
 
 &lt;p&gt;This involved using flexbox to simulate a Masonry layout by using
 &lt;code&gt;flex-flow: column wrap&lt;/code&gt; to have items flow from top to bottom with no extra

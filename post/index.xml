@@ -22,7 +22,7 @@
 Eventually, I gave up and added the Masonry Javascript library. My two
 attempts were as follows:&lt;/p&gt;
 
-&lt;h3 id=&#34;using-css-columns:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using CSS Columns&lt;/h3&gt;
+&lt;h3 id=&#34;using-css-columns&#34;&gt;Using CSS Columns&lt;/h3&gt;
 
 &lt;p&gt;CSS Columns enabled an easy, powerful way to spread page summaries across
 multiple columns. Furthermore, you can prevent page summaries from being
@@ -54,7 +54,7 @@ left with older summaries going down the first column and into the second, etc.&
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;using-flexbox:a91a7d6dc4988411aae05fc3f68642cf&#34;&gt;Using Flexbox&lt;/h3&gt;
+&lt;h3 id=&#34;using-flexbox&#34;&gt;Using Flexbox&lt;/h3&gt;
 
 &lt;p&gt;This involved using flexbox to simulate a Masonry layout by using
 &lt;code&gt;flex-flow: column wrap&lt;/code&gt; to have items flow from top to bottom with no extra
@@ -150,7 +150,7 @@ against Apache Spark?”&lt;/p&gt;
       <guid>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
       <description>
 
-&lt;h3 id=&#34;the-reason:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Reason&lt;/h3&gt;
+&lt;h3 id=&#34;the-reason&#34;&gt;The Reason&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been playing around with &lt;code&gt;tmux&lt;/code&gt; a lot lately and have come to like it
 quite a lot for the panes and windows - something I used quite a lot with my
@@ -172,7 +172,7 @@ involved a single &lt;code&gt;Mod-Shift-Enter&lt;/code&gt; and navigating betwee
 &lt;code&gt;Mod-Tab&lt;/code&gt;. Because of this, I began to look into ways to rebind tmux keys to
 be more like XMonad.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-process:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Process&lt;/h3&gt;
+&lt;h3 id=&#34;the-process&#34;&gt;The Process&lt;/h3&gt;
 
 &lt;p&gt;tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:&lt;/p&gt;
@@ -209,7 +209,7 @@ indicates that no prefix should be used.&lt;/p&gt;
 &lt;p&gt;The above indicates that the series of keystrokes &lt;code&gt;Ctrl-Space&lt;/code&gt; should change
 the layout used in tmux, no prefix needed.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-issue:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Issue&lt;/h3&gt;
+&lt;h3 id=&#34;the-issue&#34;&gt;The Issue&lt;/h3&gt;
 
 &lt;p&gt;The issue I discovered was that modifier keys - Control, Shift, Function, Alt -
 were not fully supported in tmux. In fact, modifier keys are not fully
@@ -227,7 +227,7 @@ are checked for modifiers before passing the keystroke to the application
 running within tmux. Because of this, I cannot use a setup like
 &lt;code&gt;Ctrl-Shift-Return&lt;/code&gt; for creating a new terminal tile using standard tmux.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-potential-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Potential Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-potential-solution&#34;&gt;The Potential Solution&lt;/h3&gt;
 
 &lt;p&gt;At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
@@ -251,7 +251,7 @@ setup. In fact, my hope was that this could be run very easily without an X11
 system. Furthermore, as a new owner of a Macbook Air - Linux will be put on it
 soon enough - I wanted this to be able to work on OS X as well.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-mac-os-x-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Mac OS X Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-mac-os-x-solution&#34;&gt;The Mac OS X Solution&lt;/h3&gt;
 
 &lt;p&gt;Cocoa provides the functionality to directly check if modifier keys are
 pressed, which is incredibly useful. So, I simply wrote a small Cocoa
@@ -263,7 +263,7 @@ higher (sorry Leopard and Tiger).&lt;/p&gt;
 &lt;p&gt;You can find the small program bundled with the main project
 &lt;a href=&#34;https://chipsenkbeil.com/software/tmux-xmonad-bindings/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-linux-solution:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Linux Solution&lt;/h3&gt;
+&lt;h3 id=&#34;the-linux-solution&#34;&gt;The Linux Solution&lt;/h3&gt;
 
 &lt;p&gt;This took a little digging before I realized that I needed to access the
 keyboard interface directly, rather than accessing information from a
@@ -276,7 +276,7 @@ from computer to computer.&lt;/p&gt;
 &lt;p&gt;Unfortunately, after joining IBM in January of 2014, I was not able to
 continue pursuing this project.&lt;/p&gt;
 
-&lt;h3 id=&#34;the-final-result:a0c2a1a5858b0f1c106304ad52083fb2&#34;&gt;The Final Result&lt;/h3&gt;
+&lt;h3 id=&#34;the-final-result&#34;&gt;The Final Result&lt;/h3&gt;
 
 &lt;p&gt;Overall, the configuration combined with the modifier keys captured by an
 external program successfully produced a working replica of XMonad&amp;rsquo;s key
@@ -314,7 +314,7 @@ should provide a behavior versus strict data manipulation. In addition, the
 author also claims that classes should hold a single responsibility to reduce
 complexity and ensure easy readability.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-encapsulation-via-method-wrappers:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1. Encapsulation via Method Wrappers&lt;/h3&gt;
+&lt;h3 id=&#34;1-encapsulation-via-method-wrappers&#34;&gt;1. Encapsulation via Method Wrappers&lt;/h3&gt;
 
 &lt;p&gt;The book begins by discussing abstraction in the form of encapsulation of data
 in Ruby using shorthands like &lt;em&gt;attr_reader&lt;/em&gt; to wrap field access. I was
@@ -323,7 +323,7 @@ past summer, where I had to quickly pick up and learn Ruby (1.9.3) to develop
 our prototype. Below you can see an example of a poor design choice and a
 better alternative - although not perfect, as you will see later.&lt;/p&gt;
 
-&lt;h4 id=&#34;1-a-poor-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.a Poor Design Choice&lt;/h4&gt;
+&lt;h4 id=&#34;1-a-poor-design-choice&#34;&gt;1.a Poor Design Choice&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Rectangle
     def initialize(width, length)
@@ -337,7 +337,7 @@ better alternative - although not perfect, as you will see later.&lt;/p&gt;
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;1-b-better-design-choice:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;1.b Better Design Choice&lt;/h4&gt;
+&lt;h4 id=&#34;1-b-better-design-choice&#34;&gt;1.b Better Design Choice&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class Rectangle
     attr_reader :width, :length
@@ -352,7 +352,7 @@ end
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;why-is-this-better:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;Why is this better?&lt;/h4&gt;
+&lt;h4 id=&#34;why-is-this-better&#34;&gt;Why is this better?&lt;/h4&gt;
 
 &lt;p&gt;The shorthand &lt;em&gt;attr_reader&lt;/em&gt; simply wraps the references to instance variables
 in getter methods with the same name. E.g.&lt;/p&gt;
@@ -372,7 +372,7 @@ variables without providing any alterations. However, in the future, you might
 decide to change the functionality of width or height. Not likely - this is
 an overly-simplistic example - but it could happen.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-leaky-abstractions:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2. Leaky Abstractions&lt;/h3&gt;
+&lt;h3 id=&#34;2-leaky-abstractions&#34;&gt;2. Leaky Abstractions&lt;/h3&gt;
 
 &lt;p&gt;Enter the next section of the chapter, focusing on &lt;a href=&#34;http://en.wikipedia.org/wiki/Leaky_abstraction&#34;&gt;leaky abstractions&lt;/a&gt;.
 This was something that I believe I had touched on, but not worked with often.
@@ -380,7 +380,7 @@ The reason being that I was taught (and learned from experiences at IBM) to not
 perform logical operations within class initialization. However, I am getting
 ahead of myself, let me first provide an example of a leaky abstraction.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-a-leaky-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.a Leaky Abstraction&lt;/h4&gt;
+&lt;h4 id=&#34;2-a-leaky-abstraction&#34;&gt;2.a Leaky Abstraction&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class ObscuringReferences
     attr_reader :data
@@ -401,7 +401,7 @@ future, that the data array needs to be expanded such that it contains an
 age, name, and description in that order. The &lt;em&gt;introduce_self&lt;/em&gt; method would
 then need to be altered to match the data structure change.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-b-fixed-abstraction:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;2.b Fixed Abstraction&lt;/h4&gt;
+&lt;h4 id=&#34;2-b-fixed-abstraction&#34;&gt;2.b Fixed Abstraction&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RevealingReferences
     attr_reader :person
@@ -435,7 +435,7 @@ recognize and appropriately handle it is so simple yet powerful. I&amp;rsquo;m c
 if this falls under the normal &amp;ldquo;avoid at all cost&amp;rdquo; for those that advocate
 removing logic from constructors, or if this is frequently performed.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-reuse-code:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3. Reuse Code&lt;/h3&gt;
+&lt;h3 id=&#34;3-reuse-code&#34;&gt;3. Reuse Code&lt;/h3&gt;
 
 &lt;p&gt;Okay, so, this one is incredibly obvious and has been drilled into the head of
 every student attending a university in the last decade. Simply put, if there
@@ -448,7 +448,7 @@ new method.&lt;/p&gt;
 should a class have a single responsibility but also each method should also
 only perform a single task.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-a-too-much-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.a Too Much Functionality&lt;/h4&gt;
+&lt;h4 id=&#34;3-a-too-much-functionality&#34;&gt;3.a Too Much Functionality&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RectangularPrism
     attr_reader :width, :length, :height
@@ -471,7 +471,7 @@ calculating the volume of a rectangular prism. The forumla can be given as
 In other words, the volume method is performing a calculation of the area
 and the volume, which is too much functionality.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-b-separated-functionality:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.b Separated Functionality&lt;/h4&gt;
+&lt;h4 id=&#34;3-b-separated-functionality&#34;&gt;3.b Separated Functionality&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;class RectangularPrism
     attr_reader :width, :length, :height
@@ -498,7 +498,7 @@ with the better example provided in his text, I&amp;rsquo;d still argue that thi
 not be a great feature; however, I am fairly naive with dynamic languages like
 &lt;em&gt;Ruby&lt;/em&gt; - I prefer statically-typed languages (C, Java).&lt;/p&gt;
 
-&lt;h4 id=&#34;3-c-avoid-comments:79ec1ef3a1ac8e7e9c7b1111469948eb&#34;&gt;3.c Avoid Comments&lt;/h4&gt;
+&lt;h4 id=&#34;3-c-avoid-comments&#34;&gt;3.c Avoid Comments&lt;/h4&gt;
 
 &lt;p&gt;What I did find interesting was an additional comment from the author in his
 list of benefits for this refactoring: avoid the need for comments. When I
