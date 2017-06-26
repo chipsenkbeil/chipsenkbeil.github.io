@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Sat, 12 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chipsenkbeil.com/pepper/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/pepper/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Pepper&#39;s wonderful smile</title>
@@ -142,6 +144,51 @@
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/pepper/2014/05/26/164637/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pepper asleep on her beanbag chair</title>
+      <link>https://chipsenkbeil.com/pepper/2014/05/18/133011/</link>
+      <pubDate>Sun, 18 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/pepper/2014/05/18/133011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pepper on her beanbag chair</title>
+      <link>https://chipsenkbeil.com/pepper/2014/04/26/163835/</link>
+      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/pepper/2014/04/26/163835/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pepper after a bath</title>
+      <link>https://chipsenkbeil.com/pepper/2014/03/15/191252/</link>
+      <pubDate>Sat, 15 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/pepper/2014/03/15/191252/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pepper sleeping on a purple blanket</title>
+      <link>https://chipsenkbeil.com/pepper/2014/02/17/190423/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/pepper/2014/02/17/190423/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pepper with a duck</title>
+      <link>https://chipsenkbeil.com/pepper/2014/02/16/092020/</link>
+      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/pepper/2014/02/16/092020/</guid>
       <description></description>
     </item>
     

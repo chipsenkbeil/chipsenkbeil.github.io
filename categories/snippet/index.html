@@ -15,8 +15,8 @@
       <link href="https://chipsenkbeil.com/categories/snippet/index.xml" rel="alternate" type="application/rss+xml" title="Senkbeil" />
       <link href="https://chipsenkbeil.com/categories/snippet/index.xml" rel="feed" type="application/rss+xml" title="Senkbeil" />
     
-    <meta name="generator" content="Hugo 0.17-DEV" />
-    <meta name="generation-date" content="2016-08-12 14:50:37.683442169 &#43;0000 UTC">
+    <meta name="generator" content="Hugo 0.24.1" />
+    <meta name="generation-date" content="2017-06-26 13:17:16.885531703 -0500 CDT">
     <title>Snippet &middot; Senkbeil</title>
     <link rel="shortcut icon" href="https://chipsenkbeil.com/img/favicon.ico">
     <link rel="icon" href="https://chipsenkbeil.com/img/favicon.ico">
@@ -66,101 +66,11 @@
             <ul class="menu flexible-width menu-colors no-list-float">
                 
                 
-                    <li >
-                    
-                        <a href="#!">
-                            
-                            <span>About</span>
-                            <span class="drop-right"></span>
-                            
-                        </a>
-                        <ul class="menu flexible-width menu-colors no-list-float">
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/pepper/">Pepper</a>
-                                </li>
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/resume/">Resume</a>
-                                </li>
-                            
-                        </ul>
-                    
-                    </li>
-                
-                    <li >
-                    
-                        <a href="#!">
-                            
-                            <span>Blog</span>
-                            <span class="drop-right"></span>
-                            
-                        </a>
-                        <ul class="menu flexible-width menu-colors no-list-float">
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/note/">Notes</a>
-                                </li>
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/post/">Posts</a>
-                                </li>
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/talk/">Talks</a>
-                                </li>
-                            
-                        </ul>
-                    
-                    </li>
-                
-                    <li >
-                    
-                        <a href="#!">
-                            
-                            <span>Projects</span>
-                            <span class="drop-right"></span>
-                            
-                        </a>
-                        <ul class="menu flexible-width menu-colors no-list-float">
-                            
-                                <li >
-                                    <a href="https://chipsenkbeil.com/software/">Software</a>
-                                </li>
-                            
-                        </ul>
-                    
-                    </li>
-                
             </ul>
         </li>
         <li><a href="#!" data-lightbox-id="searchbox"><i class="fa fa-search fa-2x"></i></a></li>
         
             <li class="blue-grey-text" style="border-top: 1px solid;"></li>
-            
-                <li>
-                    <a href="https://twitter.com/ChipSenkbeil">
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://www.linkedin.com/in/robertsenkbeil">
-                        <i class="fa fa-linkedin fa-2x"></i>
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://www.google.com/&#43;ChipSenkbeil">
-                        <i class="fa fa-google-plus fa-2x"></i>
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="https://www.github.com/chipsenkbeil">
-                        <i class="fa fa-github fa-2x"></i>
-                    </a>
-                </li>
             
         
         <li class="blue-grey-text" style="border-top: 1px solid;"></li>
@@ -224,7 +134,9 @@
             
             <h2 class="page-item-title">Toggle Dvorak</h2>
         </header>
-        <p class="page-item-summary">In my ArchLinux setup with XMonad, I&rsquo;ve found myself wanting to swap between QWERTY and Dvorak keyboard layouts when practicing Dvorak. While my Kinesis Advantage keyboard allows me to swap layouts at the hardware level (I&rsquo;m assuming by simulating Dvorak on top of Qwerty), I also found a keyboard-agnostic way to do this. Configuring Keypress Toggle For X11, create the following configuration at /etc/X11/xorg.conf.d/00-keyboard.conf: # Read and parsed by systemd-localed. It's probably wise not to edit this file # manually too freely.</p>
+        <p class="page-item-summary">In my ArchLinux setup with XMonad, I&rsquo;ve found myself wanting to swap between QWERTY and Dvorak keyboard layouts when practicing Dvorak. While my Kinesis Advantage keyboard allows me to swap layouts at the hardware level (I&rsquo;m assuming by simulating Dvorak on top of Qwerty), I also found a keyboard-agnostic way to do this.
+Configuring Keypress Toggle For X11, create the following configuration at /etc/X11/xorg.conf.d/00-keyboard.conf:
+# Read and parsed by systemd-localed.</p>
         <a href="https://chipsenkbeil.com/note/toggle-dvorak/" class="page-item-btn ">
             Read More
         </a>
@@ -270,7 +182,10 @@
             
             <h2 class="page-item-title">Fix for XMonad with XMobar</h2>
         </header>
-        <p class="page-item-summary">When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar. E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum. Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig. -- My overall config that is used</p>
+        <p class="page-item-summary">When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar.
+E.g. Opening a terminal or Vivaldi took up the entire screen.  The solution I found was, conveniently, located in a post on the ArchLinux forum.
+Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig.
+-- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &lt;+&gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &quot;LG3D&quot; , terminal = &quot;urxvtcd&quot; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &quot;blue&quot; }  </p>
         <a href="https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/" class="page-item-btn ">
             Read More
         </a>
@@ -316,7 +231,8 @@
             
             <h2 class="page-item-title">Using blkid to get device information</h2>
         </header>
-        <p class="page-item-summary">Quite often, I find myself needing to remind myself of devices connected to my computer so that I know what to type for the pmount program, which is really handy to have! The program [i]blkid[/i] is capable of doing this; however, I didn&rsquo;t care for the default output and found myself using this format: blkid -o list -c /dev/null What this does is tell the program to output the information in a user-friendly list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c /dev/null.&rsquo; As you can imagine, this is very annoying to type out each time.</p>
+        <p class="page-item-summary">Quite often, I find myself needing to remind myself of devices connected to my computer so that I know what to type for the pmount program, which is really handy to have! The program [i]blkid[/i] is capable of doing this; however, I didn&rsquo;t care for the default output and found myself using this format:
+blkid -o list -c /dev/null  What this does is tell the program to output the information in a user-friendly list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c /dev/null.</p>
         <a href="https://chipsenkbeil.com/note/blkid/" class="page-item-btn ">
             Read More
         </a>

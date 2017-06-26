@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="https://chipsenkbeil.com/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Work Resume (2014 - present)</title>

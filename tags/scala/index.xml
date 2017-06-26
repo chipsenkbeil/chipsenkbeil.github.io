@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="https://chipsenkbeil.com/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Scala Debugger</title>
@@ -15,8 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
-      <description>&lt;p&gt;A Scala wrapper library around the JDI (Java Debugger Interface).&lt;/p&gt;
-</description>
+      <description>A Scala wrapper library around the JDI (Java Debugger Interface).</description>
     </item>
     
     <item>
@@ -25,8 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
-      <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
-</description>
+      <description>Represents the Akka extension to the Scala Debugger API.</description>
     </item>
     
     <item>
@@ -35,8 +35,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
-      <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
-</description>
+      <description>A Jupyter kernel written in Scala for use with Apache Spark.</description>
     </item>
     
   </channel>

@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="https://chipsenkbeil.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ACM Website</title>
@@ -15,9 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/acm-website/</guid>
-      <description>&lt;p&gt;One of my first attempts at Javascript/CSS was to create a new website for the
-Virginia Tech chapter of ACM.&lt;/p&gt;
-</description>
+      <description>One of my first attempts at Javascript/CSS was to create a new website for the Virginia Tech chapter of ACM.</description>
     </item>
     
     <item>
@@ -26,9 +26,7 @@ Virginia Tech chapter of ACM.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
-generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
     </item>
     
   </channel>

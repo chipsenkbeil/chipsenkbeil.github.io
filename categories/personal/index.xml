@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="https://chipsenkbeil.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Dot files</title>
@@ -15,8 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/dotfiles/</guid>
-      <description>&lt;p&gt;My own personal collection of hidden configuration files, extra binaries, etc.&lt;/p&gt;
-</description>
+      <description>My own personal collection of hidden configuration files, extra binaries, etc.</description>
     </item>
     
     <item>
@@ -25,10 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/file-patcher/</guid>
-      <description>&lt;p&gt;Old program I wrote in C# for a game engine, no longer in development, that
-parses an XML file for a couple of commands with the intention of using it
-to download new game patches and apply them.&lt;/p&gt;
-</description>
+      <description>Old program I wrote in C# for a game engine, no longer in development, that parses an XML file for a couple of commands with the intention of using it to download new game patches and apply them.</description>
     </item>
     
     <item>
@@ -37,9 +35,7 @@ to download new game patches and apply them.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
-generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
     </item>
     
     <item>
@@ -48,9 +44,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/keyboard-state/</guid>
-      <description>&lt;p&gt;Small program written to demonstrate capturing modifier key input on Linux
-using the raw keyboard input device.&lt;/p&gt;
-</description>
+      <description>Small program written to demonstrate capturing modifier key input on Linux using the raw keyboard input device.</description>
     </item>
     
     <item>
@@ -59,9 +53,7 @@ using the raw keyboard input device.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/realfeel-game-engine/</guid>
-      <description>&lt;p&gt;Really old fork of &lt;em&gt;Mirage Source&lt;/em&gt; VB6 game engine using DirectX7 and WinSock
-to create a 2D MMORPG.&lt;/p&gt;
-</description>
+      <description>Really old fork of Mirage Source VB6 game engine using DirectX7 and WinSock to create a 2D MMORPG.</description>
     </item>
     
     <item>
@@ -70,9 +62,7 @@ to create a 2D MMORPG.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/resume/</guid>
-      <description>&lt;p&gt;My work and academic resumes, written in LaTeX. Contains utility functions
-to write your own resume easily in the same format.&lt;/p&gt;
-</description>
+      <description>My work and academic resumes, written in LaTeX. Contains utility functions to write your own resume easily in the same format.</description>
     </item>
     
     <item>
@@ -81,8 +71,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
-      <description>&lt;p&gt;A Scala wrapper library around the JDI (Java Debugger Interface).&lt;/p&gt;
-</description>
+      <description>A Scala wrapper library around the JDI (Java Debugger Interface).</description>
     </item>
     
     <item>
@@ -91,8 +80,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
-      <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
-</description>
+      <description>Represents the Akka extension to the Scala Debugger API.</description>
     </item>
     
     <item>
@@ -101,10 +89,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
-      <description>&lt;p&gt;Contains a tmux configuration script to provide XMonad-like keyboard bindings.
-Also contains necessary utility functions to capture modifier keys (like shift)
-needed for XMonad.&lt;/p&gt;
-</description>
+      <description>Contains a tmux configuration script to provide XMonad-like keyboard bindings. Also contains necessary utility functions to capture modifier keys (like shift) needed for XMonad.</description>
     </item>
     
   </channel>

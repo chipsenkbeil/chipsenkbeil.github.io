@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <atom:link href="https://chipsenkbeil.com/software/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/software/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>GridSide</title>
@@ -15,9 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
-generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
     </item>
     
     <item>
@@ -26,8 +26,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
-      <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
-</description>
+      <description>A Jupyter kernel written in Scala for use with Apache Spark.</description>
     </item>
     
     <item>
@@ -36,8 +35,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
-      <description>&lt;p&gt;A Scala wrapper library around the JDI (Java Debugger Interface).&lt;/p&gt;
-</description>
+      <description>A Scala wrapper library around the JDI (Java Debugger Interface).</description>
     </item>
     
     <item>
@@ -46,8 +44,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
-      <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
-</description>
+      <description>Represents the Akka extension to the Scala Debugger API.</description>
     </item>
     
     <item>
@@ -56,9 +53,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/resume/</guid>
-      <description>&lt;p&gt;My work and academic resumes, written in LaTeX. Contains utility functions
-to write your own resume easily in the same format.&lt;/p&gt;
-</description>
+      <description>My work and academic resumes, written in LaTeX. Contains utility functions to write your own resume easily in the same format.</description>
     </item>
     
     <item>
@@ -67,8 +62,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/dotfiles/</guid>
-      <description>&lt;p&gt;My own personal collection of hidden configuration files, extra binaries, etc.&lt;/p&gt;
-</description>
+      <description>My own personal collection of hidden configuration files, extra binaries, etc.</description>
     </item>
     
     <item>
@@ -77,10 +71,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/ece4530/</guid>
-      <description>&lt;p&gt;Competition between classmates to create the fastest combination of hardware
-and software to perform collision detection for SHA-1 digests. Contains my
-design documents, drawings, source code (C/Verliog), and associated images.&lt;/p&gt;
-</description>
+      <description>Competition between classmates to create the fastest combination of hardware and software to perform collision detection for SHA-1 digests. Contains my design documents, drawings, source code (C/Verliog), and associated images.</description>
     </item>
     
     <item>
@@ -89,9 +80,7 @@ design documents, drawings, source code (C/Verliog), and associated images.&lt;/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/ece4534/</guid>
-      <description>&lt;p&gt;Contains the PIC microcontroller C code used to control our rover through
-a maze. Does not contain the ARM code as that was written by another classmate.&lt;/p&gt;
-</description>
+      <description>Contains the PIC microcontroller C code used to control our rover through a maze. Does not contain the ARM code as that was written by another classmate.</description>
     </item>
     
     <item>
@@ -100,10 +89,7 @@ a maze. Does not contain the ARM code as that was written by another classmate.&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
-      <description>&lt;p&gt;Contains a tmux configuration script to provide XMonad-like keyboard bindings.
-Also contains necessary utility functions to capture modifier keys (like shift)
-needed for XMonad.&lt;/p&gt;
-</description>
+      <description>Contains a tmux configuration script to provide XMonad-like keyboard bindings. Also contains necessary utility functions to capture modifier keys (like shift) needed for XMonad.</description>
     </item>
     
     <item>
@@ -112,9 +98,7 @@ needed for XMonad.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/acm-website/</guid>
-      <description>&lt;p&gt;One of my first attempts at Javascript/CSS was to create a new website for the
-Virginia Tech chapter of ACM.&lt;/p&gt;
-</description>
+      <description>One of my first attempts at Javascript/CSS was to create a new website for the Virginia Tech chapter of ACM.</description>
     </item>
     
     <item>
@@ -123,9 +107,7 @@ Virginia Tech chapter of ACM.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/keyboard-state/</guid>
-      <description>&lt;p&gt;Small program written to demonstrate capturing modifier key input on Linux
-using the raw keyboard input device.&lt;/p&gt;
-</description>
+      <description>Small program written to demonstrate capturing modifier key input on Linux using the raw keyboard input device.</description>
     </item>
     
     <item>
@@ -134,14 +116,8 @@ using the raw keyboard input device.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/cs4204-project-4/</guid>
-      <description>&lt;p&gt;The goal of this assignment was to demonstrate an understanding of vertex and
-fragment shaders by using some reference code provided by the professor and
-writing our own vertex and fragment shader code in two external files.&lt;/p&gt;
-
-&lt;p&gt;Aside from minor tweaks, the only code I wrote for this assignment was the
-vertex and fragment shaders used to cause a slow ripple effect and map leaf
-textures onto the base texture.&lt;/p&gt;
-</description>
+      <description>The goal of this assignment was to demonstrate an understanding of vertex and fragment shaders by using some reference code provided by the professor and writing our own vertex and fragment shader code in two external files.
+Aside from minor tweaks, the only code I wrote for this assignment was the vertex and fragment shaders used to cause a slow ripple effect and map leaf textures onto the base texture.</description>
     </item>
     
     <item>
@@ -150,10 +126,7 @@ textures onto the base texture.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/cs4204-project-3/</guid>
-      <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
-keyframes, animation, and interpolation. Based off of previous code written for
-project 2 (revamped to work better with animation).&lt;/p&gt;
-</description>
+      <description>The goal of this assignment was to demonstrate a basic understanding of keyframes, animation, and interpolation. Based off of previous code written for project 2 (revamped to work better with animation).</description>
     </item>
     
     <item>
@@ -162,11 +135,7 @@ project 2 (revamped to work better with animation).&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/cs4204-project-2/</guid>
-      <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of texture
-mapping, lightining, and material properties available through OpenGL and apply
-them to our robot. Based off of previous code written for project 1 (revamped
-to work better with lighting).&lt;/p&gt;
-</description>
+      <description>The goal of this assignment was to demonstrate a basic understanding of texture mapping, lightining, and material properties available through OpenGL and apply them to our robot. Based off of previous code written for project 1 (revamped to work better with lighting).</description>
     </item>
     
     <item>
@@ -175,11 +144,65 @@ to work better with lighting).&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/cs4204-project-1/</guid>
-      <description>&lt;p&gt;The goal of this assignment was to demonstrate a basic understanding of
-tree-based modeling by connecting various parts of a robot together and
-providing a method to move different parts of the body and witness changes in
-one part affect its children.&lt;/p&gt;
-</description>
+      <description>The goal of this assignment was to demonstrate a basic understanding of tree-based modeling by connecting various parts of a robot together and providing a method to move different parts of the body and witness changes in one part affect its children.</description>
+    </item>
+    
+    <item>
+      <title>CS 3114 (Data Structures 2) - Project 4</title>
+      <link>https://chipsenkbeil.com/software/cs3114-project-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/cs3114-project-4/</guid>
+      <description>The goal of this assignment was to demonstrate an understanding of how different programming concepts such as the use of data structures for specific situations as well as sorting implementations and how to adapt them for different cases.
+The project required use of the previous three projects to implement an externally-sorted set of geographic point data along with an externally-stored quadtree, all of which was maintained using an LRU buffer.</description>
+    </item>
+    
+    <item>
+      <title>CS 3114 (Data Structures 2) - Project 3</title>
+      <link>https://chipsenkbeil.com/software/cs3114-project-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/cs3114-project-3/</guid>
+      <description>The goal of this assignment was to demonstrate a basic understanding of external sorting by implementing heapsort externally and was tested with academically-provided data.
+This project, for academic purposes, met all requirements with no issues in the implementation. While I cannot guarantee the code is clean as all of these projects were finished over the course of one/two days, the code itself appears to be stable.</description>
+    </item>
+    
+    <item>
+      <title>CS 3114 (Data Structures 2) - Project 2</title>
+      <link>https://chipsenkbeil.com/software/cs3114-project-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/cs3114-project-2/</guid>
+      <description>The goal of this assignment was to demonstrate a basic understanding of multiple data structures being used together to provided different methods of traversing data. In this implementation, a quadtree and a binary search tree were used.
+Please note that the code provided is an exact copy of my assignment as submitted in the class and has a flaw in the quadtree implementation. This was corrected in project 4, which used this project.</description>
+    </item>
+    
+    <item>
+      <title>CS 3114 (Data Structures 2) - Project 1</title>
+      <link>https://chipsenkbeil.com/software/cs3114-project-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/cs3114-project-1/</guid>
+      <description>The goal of this assignment was to demonstrate a basic understanding of memory management within a buffer. In the case of this assignment, least recently used (LRU) was the implementation for swapping blocks.
+Please note that the code provided is an exact copy of my assignment as submitted in the class and has a flaw in the merging of blocks. This was corrected in project 4, which reused this project.</description>
+    </item>
+    
+    <item>
+      <title>RealFeel Game Engine</title>
+      <link>https://chipsenkbeil.com/software/realfeel-game-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/realfeel-game-engine/</guid>
+      <description>Really old fork of Mirage Source VB6 game engine using DirectX7 and WinSock to create a 2D MMORPG.</description>
+    </item>
+    
+    <item>
+      <title>File Patcher</title>
+      <link>https://chipsenkbeil.com/software/file-patcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/software/file-patcher/</guid>
+      <description>Old program I wrote in C# for a game engine, no longer in development, that parses an XML file for a couple of commands with the intention of using it to download new game patches and apply them.</description>
     </item>
     
   </channel>

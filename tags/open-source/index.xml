@@ -8,54 +8,9 @@
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chipsenkbeil.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Overview of the Spark Kernel Client Library</title>
-      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
-      <description>&lt;p&gt;In this third and final part of the Spark Kernel series (part 1, part 2), we
-will focus on the client library, a Scala-based library used to interface with
-the Spark Kernel. This library enables Scala applications to quickly
-communicate with a Spark Kernel without needing to understand ZeroMQ or the
-IPython message protocol. Furthermore, using the client library, Scala
-applications are able to treat the Spark Kernel as a remote service, meaning
-that they can run separately from a Spark cluster and use the kernel as a
-remote connection into the cluster.&lt;/p&gt;
-</description>
-    </item>
+	<atom:link href="https://chipsenkbeil.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Spark Kernel Architecture</title>
-      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
-      <description>&lt;p&gt;In the first part of the Spark Kernel series, we stepped through the problem
-with enabling interactive applications against Apache Spark and how the Spark
-Kernel solved this problem. This week, we will focus on the Spark Kernel’s
-architecture: how we achieve fault tolerance and scalability using Akka, why
-we chose ZeroMQ with the IPython/Jupyter message protocol, what the layers of
-functionality are in the kernel (see figure 1 below), and elaborate on an
-interactive API from IPython called the Comm API.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to enable interactive applications against Apache Spark</title>
-      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
-      <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
-      <description>&lt;p&gt;Last December, IBM open sourced a project called the Spark Kernel, an
-application focused on interactive usage of Apache Spark. This project
-addresses a problem we encountered when trying to migrate a Storm-based
-application to Apache Spark, “How do we enable interactive applications
-against Apache Spark?”&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Dot files</title>
@@ -63,8 +18,7 @@ against Apache Spark?”&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/dotfiles/</guid>
-      <description>&lt;p&gt;My own personal collection of hidden configuration files, extra binaries, etc.&lt;/p&gt;
-</description>
+      <description>My own personal collection of hidden configuration files, extra binaries, etc.</description>
     </item>
     
     <item>
@@ -73,10 +27,7 @@ against Apache Spark?”&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/file-patcher/</guid>
-      <description>&lt;p&gt;Old program I wrote in C# for a game engine, no longer in development, that
-parses an XML file for a couple of commands with the intention of using it
-to download new game patches and apply them.&lt;/p&gt;
-</description>
+      <description>Old program I wrote in C# for a game engine, no longer in development, that parses an XML file for a couple of commands with the intention of using it to download new game patches and apply them.</description>
     </item>
     
     <item>
@@ -85,9 +36,7 @@ to download new game patches and apply them.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
-generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
     </item>
     
     <item>
@@ -96,9 +45,7 @@ generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/keyboard-state/</guid>
-      <description>&lt;p&gt;Small program written to demonstrate capturing modifier key input on Linux
-using the raw keyboard input device.&lt;/p&gt;
-</description>
+      <description>Small program written to demonstrate capturing modifier key input on Linux using the raw keyboard input device.</description>
     </item>
     
     <item>
@@ -107,9 +54,7 @@ using the raw keyboard input device.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/realfeel-game-engine/</guid>
-      <description>&lt;p&gt;Really old fork of &lt;em&gt;Mirage Source&lt;/em&gt; VB6 game engine using DirectX7 and WinSock
-to create a 2D MMORPG.&lt;/p&gt;
-</description>
+      <description>Really old fork of Mirage Source VB6 game engine using DirectX7 and WinSock to create a 2D MMORPG.</description>
     </item>
     
     <item>
@@ -118,9 +63,7 @@ to create a 2D MMORPG.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/resume/</guid>
-      <description>&lt;p&gt;My work and academic resumes, written in LaTeX. Contains utility functions
-to write your own resume easily in the same format.&lt;/p&gt;
-</description>
+      <description>My work and academic resumes, written in LaTeX. Contains utility functions to write your own resume easily in the same format.</description>
     </item>
     
     <item>
@@ -129,8 +72,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
-      <description>&lt;p&gt;A Scala wrapper library around the JDI (Java Debugger Interface).&lt;/p&gt;
-</description>
+      <description>A Scala wrapper library around the JDI (Java Debugger Interface).</description>
     </item>
     
     <item>
@@ -139,8 +81,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
-      <description>&lt;p&gt;Represents the Akka extension to the Scala Debugger API.&lt;/p&gt;
-</description>
+      <description>Represents the Akka extension to the Scala Debugger API.</description>
     </item>
     
     <item>
@@ -149,8 +90,7 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
-      <description>&lt;p&gt;A Jupyter kernel written in Scala for use with Apache Spark.&lt;/p&gt;
-</description>
+      <description>A Jupyter kernel written in Scala for use with Apache Spark.</description>
     </item>
     
     <item>
@@ -159,10 +99,34 @@ to write your own resume easily in the same format.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
-      <description>&lt;p&gt;Contains a tmux configuration script to provide XMonad-like keyboard bindings.
-Also contains necessary utility functions to capture modifier keys (like shift)
-needed for XMonad.&lt;/p&gt;
-</description>
+      <description>Contains a tmux configuration script to provide XMonad-like keyboard bindings. Also contains necessary utility functions to capture modifier keys (like shift) needed for XMonad.</description>
+    </item>
+    
+    <item>
+      <title>Overview of the Spark Kernel Client Library</title>
+      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
+      <description>In this third and final part of the Spark Kernel series (part 1, part 2), we will focus on the client library, a Scala-based library used to interface with the Spark Kernel. This library enables Scala applications to quickly communicate with a Spark Kernel without needing to understand ZeroMQ or the IPython message protocol. Furthermore, using the client library, Scala applications are able to treat the Spark Kernel as a remote service, meaning that they can run separately from a Spark cluster and use the kernel as a remote connection into the cluster.</description>
+    </item>
+    
+    <item>
+      <title>Spark Kernel Architecture</title>
+      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
+      <description>In the first part of the Spark Kernel series, we stepped through the problem with enabling interactive applications against Apache Spark and how the Spark Kernel solved this problem. This week, we will focus on the Spark Kernel’s architecture: how we achieve fault tolerance and scalability using Akka, why we chose ZeroMQ with the IPython/Jupyter message protocol, what the layers of functionality are in the kernel (see figure 1 below), and elaborate on an interactive API from IPython called the Comm API.</description>
+    </item>
+    
+    <item>
+      <title>How to enable interactive applications against Apache Spark</title>
+      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
+      <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
+      <description>Last December, IBM open sourced a project called the Spark Kernel, an application focused on interactive usage of Apache Spark. This project addresses a problem we encountered when trying to migrate a Storm-based application to Apache Spark, “How do we enable interactive applications against Apache Spark?”</description>
     </item>
     
   </channel>

@@ -8,92 +8,9 @@
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 02 Sep 2015 16:52:27 -0500</lastBuildDate>
-    <atom:link href="https://chipsenkbeil.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>CSS Masonry Layout Attempts</title>
-      <link>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
-      <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
-      <description>
-
-&lt;p&gt;I spent two days investigating this and could not find a solution that worked.
-Eventually, I gave up and added the Masonry Javascript library. My two
-attempts were as follows:&lt;/p&gt;
-
-&lt;h3 id=&#34;using-css-columns&#34;&gt;Using CSS Columns&lt;/h3&gt;
-
-&lt;p&gt;CSS Columns enabled an easy, powerful way to spread page summaries across
-multiple columns. Furthermore, you can prevent page summaries from being
-broken up in the middle by using &lt;code&gt;column-break-inside: avoid;&lt;/code&gt;. However, I had
-no way to order the page summaries dynamically such that the most recent
-summaries were at the top (from left to right) and older summaries were found
-further down. Instead, this resulted in the latest summary starting in the top
-left with older summaries going down the first column and into the second, etc.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary-container {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
-
-    -moz-column-gap: 0;
-    -webkit-column-gap: 0;
-    column-gap: 0;
-}
-
-.page-summary {
-    display: inline-block;
-    -webkit-column-break-inside: avoid; /* Chrome, Safari */
-    -moz-column-break-inside:avoid;
-    -o-column-break-inside:avoid;
-    -ms-column-break-inside:avoid;
-    column-break-inside:avoid;
-    page-break-inside: avoid;           /* Theoretically FF 20+ */
-    break-inside: avoid-column;         /* IE 11 */
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;using-flexbox&#34;&gt;Using Flexbox&lt;/h3&gt;
-
-&lt;p&gt;This involved using flexbox to simulate a Masonry layout by using
-&lt;code&gt;flex-flow: column wrap&lt;/code&gt; to have items flow from top to bottom with no extra
-spacing (similar to Masonry). There were two issues with this approach: page
-summaries still flowed from top to bottom instead of left to right and
-I couldn&amp;rsquo;t control wrapping the column into the next column without providing
-a fixed-height container.&lt;/p&gt;
-
-&lt;p&gt;The first issue was able to be solved by swapping the order of the elements,
-which you can do in flexbox. Since the list page is using pagination (meaning
-that I can guarantee the total page summaries per page), ordering the elements
-was as simple as adding child selectors to break up the order based on the
-number of elements:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.page-summary:nth-child(3n+1) {
-    order: 1;
-}
-
-.page-summary:nth-child(3n+2) {
-    order: 2;
-}
-
-.page-summary:nth-child(3n) {
-    order: 3;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Unfortunately, as I couldn&amp;rsquo;t provide a fixed-height container, the column
-approach did not work as all elements stayed in the first column. I could not
-find any working way to forcefully wrap flexbox elements after a certain
-element when using &lt;em&gt;column&lt;/em&gt; as the flow instead of &lt;em&gt;row&lt;/em&gt; (where you can set
-the row item to a width of &lt;em&gt;100%&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;I could have forced a specific height for the page summaries as I know how big
-the text will be (roughly) if I use an ellipsis for overflow on the title (and
-the summary is always 70 words max). However, the optional image throws off my
-sizing estimates.&lt;/p&gt;
-</description>
-    </item>
+	<atom:link href="https://chipsenkbeil.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>ACM Website</title>
@@ -101,9 +18,7 @@ sizing estimates.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/acm-website/</guid>
-      <description>&lt;p&gt;One of my first attempts at Javascript/CSS was to create a new website for the
-Virginia Tech chapter of ACM.&lt;/p&gt;
-</description>
+      <description>One of my first attempts at Javascript/CSS was to create a new website for the Virginia Tech chapter of ACM.</description>
     </item>
     
     <item>
@@ -112,9 +27,17 @@ Virginia Tech chapter of ACM.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>&lt;p&gt;Personal portfolio, gallery, and blog for use by the &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt;
-generator. Used by &lt;a href=&#34;chipsenkbeil.com&#34;&gt;chipsenkbeil.com&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
+    </item>
+    
+    <item>
+      <title>CSS Masonry Layout Attempts</title>
+      <link>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
+      <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
+      
+      <guid>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
+      <description>I spent two days investigating this and could not find a solution that worked. Eventually, I gave up and added the Masonry Javascript library. My two attempts were as follows:
+Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summaries across multiple columns. Furthermore, you can prevent page summaries from being broken up in the middle by using column-break-inside: avoid;. However, I had no way to order the page summaries dynamically such that the most recent summaries were at the top (from left to right) and older summaries were found further down.</description>
     </item>
     
   </channel>

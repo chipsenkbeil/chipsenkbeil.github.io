@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Mon, 06 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chipsenkbeil.com/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://chipsenkbeil.com/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>The Spark Kernel - Meetup Talk</title>
@@ -16,18 +18,7 @@
       <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
-      <description>&lt;div class=&#34;embed video-player&#34;&gt;
-    &lt;iframe class=&#34;youtube-player&#34; 
-            type=&#34;text/html&#34; 
-            width=&#34;640&#34; 
-            height=&#34;385&#34; 
-            src=&#34;http://www.youtube.com/embed/2AX6g0tK-us&#34; 
-            allowfullscreen 
-            frameborder=&#34;0&#34;&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
+      <description>  </description>
     </item>
     
   </channel>
