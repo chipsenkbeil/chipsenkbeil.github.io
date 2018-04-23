@@ -3,262 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chipsenkbeil.com/software/grid-side/</loc>
+    <loc>https://chipsenkbeil.com/notes/promox-changes/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/software/spark-kernel/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/resume/undergraduate/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/scala-debugger/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/scala-debugger-akka/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/resume/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/dotfiles/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/ece4530/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/ece4534/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/acm-website/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/keyboard-state/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs4204-project-4/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs4204-project-3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs4204-project-2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs4204-project-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs3114-project-4/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs3114-project-3/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs3114-project-2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/cs3114-project-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/realfeel-game-engine/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/software/file-patcher/</loc>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/note/search-github/</loc>
+    <loc>https://chipsenkbeil.com/notes/search-github/</loc>
     <lastmod>2017-03-13T20:51:09-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/note/toggle-dvorak/</loc>
+    <loc>https://chipsenkbeil.com/notes/toggle-dvorak/</loc>
     <lastmod>2016-08-12T09:36:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</loc>
+    <loc>https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/</loc>
     <lastmod>2016-02-17T07:49:30-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/09/12/000000/</loc>
-    <lastmod>2015-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</loc>
+    <loc>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</loc>
     <lastmod>2015-09-02T16:52:27-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</loc>
-    <lastmod>2015-07-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/post/spark-kernel-architecture/</loc>
-    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</loc>
-    <lastmod>2015-07-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</loc>
-    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/05/24/114745571/</loc>
-    <lastmod>2015-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/05/23/132236375/</loc>
-    <lastmod>2015-05-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/05/02/161726144/</loc>
-    <lastmod>2015-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/03/09/174803952/</loc>
-    <lastmod>2015-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/02/14/124613171/</loc>
-    <lastmod>2015-02-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/02/08/151034786/</loc>
-    <lastmod>2015-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2015/02/01/120930954/</loc>
-    <lastmod>2015-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/11/28/175213579/</loc>
-    <lastmod>2014-11-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/10/30/175432708/</loc>
-    <lastmod>2014-10-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/10/26/195221163/</loc>
-    <lastmod>2014-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/10/26/195555396/</loc>
-    <lastmod>2014-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/10/21/213422843/</loc>
-    <lastmod>2014-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/09/29/192909/</loc>
-    <lastmod>2014-09-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/05/26/164637/</loc>
-    <lastmod>2014-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/05/18/133011/</loc>
-    <lastmod>2014-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/04/26/163835/</loc>
-    <lastmod>2014-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/03/15/191252/</loc>
-    <lastmod>2014-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/02/17/190423/</loc>
-    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/2014/02/16/092020/</loc>
-    <lastmod>2014-02-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</loc>
+    <loc>https://chipsenkbeil.com/posts/tmux-with-xmonad-bindings/</loc>
     <lastmod>2013-12-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/post/design-to-embrace-change/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/note/blkid/</loc>
+    <loc>https://chipsenkbeil.com/notes/blkid/</loc>
     <lastmod>2012-03-07T12:31:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/categories/academic/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/akka/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/apache-spark/</loc>
-    <lastmod>2015-07-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://chipsenkbeil.com/about/</loc>
   </url>
   
   <url>
@@ -268,32 +48,19 @@
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/c/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/c#/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/c&#43;&#43;/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chipsenkbeil.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/class-assignment/</loc>
+    <loc>https://chipsenkbeil.com/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/configuration/</loc>
+    <loc>https://chipsenkbeil.com/categories/config/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -304,169 +71,26 @@
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/categories/design/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/docpad/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/embedded/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/example/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chipsenkbeil.com/categories/experiment/</loc>
     <lastmod>2015-09-02T16:52:27-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/extension/</loc>
+    <loc>https://chipsenkbeil.com/notes/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/game-engine/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/html/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/hugo/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/ibm/</loc>
-    <lastmod>2015-07-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/java/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/javascript/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/language/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/latex/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/library/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/meetup/</loc>
-    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/note/</loc>
-    <lastmod>2017-03-13T20:51:09-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/oop/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/open-source/</loc>
-    <lastmod>2015-07-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/opengl/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/pepper/</loc>
-    <lastmod>2015-09-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/personal/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/post/</loc>
+    <loc>https://chipsenkbeil.com/posts/</loc>
     <lastmod>2015-09-02T16:52:27-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/program/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/project/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/resume/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/resume/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/resume/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/ruby/</loc>
-    <lastmod>2013-10-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/scala/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/</loc>
-    <lastmod>2017-03-13T20:51:09-05:00</lastmod>
+    <loc>https://chipsenkbeil.com/tags/proxmox/</loc>
+    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -477,30 +101,8 @@
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/software/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/spark-kernel/</loc>
-    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chipsenkbeil.com/tags/</loc>
-    <lastmod>2015-07-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/talk/</loc>
-    <lastmod>2015-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/theme/</loc>
+    <lastmod>2016-02-17T07:49:30-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -517,38 +119,9 @@
   </url>
   
   <url>
-    <loc>https://chipsenkbeil.com/tags/undergraduate/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chipsenkbeil.com/tags/utility/</loc>
     <lastmod>2017-03-13T20:51:09-05:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/vb6/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/verilog/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/tags/work/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/categories/work/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chipsenkbeil.com/resume/work/</loc>
   </url>
   
   <url>

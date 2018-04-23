@@ -1,41 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on Senkbeil</title>
+    <title>Css on Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/tags/css/</link>
-    <description>Recent content in Css on Senkbeil</description>
+    <description>Recent content in Css on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 02 Sep 2015 16:52:27 -0500</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ACM Website</title>
-      <link>https://chipsenkbeil.com/software/acm-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/acm-website/</guid>
-      <description>One of my first attempts at Javascript/CSS was to create a new website for the Virginia Tech chapter of ACM.</description>
-    </item>
-    
-    <item>
-      <title>GridSide</title>
-      <link>https://chipsenkbeil.com/software/grid-side/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
-    </item>
-    
-    <item>
       <title>CSS Masonry Layout Attempts</title>
-      <link>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
+      <link>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</link>
       <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
       
-      <guid>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
+      <guid>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</guid>
       <description>I spent two days investigating this and could not find a solution that worked. Eventually, I gave up and added the Masonry Javascript library. My two attempts were as follows:
 Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summaries across multiple columns. Furthermore, you can prevent page summaries from being broken up in the middle by using column-break-inside: avoid;. However, I had no way to order the page summaries dynamically such that the most recent summaries were at the top (from left to right) and older summaries were found further down.</description>
     </item>

@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Senkbeil</title>
+    <title>Categories on Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/categories/</link>
-    <description>Recent content in Categories on Senkbeil</description>
+    <description>Recent content in Categories on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     
 	<atom:link href="https://chipsenkbeil.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Academic</title>
-      <link>https://chipsenkbeil.com/categories/academic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Config</title>
+      <link>https://chipsenkbeil.com/categories/config/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/categories/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design</title>
-      <link>https://chipsenkbeil.com/categories/design/</link>
-      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/design/</guid>
+      <guid>https://chipsenkbeil.com/categories/config/</guid>
       <description></description>
     </item>
     
@@ -35,51 +25,6 @@
       <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
       
       <guid>https://chipsenkbeil.com/categories/experiment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ibm</title>
-      <link>https://chipsenkbeil.com/categories/ibm/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/ibm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Language</title>
-      <link>https://chipsenkbeil.com/categories/language/</link>
-      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Meetup</title>
-      <link>https://chipsenkbeil.com/categories/meetup/</link>
-      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/meetup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
-      <link>https://chipsenkbeil.com/categories/personal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>https://chipsenkbeil.com/categories/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/resume/</guid>
       <description></description>
     </item>
     
@@ -98,15 +43,6 @@
       <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/categories/tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Work</title>
-      <link>https://chipsenkbeil.com/categories/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/categories/work/</guid>
       <description></description>
     </item>
     

@@ -1,238 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Senkbeil</title>
+    <title>Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/</link>
-    <description>Recent content on Senkbeil</description>
+    <description>Recent content on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Mon, 13 Mar 2017 20:51:09 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GridSide</title>
-      <link>https://chipsenkbeil.com/software/grid-side/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Proxmox Changes</title>
+      <link>https://chipsenkbeil.com/notes/promox-changes/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/software/grid-side/</guid>
-      <description>Personal portfolio, gallery, and blog for use by the Hugo generator. Used by chipsenkbeil.com.</description>
-    </item>
-    
-    <item>
-      <title>Spark Kernel</title>
-      <link>https://chipsenkbeil.com/software/spark-kernel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/spark-kernel/</guid>
-      <description>A Jupyter kernel written in Scala for use with Apache Spark.</description>
-    </item>
-    
-    <item>
-      <title>Undergraduate Resume (2009 - 2013)</title>
-      <link>https://chipsenkbeil.com/resume/undergraduate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/resume/undergraduate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala Debugger</title>
-      <link>https://chipsenkbeil.com/software/scala-debugger/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/scala-debugger/</guid>
-      <description>A Scala wrapper library around the JDI (Java Debugger Interface).</description>
-    </item>
-    
-    <item>
-      <title>Scala Debugger Akka Extension</title>
-      <link>https://chipsenkbeil.com/software/scala-debugger-akka/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/scala-debugger-akka/</guid>
-      <description>Represents the Akka extension to the Scala Debugger API.</description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>https://chipsenkbeil.com/software/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/resume/</guid>
-      <description>My work and academic resumes, written in LaTeX. Contains utility functions to write your own resume easily in the same format.</description>
-    </item>
-    
-    <item>
-      <title>Dot files</title>
-      <link>https://chipsenkbeil.com/software/dotfiles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/dotfiles/</guid>
-      <description>My own personal collection of hidden configuration files, extra binaries, etc.</description>
-    </item>
-    
-    <item>
-      <title>ECE4530 (Hardware/Software Codesign) - Main Project</title>
-      <link>https://chipsenkbeil.com/software/ece4530/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/ece4530/</guid>
-      <description>Competition between classmates to create the fastest combination of hardware and software to perform collision detection for SHA-1 digests. Contains my design documents, drawings, source code (C/Verliog), and associated images.</description>
-    </item>
-    
-    <item>
-      <title>ECE 4534 (Embedded Systems) - Main Project</title>
-      <link>https://chipsenkbeil.com/software/ece4534/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/ece4534/</guid>
-      <description>Contains the PIC microcontroller C code used to control our rover through a maze. Does not contain the ARM code as that was written by another classmate.</description>
-    </item>
-    
-    <item>
-      <title>tmux XMonad bindings</title>
-      <link>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/tmux-xmonad-bindings/</guid>
-      <description>Contains a tmux configuration script to provide XMonad-like keyboard bindings. Also contains necessary utility functions to capture modifier keys (like shift) needed for XMonad.</description>
-    </item>
-    
-    <item>
-      <title>ACM Website</title>
-      <link>https://chipsenkbeil.com/software/acm-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/acm-website/</guid>
-      <description>One of my first attempts at Javascript/CSS was to create a new website for the Virginia Tech chapter of ACM.</description>
-    </item>
-    
-    <item>
-      <title>Keyboard state</title>
-      <link>https://chipsenkbeil.com/software/keyboard-state/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/keyboard-state/</guid>
-      <description>Small program written to demonstrate capturing modifier key input on Linux using the raw keyboard input device.</description>
-    </item>
-    
-    <item>
-      <title>CS 4204 (Computer Graphics) - Project 4</title>
-      <link>https://chipsenkbeil.com/software/cs4204-project-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs4204-project-4/</guid>
-      <description>The goal of this assignment was to demonstrate an understanding of vertex and fragment shaders by using some reference code provided by the professor and writing our own vertex and fragment shader code in two external files.
-Aside from minor tweaks, the only code I wrote for this assignment was the vertex and fragment shaders used to cause a slow ripple effect and map leaf textures onto the base texture.</description>
-    </item>
-    
-    <item>
-      <title>CS 4204 (Computer Graphics) - Project 3</title>
-      <link>https://chipsenkbeil.com/software/cs4204-project-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs4204-project-3/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of keyframes, animation, and interpolation. Based off of previous code written for project 2 (revamped to work better with animation).</description>
-    </item>
-    
-    <item>
-      <title>CS 4204 (Computer Graphics) - Project 2</title>
-      <link>https://chipsenkbeil.com/software/cs4204-project-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs4204-project-2/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of texture mapping, lightining, and material properties available through OpenGL and apply them to our robot. Based off of previous code written for project 1 (revamped to work better with lighting).</description>
-    </item>
-    
-    <item>
-      <title>CS 4204 (Computer Graphics) - Project 1</title>
-      <link>https://chipsenkbeil.com/software/cs4204-project-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs4204-project-1/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of tree-based modeling by connecting various parts of a robot together and providing a method to move different parts of the body and witness changes in one part affect its children.</description>
-    </item>
-    
-    <item>
-      <title>CS 3114 (Data Structures 2) - Project 4</title>
-      <link>https://chipsenkbeil.com/software/cs3114-project-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs3114-project-4/</guid>
-      <description>The goal of this assignment was to demonstrate an understanding of how different programming concepts such as the use of data structures for specific situations as well as sorting implementations and how to adapt them for different cases.
-The project required use of the previous three projects to implement an externally-sorted set of geographic point data along with an externally-stored quadtree, all of which was maintained using an LRU buffer.</description>
-    </item>
-    
-    <item>
-      <title>CS 3114 (Data Structures 2) - Project 3</title>
-      <link>https://chipsenkbeil.com/software/cs3114-project-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs3114-project-3/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of external sorting by implementing heapsort externally and was tested with academically-provided data.
-This project, for academic purposes, met all requirements with no issues in the implementation. While I cannot guarantee the code is clean as all of these projects were finished over the course of one/two days, the code itself appears to be stable.</description>
-    </item>
-    
-    <item>
-      <title>CS 3114 (Data Structures 2) - Project 2</title>
-      <link>https://chipsenkbeil.com/software/cs3114-project-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs3114-project-2/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of multiple data structures being used together to provided different methods of traversing data. In this implementation, a quadtree and a binary search tree were used.
-Please note that the code provided is an exact copy of my assignment as submitted in the class and has a flaw in the quadtree implementation. This was corrected in project 4, which used this project.</description>
-    </item>
-    
-    <item>
-      <title>CS 3114 (Data Structures 2) - Project 1</title>
-      <link>https://chipsenkbeil.com/software/cs3114-project-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/cs3114-project-1/</guid>
-      <description>The goal of this assignment was to demonstrate a basic understanding of memory management within a buffer. In the case of this assignment, least recently used (LRU) was the implementation for swapping blocks.
-Please note that the code provided is an exact copy of my assignment as submitted in the class and has a flaw in the merging of blocks. This was corrected in project 4, which reused this project.</description>
-    </item>
-    
-    <item>
-      <title>RealFeel Game Engine</title>
-      <link>https://chipsenkbeil.com/software/realfeel-game-engine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/realfeel-game-engine/</guid>
-      <description>Really old fork of Mirage Source VB6 game engine using DirectX7 and WinSock to create a 2D MMORPG.</description>
-    </item>
-    
-    <item>
-      <title>File Patcher</title>
-      <link>https://chipsenkbeil.com/software/file-patcher/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/software/file-patcher/</guid>
-      <description>Old program I wrote in C# for a game engine, no longer in development, that parses an XML file for a couple of commands with the intention of using it to download new game patches and apply them.</description>
+      <guid>https://chipsenkbeil.com/notes/promox-changes/</guid>
+      <description>Removing subscription notice sed -i.bak &amp;#39;s/NotFound/Active/g&amp;#39; /usr/share/perl5/PVE/API2/Subscription.pm &amp;amp;&amp;amp; systemctl restart pveproxy.service Generating Let&amp;rsquo;s Encrypt certs https://pve.proxmox.com/wiki/HTTPS_Certificate_Configuration_(Version_4.x_and_newer)#Let.27s_Encrypt_using_acme.sh
+Supporting port 80 &amp;amp; 443 By default, proxmox looks for traffic only on port 8006. Based on my readings online, forcefully changing the port - which is now hardcoded - can cause a lot of problems. Instead, the most recent and successful recommendation has been to use nginx to redirect traffic on port 80 and 443 to port 8006.</description>
     </item>
     
     <item>
       <title>Search Github</title>
-      <link>https://chipsenkbeil.com/note/search-github/</link>
+      <link>https://chipsenkbeil.com/notes/search-github/</link>
       <pubDate>Mon, 13 Mar 2017 20:51:09 -0500</pubDate>
       
-      <guid>https://chipsenkbeil.com/note/search-github/</guid>
+      <guid>https://chipsenkbeil.com/notes/search-github/</guid>
       <description>Couple of notes about searching on Github that have proven to be quite useful:
- You can include/exclude specific files using the filename property in a search.  The following searches for content &amp;ldquo;some content&amp;rdquo; only in .config files.
- some content filename:.config  The following searches for content &amp;ldquo;some content&amp;rdquo; in all files but .config files.
- some content -filename:.config   You can include/exclude specific users and organizations in a search.</description>
+ You can include/exclude specific files using the filename property in a search.
+The following searches for content &amp;ldquo;some content&amp;rdquo; only in .config files.
+some content filename:.config The following searches for content &amp;ldquo;some content&amp;rdquo; in all files but .config files.
+some content -filename:.config You can include/exclude specific users and organizations in a search. This is handy when I&amp;rsquo;m trying to judge how much use a library of mine is getting in the open source community while avoiding my own projects.</description>
     </item>
     
     <item>
       <title>Toggle Dvorak</title>
-      <link>https://chipsenkbeil.com/note/toggle-dvorak/</link>
+      <link>https://chipsenkbeil.com/notes/toggle-dvorak/</link>
       <pubDate>Fri, 12 Aug 2016 09:36:18 -0500</pubDate>
       
-      <guid>https://chipsenkbeil.com/note/toggle-dvorak/</guid>
+      <guid>https://chipsenkbeil.com/notes/toggle-dvorak/</guid>
       <description>In my ArchLinux setup with XMonad, I&amp;rsquo;ve found myself wanting to swap between QWERTY and Dvorak keyboard layouts when practicing Dvorak. While my Kinesis Advantage keyboard allows me to swap layouts at the hardware level (I&amp;rsquo;m assuming by simulating Dvorak on top of Qwerty), I also found a keyboard-agnostic way to do this.
 Configuring Keypress Toggle For X11, create the following configuration at /etc/X11/xorg.conf.d/00-keyboard.conf:
 # Read and parsed by systemd-localed.</description>
@@ -240,276 +47,51 @@ Configuring Keypress Toggle For X11, create the following configuration at /etc/
     
     <item>
       <title>Fix for XMonad with XMobar</title>
-      <link>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
+      <link>https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/</link>
       <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
       
-      <guid>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
+      <guid>https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/</guid>
       <description>When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar.
-E.g. Opening a terminal or Vivaldi took up the entire screen.  The solution I found was, conveniently, located in a post on the ArchLinux forum.
+E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum.
 Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig.
--- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &amp;quot;LG3D&amp;quot; , terminal = &amp;quot;urxvtcd&amp;quot; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &amp;quot;blue&amp;quot; }  </description>
-    </item>
-    
-    <item>
-      <title>Pepper&#39;s wonderful smile</title>
-      <link>https://chipsenkbeil.com/pepper/2015/09/12/000000/</link>
-      <pubDate>Sat, 12 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/09/12/000000/</guid>
-      <description></description>
+-- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &amp;#34;LG3D&amp;#34; , terminal = &amp;#34;urxvtcd&amp;#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &amp;#34;blue&amp;#34; }</description>
     </item>
     
     <item>
       <title>CSS Masonry Layout Attempts</title>
-      <link>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</link>
+      <link>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</link>
       <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
       
-      <guid>https://chipsenkbeil.com/post/css-masonry-layout-attempts/</guid>
+      <guid>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</guid>
       <description>I spent two days investigating this and could not find a solution that worked. Eventually, I gave up and added the Masonry Javascript library. My two attempts were as follows:
 Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summaries across multiple columns. Furthermore, you can prevent page summaries from being broken up in the middle by using column-break-inside: avoid;. However, I had no way to order the page summaries dynamically such that the most recent summaries were at the top (from left to right) and older summaries were found further down.</description>
     </item>
     
     <item>
-      <title>Overview of the Spark Kernel Client Library</title>
-      <link>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/overview-of-the-spark-kernel-client-library/</guid>
-      <description>In this third and final part of the Spark Kernel series (part 1, part 2), we will focus on the client library, a Scala-based library used to interface with the Spark Kernel. This library enables Scala applications to quickly communicate with a Spark Kernel without needing to understand ZeroMQ or the IPython message protocol. Furthermore, using the client library, Scala applications are able to treat the Spark Kernel as a remote service, meaning that they can run separately from a Spark cluster and use the kernel as a remote connection into the cluster.</description>
-    </item>
-    
-    <item>
-      <title>Spark Kernel Architecture</title>
-      <link>https://chipsenkbeil.com/post/spark-kernel-architecture/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/spark-kernel-architecture/</guid>
-      <description>In the first part of the Spark Kernel series, we stepped through the problem with enabling interactive applications against Apache Spark and how the Spark Kernel solved this problem. This week, we will focus on the Spark Kernel’s architecture: how we achieve fault tolerance and scalability using Akka, why we chose ZeroMQ with the IPython/Jupyter message protocol, what the layers of functionality are in the kernel (see figure 1 below), and elaborate on an interactive API from IPython called the Comm API.</description>
-    </item>
-    
-    <item>
-      <title>How to enable interactive applications against Apache Spark</title>
-      <link>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</link>
-      <pubDate>Wed, 15 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/how-to-enable-interactive-applications-against-apache-spark/</guid>
-      <description>Last December, IBM open sourced a project called the Spark Kernel, an application focused on interactive usage of Apache Spark. This project addresses a problem we encountered when trying to migrate a Storm-based application to Apache Spark, “How do we enable interactive applications against Apache Spark?”</description>
-    </item>
-    
-    <item>
-      <title>The Spark Kernel - Meetup Talk</title>
-      <link>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</link>
-      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/talk/2015-07-06-apache-spark-meetup/</guid>
-      <description>  </description>
-    </item>
-    
-    <item>
-      <title>Pepper in the bathtub</title>
-      <link>https://chipsenkbeil.com/pepper/2015/05/24/114745571/</link>
-      <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/05/24/114745571/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper rolling in the grass</title>
-      <link>https://chipsenkbeil.com/pepper/2015/05/23/132236375/</link>
-      <pubDate>Sat, 23 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/05/23/132236375/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper with a tree limb</title>
-      <link>https://chipsenkbeil.com/pepper/2015/05/02/161726144/</link>
-      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/05/02/161726144/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper settle in for a car ride</title>
-      <link>https://chipsenkbeil.com/pepper/2015/03/09/174803952/</link>
-      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/03/09/174803952/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper staring at the camera while resting</title>
-      <link>https://chipsenkbeil.com/pepper/2015/02/14/124613171/</link>
-      <pubDate>Sat, 14 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/02/14/124613171/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper close to the camera</title>
-      <link>https://chipsenkbeil.com/pepper/2015/02/08/151034786/</link>
-      <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/02/08/151034786/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper tired after the dogpark</title>
-      <link>https://chipsenkbeil.com/pepper/2015/02/01/120930954/</link>
-      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2015/02/01/120930954/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper with a stick</title>
-      <link>https://chipsenkbeil.com/pepper/2014/11/28/175213579/</link>
-      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/11/28/175213579/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper in her Halloween costume</title>
-      <link>https://chipsenkbeil.com/pepper/2014/10/30/175432708/</link>
-      <pubDate>Thu, 30 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/10/30/175432708/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper ready to go play with a ball</title>
-      <link>https://chipsenkbeil.com/pepper/2014/10/26/195221163/</link>
-      <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/10/26/195221163/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper wanting on my lap while I am using my standing desk</title>
-      <link>https://chipsenkbeil.com/pepper/2014/10/26/195555396/</link>
-      <pubDate>Sun, 26 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/10/26/195555396/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper on a tiny blanket</title>
-      <link>https://chipsenkbeil.com/pepper/2014/10/21/213422843/</link>
-      <pubDate>Tue, 21 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/10/21/213422843/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper wanting to play</title>
-      <link>https://chipsenkbeil.com/pepper/2014/09/29/192909/</link>
-      <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/09/29/192909/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper asleep on a brown blanket</title>
-      <link>https://chipsenkbeil.com/pepper/2014/05/26/164637/</link>
-      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/05/26/164637/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper asleep on her beanbag chair</title>
-      <link>https://chipsenkbeil.com/pepper/2014/05/18/133011/</link>
-      <pubDate>Sun, 18 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/05/18/133011/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper on her beanbag chair</title>
-      <link>https://chipsenkbeil.com/pepper/2014/04/26/163835/</link>
-      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/04/26/163835/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper after a bath</title>
-      <link>https://chipsenkbeil.com/pepper/2014/03/15/191252/</link>
-      <pubDate>Sat, 15 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/03/15/191252/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper sleeping on a purple blanket</title>
-      <link>https://chipsenkbeil.com/pepper/2014/02/17/190423/</link>
-      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/02/17/190423/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pepper with a duck</title>
-      <link>https://chipsenkbeil.com/pepper/2014/02/16/092020/</link>
-      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/pepper/2014/02/16/092020/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tmux with XMonad Bindings</title>
-      <link>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</link>
+      <link>https://chipsenkbeil.com/posts/tmux-with-xmonad-bindings/</link>
       <pubDate>Tue, 24 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/post/tmux-with-xmonad-bindings/</guid>
+      <guid>https://chipsenkbeil.com/posts/tmux-with-xmonad-bindings/</guid>
       <description>The Reason I&amp;rsquo;ve been playing around with tmux a lot lately and have come to like it quite a lot for the panes and windows - something I used quite a lot with my XMonad setup on my old Fujitsu laptop. The panes act as my individual terminals with which I can write code, read documentation, chat on IRC (using weechat or irssi), play music, etc. In other words, I do quite a lot from within terminals and being able to split up a terminal into panes (like XMonad launching tiled terminals) is quite nice.</description>
     </item>
     
     <item>
-      <title>Design to Embrace Change</title>
-      <link>https://chipsenkbeil.com/post/design-to-embrace-change/</link>
-      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/post/design-to-embrace-change/</guid>
-      <description>So, I&amp;rsquo;ve been reading Practical Object-Oriented Design in Ruby while also watching the VT football game today, something I am beginning to regret. During my freshman and sophomore years at Virginia Tech, I was introduced to quite a few concepts regarding Object Oriented Programming. Mostly, these related to simplistic encapsulation of data - writing setters and getters for any and all variables - as well as using inheritance mixed with interfaces.</description>
-    </item>
-    
-    <item>
       <title>Using blkid to get device information</title>
-      <link>https://chipsenkbeil.com/note/blkid/</link>
+      <link>https://chipsenkbeil.com/notes/blkid/</link>
       <pubDate>Wed, 07 Mar 2012 12:31:47 -0500</pubDate>
       
-      <guid>https://chipsenkbeil.com/note/blkid/</guid>
+      <guid>https://chipsenkbeil.com/notes/blkid/</guid>
       <description>Quite often, I find myself needing to remind myself of devices connected to my computer so that I know what to type for the pmount program, which is really handy to have! The program [i]blkid[/i] is capable of doing this; however, I didn&amp;rsquo;t care for the default output and found myself using this format:
-blkid -o list -c /dev/null  What this does is tell the program to output the information in a user-friendly list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c /dev/null.</description>
+blkid -o list -c /dev/null What this does is tell the program to output the information in a user-friendly list of devices through &amp;lsquo;-o list&amp;rsquo; and not report previous devices using &amp;lsquo;-c /dev/null.</description>
     </item>
     
     <item>
-      <title>Work Resume (2014 - present)</title>
-      <link>https://chipsenkbeil.com/resume/work/</link>
+      <title>About</title>
+      <link>https://chipsenkbeil.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/resume/work/</guid>
+      <guid>https://chipsenkbeil.com/about/</guid>
       <description></description>
     </item>
     

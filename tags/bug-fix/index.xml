@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bug Fix on Senkbeil</title>
+    <title>Bug Fix on Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/tags/bug-fix/</link>
-    <description>Recent content in Bug Fix on Senkbeil</description>
+    <description>Recent content in Bug Fix on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
     <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/tags/bug-fix/index.xml" rel="self" type="application/rss+xml" />
@@ -14,14 +13,14 @@
     
     <item>
       <title>Fix for XMonad with XMobar</title>
-      <link>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</link>
+      <link>https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/</link>
       <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
       
-      <guid>https://chipsenkbeil.com/note/fix-for-xmonad-with-xmobar/</guid>
+      <guid>https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/</guid>
       <description>When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar.
-E.g. Opening a terminal or Vivaldi took up the entire screen.  The solution I found was, conveniently, located in a post on the ArchLinux forum.
+E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum.
 Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig.
--- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &amp;quot;LG3D&amp;quot; , terminal = &amp;quot;urxvtcd&amp;quot; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &amp;quot;blue&amp;quot; }  </description>
+-- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &amp;lt;+&amp;gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &amp;#34;LG3D&amp;#34; , terminal = &amp;#34;urxvtcd&amp;#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &amp;#34;blue&amp;#34; }</description>
     </item>
     
   </channel>

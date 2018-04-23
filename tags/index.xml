@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Senkbeil</title>
+    <title>Tags on Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/tags/</link>
-    <description>Recent content in Tags on Senkbeil</description>
+    <description>Recent content in Tags on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;#169; by Chip Senkbeil</copyright>
-    <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Feb 2016 07:49:30 -0600</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Akka</title>
-      <link>https://chipsenkbeil.com/tags/akka/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/akka/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apache Spark</title>
-      <link>https://chipsenkbeil.com/tags/apache-spark/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/apache-spark/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Bug Fix</title>
@@ -36,51 +17,6 @@
       <pubDate>Wed, 17 Feb 2016 07:49:30 -0600</pubDate>
       
       <guid>https://chipsenkbeil.com/tags/bug-fix/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>https://chipsenkbeil.com/tags/c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C#</title>
-      <link>https://chipsenkbeil.com/tags/c#/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/c#/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>https://chipsenkbeil.com/tags/c&#43;&#43;/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Class Assignment</title>
-      <link>https://chipsenkbeil.com/tags/class-assignment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/class-assignment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
-      <link>https://chipsenkbeil.com/tags/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/configuration/</guid>
       <description></description>
     </item>
     
@@ -94,191 +30,11 @@
     </item>
     
     <item>
-      <title>Docpad</title>
-      <link>https://chipsenkbeil.com/tags/docpad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Proxmox</title>
+      <link>https://chipsenkbeil.com/tags/proxmox/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/tags/docpad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Embedded</title>
-      <link>https://chipsenkbeil.com/tags/embedded/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/embedded/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example</title>
-      <link>https://chipsenkbeil.com/tags/example/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Extension</title>
-      <link>https://chipsenkbeil.com/tags/extension/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/extension/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Game Engine</title>
-      <link>https://chipsenkbeil.com/tags/game-engine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/game-engine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://chipsenkbeil.com/tags/html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://chipsenkbeil.com/tags/hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://chipsenkbeil.com/tags/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
-      <link>https://chipsenkbeil.com/tags/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Latex</title>
-      <link>https://chipsenkbeil.com/tags/latex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Library</title>
-      <link>https://chipsenkbeil.com/tags/library/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/library/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Oop</title>
-      <link>https://chipsenkbeil.com/tags/oop/</link>
-      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/oop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Open Source</title>
-      <link>https://chipsenkbeil.com/tags/open-source/</link>
-      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Opengl</title>
-      <link>https://chipsenkbeil.com/tags/opengl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/opengl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Program</title>
-      <link>https://chipsenkbeil.com/tags/program/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/program/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Project</title>
-      <link>https://chipsenkbeil.com/tags/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>https://chipsenkbeil.com/tags/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/resume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ruby</title>
-      <link>https://chipsenkbeil.com/tags/ruby/</link>
-      <pubDate>Sat, 26 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/ruby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://chipsenkbeil.com/tags/scala/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spark Kernel</title>
-      <link>https://chipsenkbeil.com/tags/spark-kernel/</link>
-      <pubDate>Mon, 06 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/spark-kernel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Theme</title>
-      <link>https://chipsenkbeil.com/tags/theme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/theme/</guid>
+      <guid>https://chipsenkbeil.com/tags/proxmox/</guid>
       <description></description>
     </item>
     
@@ -292,47 +48,11 @@
     </item>
     
     <item>
-      <title>Undergraduate</title>
-      <link>https://chipsenkbeil.com/tags/undergraduate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/undergraduate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Utility</title>
       <link>https://chipsenkbeil.com/tags/utility/</link>
       <pubDate>Mon, 13 Mar 2017 20:51:09 -0500</pubDate>
       
       <guid>https://chipsenkbeil.com/tags/utility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vb6</title>
-      <link>https://chipsenkbeil.com/tags/vb6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/vb6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Verilog</title>
-      <link>https://chipsenkbeil.com/tags/verilog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/verilog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Work</title>
-      <link>https://chipsenkbeil.com/tags/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://chipsenkbeil.com/tags/work/</guid>
       <description></description>
     </item>
     
