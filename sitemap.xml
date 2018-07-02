@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chipsenkbeil.com/posts/reducing-the-barrier-to-entry-in-note-taking/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chipsenkbeil.com/notes/promox-changes/</loc>
     <lastmod>2018-01-14T00:00:00+00:00</lastmod>
   </url>
@@ -24,7 +29,7 @@
   
   <url>
     <loc>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</loc>
-    <lastmod>2015-09-02T16:52:27-05:00</lastmod>
+    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -54,7 +59,7 @@
   
   <url>
     <loc>https://chipsenkbeil.com/</loc>
-    <lastmod>2018-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,13 +71,13 @@
   
   <url>
     <loc>https://chipsenkbeil.com/tags/css/</loc>
-    <lastmod>2015-09-02T16:52:27-05:00</lastmod>
+    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chipsenkbeil.com/categories/experiment/</loc>
-    <lastmod>2015-09-02T16:52:27-05:00</lastmod>
+    <lastmod>2015-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -84,7 +89,7 @@
   
   <url>
     <loc>https://chipsenkbeil.com/posts/</loc>
-    <lastmod>2015-09-02T16:52:27-05:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,7 +119,7 @@
   
   <url>
     <loc>https://chipsenkbeil.com/categories/tool/</loc>
-    <lastmod>2013-12-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -127,6 +132,12 @@
   <url>
     <loc>https://chipsenkbeil.com/tags/xmonad/</loc>
     <lastmod>2013-12-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chipsenkbeil.com/tags/zsh/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

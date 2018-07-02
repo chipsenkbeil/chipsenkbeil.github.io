@@ -6,10 +6,19 @@
     <description>Recent content on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reducing the Barrier to Entry in Note Taking</title>
+      <link>https://chipsenkbeil.com/posts/reducing-the-barrier-to-entry-in-note-taking/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/posts/reducing-the-barrier-to-entry-in-note-taking/</guid>
+      <description>One of my biggest challenges to accomplishing something is the barrier to entry. Starting a project, exercising, and even writing this blog post take genuine effort for me to do. After realizing this as one of my biggest obstacles to getting things done, I&amp;rsquo;ve dedicated quite a few cycles of my time toward figuring out ways to reduce the initial friction. For the case of taking notes, this involved both providing a quick way to get started as well as a comfortable environment to write notes.</description>
+    </item>
     
     <item>
       <title>Proxmox Changes</title>
@@ -60,7 +69,7 @@ Essentially, you just need to add a handleEventHook with docksEventHook and hand
     <item>
       <title>CSS Masonry Layout Attempts</title>
       <link>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</link>
-      <pubDate>Wed, 02 Sep 2015 16:52:27 -0500</pubDate>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/posts/css-masonry-layout-attempts/</guid>
       <description>I spent two days investigating this and could not find a solution that worked. Eventually, I gave up and added the Masonry Javascript library. My two attempts were as follows:
