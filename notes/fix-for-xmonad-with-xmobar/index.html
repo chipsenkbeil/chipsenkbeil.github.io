@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Chip Senkbeil">
+    <meta name="description" content="Chip Senkbeil&#39;s Personal Website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://chipsenkbeil.com/">
+    <title>
+  Fix for XMonad with XMobar · Chip Senkbeil
+</title>
+
+    <link rel="canonical" href="https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://chipsenkbeil.com/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.38.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://chipsenkbeil.com/">
+      Chip Senkbeil
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/posts/">blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/notes/">notes</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/about/">about</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Fix for XMonad with XMobar</h1>
+    </header>
+
+    <p>When I updated XMonad late last year (2015), I noticed a bug where any
+application that I opened on my first workspace would cover XMobar.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">E.g. Opening a terminal or Vivaldi took up the entire screen.</pre></div>
+<p>The solution I found was, conveniently, located in a <a href="https://bbs.archlinux.org/viewtopic.php?id=206890">post on the ArchLinux
+forum</a>.</p>
+
+<p>Essentially, you just need to add a <code>handleEventHook</code> with <code>docksEventHook</code>
+and <code>handleEventHook defaultConfig</code>.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#007f7f">-- My overall config that is used elsewhere</span>
+myConfig = defaultConfig
+    { manageHook = manageDocks &lt;+&gt; manageHook defaultConfig
+    , layoutHook = avoidStruts $ layoutHook defaultConfig
+    , handleEventHook = mconcat
+                        [ docksEventHook
+                        , handleEventHook defaultConfig ]
+    , startupHook = setWMName <span style="color:#0ff;font-weight:bold">&#34;LG3D&#34;</span>
+    , terminal = <span style="color:#0ff;font-weight:bold">&#34;urxvtcd&#34;</span>
+    , modMask = mod1Mask
+    , borderWidth = <span style="color:#ff0;font-weight:bold">1</span>
+    , focusedBorderColor = <span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>
+    }</code></pre></div>
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2018    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Chip Senkbeil">
+    <meta name="description" content="Chip Senkbeil&#39;s Personal Website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://chipsenkbeil.com/">
+    <title>
+  Using blkid to get device information · Chip Senkbeil
+</title>
+
+    <link rel="canonical" href="https://chipsenkbeil.com/notes/blkid/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://chipsenkbeil.com/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.38.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://chipsenkbeil.com/">
+      Chip Senkbeil
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/posts/">blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/notes/">notes</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://chipsenkbeil.com/about/">about</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Using blkid to get device information</h1>
+    </header>
+
+    <p>Quite often, I find myself needing to remind myself of devices connected to my
+computer so that I know what to type for the pmount program, which is really
+handy to have! The program [i]blkid[/i] is capable of doing this; however, I
+didn&rsquo;t care for the default output and found myself using this format:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">blkid -o list -c /dev/null</code></pre></div>
+<p><img src="https://chipsenkbeil.com/img/post/blkid.jpg" alt="Example of usage" /></p>
+
+<p>What this does is tell the program to output the information in a user-friendly
+list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c
+/dev/null.&rsquo;</p>
+
+<p>As you can imagine, this is very annoying to type out each time. It is also
+annoying to include &lsquo;sudo&rsquo; in front of it when I am not the root user. The
+program will still output some information, but to display everything I want,
+it needs root permissions.</p>
+
+<p>So, to make this as painless as possible, I wrote a very small wrapper script
+that does this task for me:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0f0;font-weight:bold">#! /bin/sh
+</span><span style="color:#0f0;font-weight:bold"></span>
+<span style="color:#fff;font-weight:bold">if</span> [[ $UID != <span style="color:#ff0;font-weight:bold">0</span>]]; <span style="color:#fff;font-weight:bold">then</span>
+    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;This script requires root privileges to run:&#34;</span>
+    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;sudo </span>$0<span style="color:#0ff;font-weight:bold"> </span>$*<span style="color:#0ff;font-weight:bold">&#34;</span>
+<span style="color:#fff;font-weight:bold">fi</span>
+
+blkid -o list -c /dev/null</code></pre></div>
+<p>Sticking that in the file list_devices.sh, giving it proper permissions for
+execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
+directory did wonders for me. Hopefully it&rsquo;ll help someone else out there as
+well!</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2018    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
