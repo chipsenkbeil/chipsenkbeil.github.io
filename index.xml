@@ -6,10 +6,20 @@
     <description>Recent content on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Breaking Down the Zsh Notes Function</title>
+      <link>https://chipsenkbeil.com/posts/breaking-down-the-zsh-notes-function/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/posts/breaking-down-the-zsh-notes-function/</guid>
+      <description>Earlier, I discussed my need to have method to jot down notes quickly and comfortably on a computer. I wanted the setup to be as painless as possible while also giving me the flexibility I desired to extend the note-taking method.
+Being a lightweight user of zsh - not leveraging many plugins or additional functionality - I decided to explore writing a zsh function to be exposed in my shell.</description>
+    </item>
     
     <item>
       <title>Reducing the Barrier to Entry in Note Taking</title>
