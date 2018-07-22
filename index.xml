@@ -112,7 +112,7 @@ blkid -o list -c /dev/null What this does is tell the program to output the info
       
       <guid>https://chipsenkbeil.com/about/</guid>
       <description>Presently employed as a Solutions Engineer at Facebook.
-Public Projects  remote.nvim; Remote File Editor; vimscript/python LINK Grus; Static Site Generator; Scala LINK Scala Debugger; Scala Tooling; Scala LINK Grid Side; Hugo Theme; JavaScript/CSS/HTML LINK Apache Toree; Scala/R/Python Spark Kernel; Scala LINK  Public Talks  Debugging in Scala; ScalaSphere, 2017; Krakow, Poland LINK Spark Kernel; Spark Meetup Bay Area, 2015; San Francisco, California LINK  Public Papers  UAV Collision Avoidance Using Artificial Potential Fields (2014) LINK Running students&amp;rsquo; software tests against each others&amp;rsquo; code: new life for an old &amp;ldquo;gimmick&amp;rdquo; (2012) LINK  Education  M.</description>
+Employment History  Solutions Engineer; Facebook; 2017 - present Software Engineer; IBM; 2014 - 2017  Public Projects  remote.nvim; Remote File Editor; vimscript/python LINK Grus; Static Site Generator; Scala LINK Scala Debugger; Scala Tooling; Scala LINK Grid Side; Hugo Theme; JavaScript/CSS/HTML LINK Apache Toree; Scala/R/Python Spark Kernel; Scala LINK  Public Talks  Debugging in Scala; ScalaSphere, 2017; Krakow, Poland LINK Spark Kernel; Spark Meetup Bay Area, 2015; San Francisco, California LINK  Public Papers  UAV Collision Avoidance Using Artificial Potential Fields (2014) LINK Running students&amp;rsquo; software tests against each others&amp;rsquo; code: new life for an old &amp;ldquo;gimmick&amp;rdquo; (2012) LINK  Education  M.</description>
     </item>
     
   </channel>
