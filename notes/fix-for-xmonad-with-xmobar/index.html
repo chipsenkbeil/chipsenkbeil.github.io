@@ -23,6 +23,8 @@
     
 
     
+      <link rel="stylesheet" href="https://chipsenkbeil.com/styles/gruvbox.css">
+    
 
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
@@ -75,25 +77,25 @@
 
     <p>When I updated XMonad late last year (2015), I noticed a bug where any
 application that I opened on my first workspace would cover XMobar.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">E.g. Opening a terminal or Vivaldi took up the entire screen.</pre></div>
+<div class="highlight"><pre class="chroma">E.g. Opening a terminal or Vivaldi took up the entire screen.</pre></div>
 <p>The solution I found was, conveniently, located in a <a href="https://bbs.archlinux.org/viewtopic.php?id=206890">post on the ArchLinux
 forum</a>.</p>
 
 <p>Essentially, you just need to add a <code>handleEventHook</code> with <code>docksEventHook</code>
 and <code>handleEventHook defaultConfig</code>.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#007f7f">-- My overall config that is used elsewhere</span>
-myConfig = defaultConfig
-    { manageHook = manageDocks &lt;+&gt; manageHook defaultConfig
-    , layoutHook = avoidStruts $ layoutHook defaultConfig
-    , handleEventHook = mconcat
-                        [ docksEventHook
-                        , handleEventHook defaultConfig ]
-    , startupHook = setWMName <span style="color:#0ff;font-weight:bold">&#34;LG3D&#34;</span>
-    , terminal = <span style="color:#0ff;font-weight:bold">&#34;urxvtcd&#34;</span>
-    , modMask = mod1Mask
-    , borderWidth = <span style="color:#ff0;font-weight:bold">1</span>
-    , focusedBorderColor = <span style="color:#0ff;font-weight:bold">&#34;blue&#34;</span>
-    }</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-haskell" data-lang="haskell"><span class="c1">-- My overall config that is used elsewhere</span>
+<span class="nf">myConfig</span> <span class="ow">=</span> <span class="nf">defaultConfig</span>
+    <span class="p">{</span> <span class="nf">manageHook</span> <span class="ow">=</span> <span class="nf">manageDocks</span> <span class="o">&lt;+&gt;</span> <span class="nf">manageHook</span> <span class="nf">defaultConfig</span>
+    <span class="p">,</span> <span class="nf">layoutHook</span> <span class="ow">=</span> <span class="nf">avoidStruts</span> <span class="o">$</span> <span class="nf">layoutHook</span> <span class="nf">defaultConfig</span>
+    <span class="p">,</span> <span class="nf">handleEventHook</span> <span class="ow">=</span> <span class="nf">mconcat</span>
+                        <span class="p">[</span> <span class="nf">docksEventHook</span>
+                        <span class="p">,</span> <span class="nf">handleEventHook</span> <span class="nf">defaultConfig</span> <span class="p">]</span>
+    <span class="p">,</span> <span class="nf">startupHook</span> <span class="ow">=</span> <span class="nf">setWMName</span> <span class="s">&#34;LG3D&#34;</span>
+    <span class="p">,</span> <span class="nf">terminal</span> <span class="ow">=</span> <span class="s">&#34;urxvtcd&#34;</span>
+    <span class="p">,</span> <span class="nf">modMask</span> <span class="ow">=</span> <span class="nf">mod1Mask</span>
+    <span class="p">,</span> <span class="nf">borderWidth</span> <span class="ow">=</span> <span class="mi">1</span>
+    <span class="p">,</span> <span class="nf">focusedBorderColor</span> <span class="ow">=</span> <span class="s">&#34;blue&#34;</span>
+    <span class="p">}</span></code></pre></div>
   </article>
 </section>
 

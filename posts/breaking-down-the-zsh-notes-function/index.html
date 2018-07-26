@@ -23,6 +23,8 @@
     
 
     
+      <link rel="stylesheet" href="https://chipsenkbeil.com/styles/gruvbox.css">
+    
 
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
@@ -125,7 +127,7 @@ well.</p>
 <h2 id="implementation">Implementation</h2>
 
 <h3 id="defining-modes-of-operation">Defining Modes of Operation</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">local MODE_EDIT=&#34;edit&#34;
+<div class="highlight"><pre class="chroma">local MODE_EDIT=&#34;edit&#34;
 local MODE_REMOVE=&#34;remove&#34;
 local MODE_LIST=&#34;list&#34;
 local MODE_HELP=&#34;help&#34;
@@ -139,7 +141,7 @@ was going to be performed. This would be contained in the <code>mode</code> vari
 would be set using one of the constants above it.</p>
 
 <h3 id="specifying-aliases-for-modes">Specifying Aliases for Modes</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">local -a COMMAND_REMOVE
+<div class="highlight"><pre class="chroma">local -a COMMAND_REMOVE
 COMMAND_REMOVE=(delete remove del rm d r)
 local -a COMMAND_LIST
 COMMAND_LIST=(list ls l)
@@ -155,7 +157,7 @@ use to represent a mode of operation. This makes it easier for me to add or
 remove aliases for each mode and centralizes them at the top of the function.</p>
 
 <h3 id="acquiring-date-information">Acquiring Date Information</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">local date=&#34;$(date +&#39;%Y-%m-%d&#39;)&#34;
+<div class="highlight"><pre class="chroma">local date=&#34;$(date +&#39;%Y-%m-%d&#39;)&#34;
 local human_date=&#34;$(date +&#39;%A, %B %d, %Y (%Y-%m-%d)&#39;)&#34;</pre></div>
 <p>This is used later to populate part of a new note with the current date. These
 lines leverage the external <strong>date</strong> shell function to acquire both a date
@@ -170,7 +172,7 @@ like &ldquo;2018-06-30&rdquo;</li>
 </ul>
 
 <h3 id="creating-the-base-path">Creating the Base Path</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">local base_path=&#34;$HOME/.notes&#34;
+<div class="highlight"><pre class="chroma">local base_path=&#34;$HOME/.notes&#34;
 mkdir -p &#34;$base_path&#34;</pre></div>
 <p>All of my notes live in a flat structure, being placed in a directory specified
 by the variable <strong>base_path</strong>. For my case, I decided to have the directory be
@@ -184,7 +186,7 @@ making sure that the <strong>.notes</strong> directory is created within my home
 but it also means it supports a deeper base path.</p>
 
 <h3 id="setting-up-state">Setting Up State</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">local DEFAULT_NOTE_FILE=&#34;default&#34;
+<div class="highlight"><pre class="chroma">local DEFAULT_NOTE_FILE=&#34;default&#34;
 local DEFAULT_NOTE_NAME=&#34;default&#34;
 local DEFAULT_NOTE_TITLE=&#34;General Notes&#34;
 local note_file=&#34;&#34;
@@ -203,7 +205,7 @@ as the <strong>cmd</strong> variable for use in determining the mode of operatio
 <code>notes edit my-new-note</code> would set <strong>cmd</strong> to <em>edit</em>.</p>
 
 <h3 id="determine-mode-of-operation">Determine Mode of Operation</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Process specific modes if provided
+<div class="highlight"><pre class="chroma"># Process specific modes if provided
 if [[ ${COMMAND_REMOVE[(ie)$cmd]} -le ${#COMMAND_REMOVE} ]]; then
   mode=&#34;$MODE_REMOVE&#34;
   shift
@@ -227,7 +229,7 @@ fi</pre></div>
 code will be in for the remainder of the function. Currently, this is a series
 of if statements checking the command (first argument) against each of the
 arrays of aliases specified earlier.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">${COMMAND_REMOVE[(ie)$cmd]} -le ${#COMMAND_REMOVE}</pre></div>
+<div class="highlight"><pre class="chroma">${COMMAND_REMOVE[(ie)$cmd]} -le ${#COMMAND_REMOVE}</pre></div>
 <p>This uses some less-than-obvious subscript flags to find the first match within
 the array and return its index (e.g. <code>${COMMAND_REMOVE[(ie)$cmd]}</code>) and then check
 if that index is less than or equal to the last index in the array
@@ -235,7 +237,7 @@ if that index is less than or equal to the last index in the array
 is no match found, the index after the last value in the array is returned,
 which would be greater than the last index in the array, thereby returning
 false in the condition.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">shift
+<div class="highlight"><pre class="chroma">shift
 cmd=&#34;$1&#34;</pre></div>
 <p>For known commands, I also pop off the first argument and update the <strong>cmd</strong>
 variable to the next in the list. In the case of <code>notes edit date</code>, this would
@@ -255,7 +257,7 @@ just type the function and the name of the note to create or resume and edit a
 note.</p>
 
 <h3 id="setting-the-note-state">Setting the Note State</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># If date provided, will open notes for current date
+<div class="highlight"><pre class="chroma"># If date provided, will open notes for current date
 if [ &#34;$cmd&#34; = &#34;date&#34; ]; then
   note_name=&#34;date&#34;
   note_title=&#34;Notes for $human_date&#34;
@@ -284,7 +286,7 @@ can be injected through commands like <code>notes date</code>, <code>notes edit 
 <code>notes remove date</code>.</p>
 
 <h3 id="creating-the-note-file-if-missing">Creating the Note File if Missing</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Update full path
+<div class="highlight"><pre class="chroma"># Update full path
 note_path=&#34;$base_path/$note_file&#34;
 
 if [ &#34;$mode&#34; = &#34;$MODE_EDIT&#34; ] &amp;&amp; [ ! -f &#34;$note_path&#34; ]; then
@@ -296,10 +298,10 @@ title and file to edit, we build up the full path to the file and check if
 we&rsquo;re in the edit mode. If so and the file doesn&rsquo;t exist, the function will
 create a new file with markdown syntax for a top-level header. For instance,
 <code>notes my-new-note</code> will create a new file (named my-new-note.md) like below:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Notes for my-new-note</pre></div>
+<div class="highlight"><pre class="chroma"># Notes for my-new-note</pre></div>
 <p>This also applies to the <em>date</em> syntax, where <code>notes date</code> for June 30th, 2018
 would create a new file named 2018-06-30.md and contents like below:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"># Notes for Sunday, June 30, 2018 (2018-06-30)</pre></div>
+<div class="highlight"><pre class="chroma"># Notes for Sunday, June 30, 2018 (2018-06-30)</pre></div>
 <h3 id="performing-the-mode-operation">Performing the Mode Operation</h3>
 
 <p>The finally section of code is a series of conditionals to determine which mode
@@ -307,7 +309,7 @@ the function is in (create/edit, remove, list, or help) and then perform the
 associated operation.</p>
 
 <h4 id="opening-a-file-for-editing-or-creation">Opening a File for Editing (or Creation)</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">if [ &#34;$mode&#34; = &#34;$MODE_EDIT&#34; ]; then
+<div class="highlight"><pre class="chroma">if [ &#34;$mode&#34; = &#34;$MODE_EDIT&#34; ]; then
   $EDITOR &#34;$note_path&#34;</pre></div>
 <p>This is as simple as it gets. The function relies on the <strong>EDITOR</strong> variable
 being appropriately set. You do have your <strong>EDITOR</strong> variable set to something
@@ -316,7 +318,7 @@ to the file to edit. In my case, a call like <code>notes my-new-note</code> turn
 <code>nvim /Users/senk/.notes/my-new-note.md</code> on Mac OS X.</p>
 
 <h4 id="removing-a-file">Removing a File</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">elif [ &#34;$mode&#34; = &#34;$MODE_REMOVE&#34; ]; then
+<div class="highlight"><pre class="chroma">elif [ &#34;$mode&#34; = &#34;$MODE_REMOVE&#34; ]; then
   if [ ! -f &#34;$note_path&#34; ]; then
     builtin echo &#34;No note exists for $note_name!&#34;
   else
@@ -330,7 +332,7 @@ important given that my notes are not versioned, which is discussed during my
 concluding thoughts.</p>
 
 <h4 id="listing-all-note-files">Listing All Note Files</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">elif [ &#34;$mode&#34; = &#34;$MODE_LIST&#34; ]; then
+<div class="highlight"><pre class="chroma">elif [ &#34;$mode&#34; = &#34;$MODE_LIST&#34; ]; then
   ls &#34;$base_path&#34;</pre></div>
 <p>The list mode takes no arguments and purely echos out the files within the
 notes directory. This means that the markdown extension of <strong>.md</strong> that is
@@ -339,7 +341,7 @@ some other tool to remove the extensions and better present the notes. Another
 is to provide a means of filtering notes in some way.</p>
 
 <h4 id="displaying-help-text">Displaying Help Text</h4>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">elif [ &#34;$mode&#34; = &#34;$MODE_HELP&#34; ]; then
+<div class="highlight"><pre class="chroma">elif [ &#34;$mode&#34; = &#34;$MODE_HELP&#34; ]; then
   builtin echo &#34;Usage: notes [&lt;command&gt;] [&lt;name&gt;]
 
 Commands
@@ -382,7 +384,7 @@ win for productivity and I encourage everyone to find their way.</p>
 
 <p>There is no license on this code. Consider it public domain to do with as you
 please.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">notes() {
+<div class="highlight"><pre class="chroma">notes() {
   local MODE_EDIT=&#34;edit&#34;
   local MODE_REMOVE=&#34;remove&#34;
   local MODE_LIST=&#34;list&#34;
@@ -508,6 +510,27 @@ provided name will be opened (or created if does not exist) for editing.&#34;
 
   <br/>
 
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "chipsenkbeil" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   
   
 </section>

@@ -23,6 +23,8 @@
     
 
     
+      <link rel="stylesheet" href="https://chipsenkbeil.com/styles/gruvbox.css">
+    
 
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
@@ -85,15 +87,15 @@ on top of Qwerty), I also found a keyboard-agnostic way to do this.</p>
 
 <p>For X11, create the following configuration at
 <code>/etc/X11/xorg.conf.d/00-keyboard.conf</code>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># Read and parsed by systemd-localed. It&#39;s probably wise not to edit this file
-</span><span style="color:#007f7f"># manually too freely.
-</span><span style="color:#007f7f"></span>Section <span style="color:#0ff;font-weight:bold">&#34;InputClass&#34;</span>
-    Identifier <span style="color:#0ff;font-weight:bold">&#34;system-keyboard&#34;</span>
-    MatchIsKeyboard <span style="color:#0ff;font-weight:bold">&#34;on&#34;</span>
-    Option <span style="color:#0ff;font-weight:bold">&#34;XkbLayout&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;us,us&#34;</span>
-    Option <span style="color:#0ff;font-weight:bold">&#34;XkbModel&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;,&#34;</span>
-    Option <span style="color:#0ff;font-weight:bold">&#34;XkbVariant&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;,dvorak&#34;</span>
-    Option <span style="color:#0ff;font-weight:bold">&#34;XkbOptions&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;grp:toggle&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Read and parsed by systemd-localed. It&#39;s probably wise not to edit this file
+</span><span class="c1"># manually too freely.
+</span><span class="c1"></span>Section <span class="s2">&#34;InputClass&#34;</span>
+    Identifier <span class="s2">&#34;system-keyboard&#34;</span>
+    MatchIsKeyboard <span class="s2">&#34;on&#34;</span>
+    Option <span class="s2">&#34;XkbLayout&#34;</span> <span class="s2">&#34;us,us&#34;</span>
+    Option <span class="s2">&#34;XkbModel&#34;</span> <span class="s2">&#34;,&#34;</span>
+    Option <span class="s2">&#34;XkbVariant&#34;</span> <span class="s2">&#34;,dvorak&#34;</span>
+    Option <span class="s2">&#34;XkbOptions&#34;</span> <span class="s2">&#34;grp:toggle&#34;</span>
 EndSection</code></pre></div>
 <p>This enables toggling Dvorak via <code>Right-Alt</code>.</p>
 
@@ -103,19 +105,19 @@ EndSection</code></pre></div>
 as my current workspace, battery charge, and time. To avoid confusing
 myself when switching between keyboard layouts, I added a visual
 indicator in the right corner of Xmobar via the following:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#007f7f">-- Display of Xmobar information</span>
-, template = <span style="color:#0ff;font-weight:bold">&#34;%StdinReader%  }{ %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %KAUS% | %date% || %kbd% &#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-haskell" data-lang="haskell"><span class="c1">-- Display of Xmobar information</span>
+<span class="p">,</span> <span class="nf">template</span> <span class="ow">=</span> <span class="s">&#34;%StdinReader%  }{ %battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% | %KAUS% | %date% || %kbd% &#34;</span>
 
-, commands =
-    [
-    <span style="color:#007f7f">-- Series of commands to run on Xmobar</span>
-    <span style="color:#007f7f">-- ...</span>
+<span class="p">,</span> <span class="nf">commands</span> <span class="ow">=</span>
+    <span class="p">[</span>
+    <span class="c1">-- Series of commands to run on Xmobar</span>
+    <span class="c1">-- ...</span>
 
-    <span style="color:#007f7f">-- keyboard layout indicator</span>
-    , <span style="color:#fff;font-weight:bold">Run</span> <span style="color:#fff;font-weight:bold">Kbd</span>            [ (<span style="color:#0ff;font-weight:bold">&#34;us(dvorak)&#34;</span> , <span style="color:#0ff;font-weight:bold">&#34;&lt;fc=#00008B&gt;DV&lt;/fc&gt;&#34;</span>)
-                         , (<span style="color:#0ff;font-weight:bold">&#34;us&#34;</span>         , <span style="color:#0ff;font-weight:bold">&#34;&lt;fc=#8B0000&gt;US&lt;/fc&gt;&#34;</span>)
-                         ]
-    ]</code></pre></div>
+    <span class="c1">-- keyboard layout indicator</span>
+    <span class="p">,</span> <span class="kt">Run</span> <span class="kt">Kbd</span>            <span class="p">[</span> <span class="p">(</span><span class="s">&#34;us(dvorak)&#34;</span> <span class="p">,</span> <span class="s">&#34;&lt;fc=#00008B&gt;DV&lt;/fc&gt;&#34;</span><span class="p">)</span>
+                         <span class="p">,</span> <span class="p">(</span><span class="s">&#34;us&#34;</span>         <span class="p">,</span> <span class="s">&#34;&lt;fc=#8B0000&gt;US&lt;/fc&gt;&#34;</span><span class="p">)</span>
+                         <span class="p">]</span>
+    <span class="p">]</span></code></pre></div>
   </article>
 </section>
 

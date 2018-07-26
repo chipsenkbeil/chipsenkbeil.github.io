@@ -23,6 +23,8 @@
     
 
     
+      <link rel="stylesheet" href="https://chipsenkbeil.com/styles/gruvbox.css">
+    
 
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
@@ -104,24 +106,24 @@ be more like XMonad.</p>
 
 <p>tmux provides multiple ways to rebind keys and perform startup actions. The
 first is to execute the actions from the terminal:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-raw" data-lang="raw">tmux bind-key d kill-pane</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-raw" data-lang="raw">tmux bind-key d kill-pane</code></pre></div>
 <p>Another option is to perform the task within a running tmux instance by
 entering <code>Ctrl-b :</code>, which enters a command mode for you to enter tmux actions.</p>
 
 <p>Of course, these methods were not what I needed. What I discovered was that
 tmux could source a file to get its bindings. You could have <code>.tmux.conf</code>
 within your home directory or use</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-raw" data-lang="raw">tmux source my_tmux.conf</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-raw" data-lang="raw">tmux source my_tmux.conf</code></pre></div>
 <p>For me, I began to work with the default <code>.tmux.conf</code> file. Keybindings were
 easy to rebind using <code>bind-key</code> and <code>unbind-key</code>. For instance, if I wanted
 to bind the space key to change the layout - XMonad uses <code>Mod-Space</code> by
 default - I would use the following:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-raw" data-lang="raw">bind-key Space next-layout</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-raw" data-lang="raw">bind-key Space next-layout</code></pre></div>
 <p>However, a simple <code>bind-key</code> does not remove the prefix! This means that the
 above would actually be <code>Ctrl-b Space</code> as the combination. Luckily, tmux
 provides a way to avoid the prefix when performing actions. The <code>-n</code> switch
 indicates that no prefix should be used.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-raw" data-lang="raw">bind-key -n C-Space next-layout</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-raw" data-lang="raw">bind-key -n C-Space next-layout</code></pre></div>
 <p>The above indicates that the series of keystrokes <code>Ctrl-Space</code> should change
 the layout used in tmux, no prefix needed.</p>
 
@@ -148,7 +150,7 @@ running within tmux. Because of this, I cannot use a setup like
 <p>At least, I did not believe that I could. I discovered that tmux provided even
 more functionality through the ability to not only launch shell programs but
 also check the return status of said programs!</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-raw" data-lang="raw"># Run command if system is Mac OS X
+<div class="highlight"><pre class="chroma"><code class="language-raw" data-lang="raw"># Run command if system is Mac OS X
 if-shell &#39;test `uname` == &#34;DARWIN&#34;&#39; &lt;COMMAND&gt; [OPTIONAL COMMAND]</code></pre></div>
 <p>Because of this ability, I thought about having a small program that could be
 executed to indicate whether modifier keys like control and shift were
@@ -202,6 +204,27 @@ panes and navigating.</p>
 
   <br/>
 
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "chipsenkbeil" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   
   
 </section>

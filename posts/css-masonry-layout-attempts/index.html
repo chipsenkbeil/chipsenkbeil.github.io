@@ -23,6 +23,8 @@
     
 
     
+      <link rel="stylesheet" href="https://chipsenkbeil.com/styles/gruvbox.css">
+    
 
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/images/favicon-16x16.png" sizes="16x16">
@@ -91,26 +93,26 @@ no way to order the page summaries dynamically such that the most recent
 summaries were at the top (from left to right) and older summaries were found
 further down. Instead, this resulted in the latest summary starting in the top
 left with older summaries going down the first column and into the second, etc.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.page-summary-container {
-    <span style="color:#fff;font-weight:bold">-moz-</span><span style="color:#fff;font-weight:bold">column-count</span>: <span style="color:#ff0;font-weight:bold">3</span>;
-    <span style="color:#fff;font-weight:bold">-webkit-</span><span style="color:#fff;font-weight:bold">column-count</span>: <span style="color:#ff0;font-weight:bold">3</span>;
-    <span style="color:#fff;font-weight:bold">column-count</span>: <span style="color:#ff0;font-weight:bold">3</span>;
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">page-summary-container</span> <span class="p">{</span>
+    <span class="kp">-moz-</span><span class="k">column-count</span><span class="p">:</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="k">column-count</span><span class="p">:</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">column-count</span><span class="p">:</span> <span class="mi">3</span><span class="p">;</span>
 
-    <span style="color:#fff;font-weight:bold">-moz-</span><span style="color:#fff;font-weight:bold">column-gap</span>: <span style="color:#ff0;font-weight:bold">0</span>;
-    <span style="color:#fff;font-weight:bold">-webkit-</span><span style="color:#fff;font-weight:bold">column-gap</span>: <span style="color:#ff0;font-weight:bold">0</span>;
-    <span style="color:#fff;font-weight:bold">column-gap</span>: <span style="color:#ff0;font-weight:bold">0</span>;
-}
+    <span class="kp">-moz-</span><span class="k">column-gap</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="k">column-gap</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">column-gap</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 
-.page-summary {
-    <span style="color:#fff;font-weight:bold">display</span>: <span style="color:#fff;font-weight:bold">inline</span>-<span style="color:#fff;font-weight:bold">block</span>;
-    <span style="color:#fff;font-weight:bold">-webkit-</span>column-break-inside: <span style="color:#fff;font-weight:bold">avoid</span>; <span style="color:#007f7f">/* Chrome, Safari */</span>
-    <span style="color:#fff;font-weight:bold">-moz-</span>column-break-inside:<span style="color:#fff;font-weight:bold">avoid</span>;
-    <span style="color:#fff;font-weight:bold">-o-</span>column-break-inside:<span style="color:#fff;font-weight:bold">avoid</span>;
-    <span style="color:#fff;font-weight:bold">-ms-</span>column-break-inside:<span style="color:#fff;font-weight:bold">avoid</span>;
-    column-break-inside:<span style="color:#fff;font-weight:bold">avoid</span>;
-    <span style="color:#fff;font-weight:bold">page-break-inside</span>: <span style="color:#fff;font-weight:bold">avoid</span>;           <span style="color:#007f7f">/* Theoretically FF 20+ */</span>
-    <span style="color:#fff;font-weight:bold">break-inside</span>: <span style="color:#fff;font-weight:bold">avoid</span>-<span style="color:#fff;font-weight:bold">column</span>;         <span style="color:#007f7f">/* IE 11 */</span>
-}</code></pre></div>
+<span class="p">.</span><span class="nc">page-summary</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="o">-</span><span class="kc">block</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="n">column-break-inside</span><span class="p">:</span> <span class="kc">avoid</span><span class="p">;</span> <span class="c">/* Chrome, Safari */</span>
+    <span class="kp">-moz-</span><span class="n">column-break-inside</span><span class="p">:</span><span class="kc">avoid</span><span class="p">;</span>
+    <span class="kp">-o-</span><span class="n">column-break-inside</span><span class="p">:</span><span class="kc">avoid</span><span class="p">;</span>
+    <span class="kp">-ms-</span><span class="n">column-break-inside</span><span class="p">:</span><span class="kc">avoid</span><span class="p">;</span>
+    <span class="n">column-break-inside</span><span class="p">:</span><span class="kc">avoid</span><span class="p">;</span>
+    <span class="k">page-break-inside</span><span class="p">:</span> <span class="kc">avoid</span><span class="p">;</span>           <span class="c">/* Theoretically FF 20+ */</span>
+    <span class="k">break-inside</span><span class="p">:</span> <span class="kc">avoid</span><span class="o">-</span><span class="kc">column</span><span class="p">;</span>         <span class="c">/* IE 11 */</span>
+<span class="p">}</span></code></pre></div>
 <h3 id="using-flexbox">Using Flexbox</h3>
 
 <p>This involved using flexbox to simulate a Masonry layout by using
@@ -125,17 +127,17 @@ which you can do in flexbox. Since the list page is using pagination (meaning
 that I can guarantee the total page summaries per page), ordering the elements
 was as simple as adding child selectors to break up the order based on the
 number of elements:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.page-summary:nth-child(<span style="font-weight:bold">3n</span>+<span style="font-weight:bold">1</span>) {
-    <span style="color:#fff;font-weight:bold">order</span>: <span style="color:#ff0;font-weight:bold">1</span>;
-}
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">page-summary</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">+</span><span class="nt">1</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">order</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
 
-.page-summary:nth-child(<span style="font-weight:bold">3n</span>+<span style="font-weight:bold">2</span>) {
-    <span style="color:#fff;font-weight:bold">order</span>: <span style="color:#ff0;font-weight:bold">2</span>;
-}
+<span class="p">.</span><span class="nc">page-summary</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">+</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">order</span><span class="p">:</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
 
-.page-summary:nth-child(<span style="font-weight:bold">3n</span>) {
-    <span style="color:#fff;font-weight:bold">order</span>: <span style="color:#ff0;font-weight:bold">3</span>;
-}</code></pre></div>
+<span class="p">.</span><span class="nc">page-summary</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">order</span><span class="p">:</span> <span class="mi">3</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 <p>Unfortunately, as I couldn&rsquo;t provide a fixed-height container, the column
 approach did not work as all elements stayed in the first column. I could not
 find any working way to forcefully wrap flexbox elements after a certain
@@ -151,6 +153,27 @@ sizing estimates.</p>
 
   <br/>
 
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "chipsenkbeil" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   
   
 </section>
