@@ -114,15 +114,15 @@ home directory. Within that directory, each note file would have the markdown
 extension of <em>.md</em>. The function itself could be provided with the name of the
 note file such as <em>blogpost</em> and it would in turn open the corresponding
 markdown file (e.g. <em>blogpost.md</em>).</p>
-<div class="highlight"><pre class="chroma">notes() {
-  local base_path=&#34;$HOME/.notes&#34;
-  mkdir -p &#34;$base_path&#34;
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">notes<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">local</span> <span class="nv">base_path</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.notes&#34;</span>
+  mkdir -p <span class="s2">&#34;</span><span class="nv">$base_path</span><span class="s2">&#34;</span>
 
-  local note_file=&#34;$1.md&#34;
-  local note_path=&#34;$base_path/$note_file&#34;
+  <span class="nb">local</span> <span class="nv">note_file</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">.md&#34;</span>
+  <span class="nb">local</span> <span class="nv">note_path</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$base_path</span><span class="s2">/</span><span class="nv">$note_file</span><span class="s2">&#34;</span>
 
-  $EDITOR &#34;$note_path&#34;
-}</pre></div>
+  <span class="nv">$EDITOR</span> <span class="s2">&#34;</span><span class="nv">$note_path</span><span class="s2">&#34;</span>
+<span class="o">}</span></code></pre></div>
 <p>The above would create the <em>.notes</em> directory if it did not exist, convert the
 provided argument into a file name, and then open the file using my editor,
 which was configured earlier in my <em>.zshrc</em> file as <code>export EDITOR=&quot;nvim&quot;</code>.</p>
