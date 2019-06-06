@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zsh on Chip Senkbeil</title>
+    <title>zsh on Chip Senkbeil</title>
     <link>https://chipsenkbeil.com/tags/zsh/</link>
-    <description>Recent content in Zsh on Chip Senkbeil</description>
+    <description>Recent content in zsh on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>

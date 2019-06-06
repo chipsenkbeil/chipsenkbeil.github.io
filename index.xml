@@ -125,5 +125,14 @@ blkid -o list -c /dev/null What this does is tell the program to output the info
 Employment History  Solutions Engineer; Facebook; 2017 - present Software Engineer; IBM; 2014 - 2017  Public Projects  remote.nvim; Remote File Editor; vimscript/python LINK Grus; Static Site Generator; Scala LINK Scala Debugger; Scala Tooling; Scala LINK Grid Side; Hugo Theme; JavaScript/CSS/HTML LINK Apache Toree; Scala/R/Python Spark Kernel; Scala LINK  Public Talks  Debugging in Scala; ScalaSphere, 2017; Krakow, Poland LINK Spark Kernel; Spark Meetup Bay Area, 2015; San Francisco, California LINK  Public Papers  UAV Collision Avoidance Using Artificial Potential Fields (2014) LINK Running students&amp;rsquo; software tests against each others&amp;rsquo; code: new life for an old &amp;ldquo;gimmick&amp;rdquo; (2012) LINK  Education  M.</description>
     </item>
     
+    <item>
+      <title>Reading</title>
+      <link>https://chipsenkbeil.com/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/reading/</guid>
+      <description> Upcoming Books  TODO  Current Books  Managing Humans: Biting and Humorous Tales of a Software Engineering Manager by Michael Lopp (3rd edition) The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change by Stephen R. Covey (25th Anniversary Edition)  Finished Books  TODO  </description>
+    </item>
+    
   </channel>
 </rss>
