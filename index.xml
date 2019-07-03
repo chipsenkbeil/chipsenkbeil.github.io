@@ -6,10 +6,30 @@
     <description>Recent content on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Qutebrowser Cheatsheet</title>
+      <link>https://chipsenkbeil.com/notes/qutebrowser-cheatsheet/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/notes/qutebrowser-cheatsheet/</guid>
+      <description> Tabs Navigating Tabs    Key Combination Description     Shift+j Go to next tab (to the right), looping around to first tab if at the end   Shift+k Go to previous tab (to the left), looping around to last tab if at the beginning   gt Open list of tabs to fuzzy search and jump to specified tab   +Shift+t Go to tab at N    Moving Tabs    Key Combination Description     gD Move current tab to new window    Deleting Tabs    Key Combination Description     d Close current tab   co Close all tabs but current tab    Element Selection Select Input    Key Combination Description     gi Go to primary input textbox (not sure how it decides)   ;t Provide hints for selecting an input textbox    Select Hyperlink on Page    Key Combination Description     f Provide hints for selecting a hyperlink (to open in current tab)   Shift+f Provide hints for selecting a hyperlink (to open in new tab)    URLs Open URL    Key Combination Description     o Open list of history/quickmarks as well as be able to provide own link to go to in current tab   Shift+o Open list of history/quickmarks as well as be able to provide own link to go to in new tab    Pages Page Navigation    Key Combination Description     gg Jump to top of page   Shift+g Jump to bottom of page   [N]+j Move down 1 line in page, or N lines if specified   [N]+k Move up 1 line in page, or N lines if specified    Page History    Key Combination Description     Shift+h Go back in history of current tab   Shift+l Go forward in history of current tab    Page Search    Key Combination Description     / Search for text in current tab   n Move forward in search in current tab   Shift+n Move backward in search in current tab    </description>
+    </item>
+    
+    <item>
+      <title>Raspbian Static IP</title>
+      <link>https://chipsenkbeil.com/notes/raspbian-static-ip/</link>
+      <pubDate>Sat, 22 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/notes/raspbian-static-ip/</guid>
+      <description>The main changes need to occur in /etc/dhcpcd.conf.
+Find Interface Name Before editing that file, we need to look up our ethernet interface name. This used to be something easy like eth0, but Debian appears to have changed interface names. Run ifconfig to see Debian&amp;rsquo;s current interfaces. With the Raspberry Pi 3 B+, there will also be a wifi interface shown as below:
+enxb827ebb61344: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt; mtu 1500 ether b8:27:eb:b6:13:44 txqueuelen 1000 (Ethernet) RX packets 24867 bytes 5952214 (5.</description>
+    </item>
     
     <item>
       <title>Finding My Balance</title>
@@ -126,12 +146,12 @@ Employment History  Solutions Engineer; Facebook; 2017 - present Software Engine
     </item>
     
     <item>
-      <title>Reading</title>
-      <link>https://chipsenkbeil.com/reading/</link>
+      <title>Miscellaneous</title>
+      <link>https://chipsenkbeil.com/miscellaneous/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://chipsenkbeil.com/reading/</guid>
-      <description> Upcoming Books  TODO  Current Books  Managing Humans: Biting and Humorous Tales of a Software Engineering Manager by Michael Lopp (3rd edition) The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change by Stephen R. Covey (25th Anniversary Edition)  Finished Books  TODO  </description>
+      <guid>https://chipsenkbeil.com/miscellaneous/</guid>
+      <description> Current Books  Managing Humans: Biting and Humorous Tales of a Software Engineering Manager by Michael Lopp (3rd edition) The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change by Stephen R. Covey (25th Anniversary Edition)  Handy Links  How to rename the default raspberry pi user  Handles to Raspbian 2019 challenges and ensures all relevant groups are kept in tact as well   </description>
     </item>
     
   </channel>

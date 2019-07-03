@@ -10,24 +10,26 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Chip Senkbeil"/>
-<meta name="twitter:description" content="Chip Senkbeil&#39;s Personal Website"/>
+<meta name="twitter:title" content="Raspbian Static IP"/>
+<meta name="twitter:description" content="Quick steps to set a static IP address for Raspbian in 2019"/>
 
-    <meta property="og:title" content="Chip Senkbeil" />
-<meta property="og:description" content="Chip Senkbeil&#39;s Personal Website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://chipsenkbeil.com/" />
+    <meta property="og:title" content="Raspbian Static IP" />
+<meta property="og:description" content="Quick steps to set a static IP address for Raspbian in 2019" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chipsenkbeil.com/notes/raspbian-static-ip/" />
+<meta property="article:published_time" content="2019-06-22T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-06-22T00:00:00&#43;00:00"/>
 
-<meta property="og:updated_time" content="2019-07-03T00:00:00&#43;00:00"/>
-
-
-    
-      <base href="https://chipsenkbeil.com/">
-    
-    <title>Chip Senkbeil</title>
 
     
-      <link rel="canonical" href="https://chipsenkbeil.com/">
+      <base href="https://chipsenkbeil.com/notes/raspbian-static-ip/">
+    
+    <title>
+  Raspbian Static IP · Chip Senkbeil
+</title>
+
+    
+      <link rel="canonical" href="https://chipsenkbeil.com/notes/raspbian-static-ip/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -53,7 +55,6 @@
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <link rel="alternate" type="application/rss+xml" href="https://chipsenkbeil.com/index.xml" title="Chip Senkbeil" />
     <meta name="generator" content="Hugo 0.55.6" />
   </head>
 
@@ -94,43 +95,61 @@
 
       <div class="content">
         
-  <section class="container centered">
-  <div class="about">
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Raspbian Static IP</h1>
+    </header>
+
     
-      <div class="avatar"><img src="https://chipsenkbeil.com/img/profile.jpg" alt="avatar"></div>
-    
-    <h1>Chip Senkbeil</h1>
-    <h2>Solutions Engineer @ Facebook</h2>
-    
-    <ul>
-      
-        
-          <li>
-            <a href="https://github.com/chipsenkbeil/" aria-label="github">github</a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://twitter.com/chipsenkbeil/" aria-label="twitter">twitter</a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://linkedin.com/in/robertsenkbeil/" aria-label="linkedin">linkedin</a>
-          </li>
-        
-      
-        
-          <li>
-            <a href="https://keybase.io/senkwich" aria-label="keybase">keybase</a>
-          </li>
-        
-      
-    </ul>
-    
-  </div>
+
+<p>The main changes need to occur in <code>/etc/dhcpcd.conf</code>.</p>
+
+<h3 id="find-interface-name">Find Interface Name</h3>
+
+<p>Before editing that file, we need to look up our ethernet interface name.
+This used to be something easy like <strong>eth0</strong>, but Debian appears to have
+<a href="https://wiki.debian.org/NetworkConfiguration#Predictable_Network_Interface_Names">changed interface names</a>. Run <code>ifconfig</code> to see Debian&rsquo;s current interfaces. With the Raspberry Pi 3 B+, there will also be a wifi interface shown as below:</p>
+<div class="highlight"><pre class="chroma">enxb827ebb61344: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        ether b8:27:eb:b6:13:44  txqueuelen 1000  (Ethernet)
+        RX packets 24867  bytes 5952214 (5.6 MiB)
+        RX errors 1  dropped 350  overruns 0  frame 0
+        TX packets 2884  bytes 222449 (217.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+        ether b8:27:eb:e3:46:11  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0</pre></div>
+<p>Notice <strong>enxb827ebb61344</strong>, the ridiculously ugly interface name that we&rsquo;ll
+need when setting our static IP.</p>
+
+<h3 id="updating-etc-dhcpcd-conf">Updating /etc/dhcpcd.conf</h3>
+
+<p>With the interface name for ethernet written down, we can open up
+<code>/etc/dhcpcd.conf</code>. There may already be a section for configuring a static IP address. Either way, we&rsquo;ll want something like the following:</p>
+<div class="highlight"><pre class="chroma"># Static IP for raspberry pi (192.168.1.10)
+interface enxb827ebb61344
+static ip_address=192.168.1.10/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1</pre></div>
+<p>This should set the Raspbian to have an IP address of <strong>192.168.1.10</strong>,
+pointing to our router at <strong>192.168.1.1</strong>.</p>
+
+<p>Make sure to reboot afterwords.</p>
+
+  </article>
 </section>
 
 
