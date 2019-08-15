@@ -6,10 +6,20 @@
     <description>Recent content in config on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/categories/config/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux Virtual Monitors with xrandr</title>
+      <link>https://chipsenkbeil.com/notes/linux-virtual-monitors-with-xrandr/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/notes/linux-virtual-monitors-with-xrandr/</guid>
+      <description>I recently learned that you can configure virtual monitors with xrandr. There are two different ways to use this: treat multiple physical monitors as one giant virtual monitor or treat one physical monitor as multiple virtual monitors.
+Why do I want to do this? My primary interest here is to split a super widescreen monitor like the Dell 49&amp;rdquo; UltraSharp Curved Monitor (U4919DW) as multiple separate displays. I like the way that dwm breaks up monitors into multiple spaces and when I have two or three separate monitors I normally use a center monitor for focused work with the side monitors containing music, calendar, and chat.</description>
+    </item>
     
     <item>
       <title>Qutebrowser Cheatsheet</title>
