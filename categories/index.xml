@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Chip Senkbeil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chipsenkbeil.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>applying</title>
+      <link>https://chipsenkbeil.com/categories/applying/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chipsenkbeil.com/categories/applying/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>config</title>
