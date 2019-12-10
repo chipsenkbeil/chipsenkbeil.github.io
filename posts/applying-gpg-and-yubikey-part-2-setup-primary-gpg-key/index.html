@@ -22,7 +22,7 @@ Setting up a primary GPG key Although I knew I had an old key floating around fr
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key/" />
 <meta property="article:published_time" content="2019-08-16T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-08-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-12-10T00:00:00&#43;00:00"/>
 
 
     
@@ -115,7 +115,7 @@ Setting up a primary GPG key Although I knew I had an old key floating around fr
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              5 minutes read
+              8 minutes read
             </span>
           </div>
           <div class="categories">
@@ -250,9 +250,114 @@ sec   rsa4096/0x6CA6A08DBA640677 2019-03-01 [SC]
       2C8160E6AF1166154CDAED266CA6A08DBA640677
 uid                   [ultimate] Chip Senkbeil (Personal [Senkbeil]) &lt;chip@senkbeil.org&gt;
 ssb   rsa4096/0x588B4B090695884C 2019-03-01 [E]</pre></div>
+<h3 id="optional-step-7-create-additional-subkeys">(Optional) Step 7: Create additional subkeys</h3>
+
+<blockquote>
+<p>Subkeys are incredibly handy for separating responsibilities and limiting
+the impact to your web of trust for your identity if a key is compromised
+or stolen. This is an optional step to create new subkeys for signing and
+authentication, which we&rsquo;ll explore further in later posts.</p>
+</blockquote>
+
+<p>If you look at the output of <code>gpg -k</code> after creating your first primary key,
+you should notice two different keys, primary labeled with <em>pub</em> and each
+subkey with <em>sub</em>. Each key will have its capabilities listed next to its ID,
+one capital letter per capability. In my case, I had the primary key produced
+with Sign (S) and Certify &copy; capabilities and a <em>subkey</em> with Encrypt (E)
+capability.</p>
+
+<p>I would prefer to have one subkey per responsibility so that I can store my
+primary key offline and only use it when producing new subkeys, revoking
+subkeys, adding new UIDs, or any other key-modification responsibility.
+Originally, I tried having a single subkey with encrypt, sign, and authenticate
+capabilities; however, this is a discouraged practice and caused issues later.
+Instead, we&rsquo;ll be creating an individual subkey per capability.</p>
+
+<p>Given that we already have a subkey for the encrypt capability, we only need to
+create two subkeys: one for sign and one for authenticate. To start, we need to
+open an interactive menu via <code>gpg --edit-key 6CA6A08DBA640677</code>. You may need to
+include <strong>&ndash;expert</strong> to create/modify keys.</p>
+
+<blockquote>
+<p>Alternatively, I could have used an UID such as <em>chip@senkbeil.org</em> instead of the primary key ID. There are a variety of ways to specify a user id (UID), which are described on the <a href="https://www.gnupg.org/documentation/manuals/gnupg/Specify-a-User-ID.html">official documentation page</a>.</p>
+</blockquote>
+
+<h4 id="optional-step-7-1-create-sign-subkey">(Optional) Step 7.1: Create sign subkey</h4>
+
+<p>We start by being in an interactive CLI where we want to run <code>addkey</code> to begin
+the process of adding a new subkey. This <strong>requires</strong> you to have your primary
+key available, it cannot be removed or stubbed.</p>
+<div class="highlight"><pre class="chroma">gpg&gt; addkey
+
+# You may need to enter your password for the primary key here</pre></div>
+<p>Like when creating the primary key, we want to specify capabilities. For the
+signing key, this is fairly straightforward using <strong>RSA (sign only)</strong>.</p>
+<div class="highlight"><pre class="chroma">Please select what kind of key you want:
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+Your selection? 4</pre></div>
+<p>Similarly, we need to specify a bit length. I&rsquo;ve been using the max of 4096 as
+my Yubikey supports that length key. If you plan to combine your GPG keys with
+your Yubikey(s), make sure to check the maximum length it supports!</p>
+<div class="highlight"><pre class="chroma">RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096</pre></div>
+<p>Lastly, we need to specify an expiration for a key. Unlike encryption, I want
+to cause my sign (and authenticate) keys to expire after five years.</p>
+<div class="highlight"><pre class="chroma">Please specify how long the key should be valid.
+         0 = key does not expire
+      &lt;n&gt;  = key expires in n days
+      &lt;n&gt;w = key expires in n weeks
+      &lt;n&gt;m = key expires in n months
+      &lt;n&gt;y = key expires in n years
+Key is valid for? (0) 5y</pre></div>
+<h4 id="optional-step-7-2-create-authenticate-subkey">(Optional) Step 7.2: Create authenticate subkey</h4>
+
+<p>We go through a similar flow for the authenticate key, except we need to
+specify our own capabilities via <strong>RSA (set your own capabilities)</strong>.</p>
+<div class="highlight"><pre class="chroma">gpg&gt; addkey
+
+# You may need to enter your password for the primary key here
+
+Please select what kind of key you want:
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
+   (7) DSA (set your own capabilities)
+   (8) RSA (set your own capabilities)
+Your selection? 8</pre></div>
+<p>By default, sign and encrypt capabilities will be selected. I toggled both of
+those off first and then added authenticate.</p>
+<div class="highlight"><pre class="chroma">Possible actions for a RSA key: Sign Encrypt Authenticate
+Current allowed actions: Sign Encrypt
+
+   (S) Toggle the sign capability
+   (E) Toggle the encrypt capability
+   (A) Toggle the authenticate capability
+   (Q) Finished
+
+Your selection? S
+Your selection? E
+Your selection? A</pre></div>
+<p>Lastly, we want to specify our bit length and expiration period. I followed the
+same configuration as with the sign subkey.</p>
+<div class="highlight"><pre class="chroma">RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+
+Please specify how long the key should be valid.
+         0 = key does not expire
+      &lt;n&gt;  = key expires in n days
+      &lt;n&gt;w = key expires in n weeks
+      &lt;n&gt;m = key expires in n months
+      &lt;n&gt;y = key expires in n years
+Key is valid for? (0) 5y</pre></div>
 <h2 id="what-s-next">What&rsquo;s next?</h2>
 
-<p>In <a href="https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-3-encryption">the next post</a>, I&rsquo;ll be explaining how I set up <a href="https://passwordstore.org/">pass</a> and <a href="https://neomutt.org/">neomutt</a> for encrypting my passwords and email respectively.</p>
+<p>In <a href="https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-3-encryption">the next post</a>, I&rsquo;ll be explaining how I set up <a href="https://passwordstore.org/">pass</a> and <a href="https://neomutt.org/">neomutt</a> for encrypting passwords and email respectively.</p>
 
       </div>
 
