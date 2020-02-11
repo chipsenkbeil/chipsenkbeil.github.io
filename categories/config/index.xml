@@ -18,7 +18,8 @@
       
       <guid>https://chipsenkbeil.com/notes/linux-virtual-monitors-with-xrandr/</guid>
       <description>I recently learned that you can configure virtual monitors with xrandr. There are two different ways to use this: treat multiple physical monitors as one giant virtual monitor or treat one physical monitor as multiple virtual monitors.
-Why do I want to do this? My primary interest here is to split a super widescreen monitor like the Dell 49&amp;rdquo; UltraSharp Curved Monitor (U4919DW) as multiple separate displays. I like the way that dwm breaks up monitors into multiple spaces and when I have two or three separate monitors I normally use a center monitor for focused work with the side monitors containing music, calendar, and chat.</description>
+ Note that this requires xrandr 1.5.0 or higher, which introduces setmonitor as an option in the CLI.
+ Why do I want to do this? My primary interest here is to split a super widescreen monitor like the Dell 49&amp;rdquo; UltraSharp Curved Monitor (U4919DW) as multiple separate displays.</description>
     </item>
     
     <item>

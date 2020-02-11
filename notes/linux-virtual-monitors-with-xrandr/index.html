@@ -18,7 +18,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/notes/linux-virtual-monitors-with-xrandr/" />
 <meta property="article:published_time" content="2019-08-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-08-14T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-12-15T00:00:00&#43;00:00"/>
 
 
     
@@ -108,6 +108,11 @@ are two different ways to use this: treat multiple physical monitors as
 one giant virtual monitor or treat one physical monitor as multiple
 virtual monitors.</p>
 
+<blockquote>
+<p>Note that this requires xrandr 1.5.0 or higher, which introduces setmonitor
+as an option in the CLI.</p>
+</blockquote>
+
 <h2 id="why-do-i-want-to-do-this">Why do I want to do this?</h2>
 
 <p>My primary interest here is to split a super widescreen monitor like the
@@ -122,7 +127,7 @@ from a laptop rather than plugging the laptop in directly.</p>
 <p><a href="https://askubuntu.com/a/998435">This post</a> highlighted a means to do this
 with xrandr 1.5+ virtual monitors.</p>
 
-<p>Leveraging <code>xrandr</code> to print out your display information, you can create
+<p>Leveraging <strong>xrandr</strong> to print out your display information, you can create
 new virtual monitors using <code>xrandr --setmonitor</code>.</p>
 
 <p>On my laptop, the output of <code>xrandr</code> yielded:</p>
@@ -163,7 +168,7 @@ xrandr --fb 1920x1080</pre></div>
     
       <p>Views are my own<br /><a href="https://chipsenkbeil.com/keys/chipsenkbeil.pub.gpg">Public Keys</a></p>
     
-     © 2019
+     © 2020
     
     
   </section>

@@ -43,13 +43,13 @@ Refresher of current state At this point, we have our primary key for signing an
     </item>
     
     <item>
-      <title>Applying GPG and Yubikey: Part 2 (Setup Primary GPG Key)</title>
+      <title>Applying GPG and Yubikey: Part 2 (Setup GPG Keys)</title>
       <link>https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key/</guid>
       <description>If you haven&amp;rsquo;t read my overview post, feel free to check it out to get an idea of why and how I started using GPG and Yubikey.
-Today we&amp;rsquo;ll be diving into how to set up a new master GPG key and configure it for use with the pass utility.
+Today we&amp;rsquo;ll be diving into how to set up a new master GPG key and configure it for use with the pass utility. Additionally, we&amp;rsquo;ll run through the process to create subkeys with the idea of eventually storing these on Yubikeys.
 Setting up a primary GPG key Although I knew I had an old key floating around from previous use, I wanted to start from scratch.</description>
     </item>
     
@@ -60,7 +60,8 @@ Setting up a primary GPG key Although I knew I had an old key floating around fr
       
       <guid>https://chipsenkbeil.com/notes/linux-virtual-monitors-with-xrandr/</guid>
       <description>I recently learned that you can configure virtual monitors with xrandr. There are two different ways to use this: treat multiple physical monitors as one giant virtual monitor or treat one physical monitor as multiple virtual monitors.
-Why do I want to do this? My primary interest here is to split a super widescreen monitor like the Dell 49&amp;rdquo; UltraSharp Curved Monitor (U4919DW) as multiple separate displays. I like the way that dwm breaks up monitors into multiple spaces and when I have two or three separate monitors I normally use a center monitor for focused work with the side monitors containing music, calendar, and chat.</description>
+ Note that this requires xrandr 1.5.0 or higher, which introduces setmonitor as an option in the CLI.
+ Why do I want to do this? My primary interest here is to split a super widescreen monitor like the Dell 49&amp;rdquo; UltraSharp Curved Monitor (U4919DW) as multiple separate displays.</description>
     </item>
     
     <item>

@@ -43,13 +43,13 @@ Refresher of current state At this point, we have our primary key for signing an
     </item>
     
     <item>
-      <title>Applying GPG and Yubikey: Part 2 (Setup Primary GPG Key)</title>
+      <title>Applying GPG and Yubikey: Part 2 (Setup GPG Keys)</title>
       <link>https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://chipsenkbeil.com/posts/applying-gpg-and-yubikey-part-2-setup-primary-gpg-key/</guid>
       <description>If you haven&amp;rsquo;t read my overview post, feel free to check it out to get an idea of why and how I started using GPG and Yubikey.
-Today we&amp;rsquo;ll be diving into how to set up a new master GPG key and configure it for use with the pass utility.
+Today we&amp;rsquo;ll be diving into how to set up a new master GPG key and configure it for use with the pass utility. Additionally, we&amp;rsquo;ll run through the process to create subkeys with the idea of eventually storing these on Yubikeys.
 Setting up a primary GPG key Although I knew I had an old key floating around from previous use, I wanted to start from scratch.</description>
     </item>
     
