@@ -17,8 +17,8 @@
 <meta property="og:description" content="Configuring Calibre Server entirely from the CLI to server my book library" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/notes/configuring-calibre-server-from-cli/" />
-<meta property="article:published_time" content="2020-04-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2020-04-19T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2020-04-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-19T00:00:00+00:00" />
 
 
     
@@ -55,7 +55,7 @@
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -101,62 +101,44 @@
       <h1>Configuring Calibre Server from CLI</h1>
     </header>
 
-    
-
-<p>Watching</p>
-
+    <p>Watching</p>
 <h2 id="installing-on-a-freebsd-jail">Installing on a FreeBSD Jail</h2>
-
 <p>Very easy to do on FreeBSD 11.3 via the FreeNAS GUI.</p>
-
 <ol>
 <li>Create a new jail and set a specific IPv4 address to host. For me, this
 was 192.168.5.33</li>
 <li>Enter into a shell within the jail and run <code>pkg install calibre</code></li>
 </ol>
-
 <p>FreeBSD will ask if we want to download and set up the package manager,
 which we do. After that, it&rsquo;ll install a lot of packages (Python 3.7,
 some Perl, etc.) and then all CLI commands should be available.</p>
-
 <h2 id="create-your-library">Create your library</h2>
-
 <p>I already had a directory full of books comprised of epub, pdf, html, and txt
 files on my FreeNAS box. The first step was to import those books into a
 calibre library.</p>
-
 <p>If I was using the Calibre GUI, this would be as simple as pressing a
 button; however, this is a little different (still easy) when running
 purely from a terminal.</p>
-
 <ol>
 <li>Add a mount point within the jail to my directory of books (I used the
 GUI)</li>
-
-<li><p>Run <a href="https://manual.calibre-ebook.com/generated/en/calibredb.html#adding-from-directories"><code>calibredb add</code></a>, specifying a new library location, the recurse option, and a directory of books</p>
-<div class="highlight"><pre class="chroma">calibredb add --with-library /var/lib/calibre/library -r /mnt/books</pre></div></li>
+<li>Run <a href="https://manual.calibre-ebook.com/generated/en/calibredb.html#adding-from-directories"><code>calibredb add</code></a>, specifying a new library location, the recurse option, and a directory of books</li>
 </ol>
-
-<h2 id="build-a-user-database">Build a user database</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">calibredb add --with-library /var/lib/calibre/library -r /mnt/books
+</code></pre></div><h2 id="build-a-user-database">Build a user database</h2>
 <p>Running the server internally on my network is fairly easy, but I wanted to
 also expose it externally and needed to create a user with
 authentication.</p>
-
 <p>Running <a href="https://manual.calibre-ebook.com/generated/en/calibre-server.html"><code>calibre-server --manage-users</code></a> and specifying a database location will prompt to create a new user and password. The database location will then be created.</p>
-<div class="highlight"><pre class="chroma">calibre-server --userdb /var/lib/calibre/users.sqlite --manage-users</pre></div>
-<h2 id="test-running-the-server-on-port-8080">Test running the server on port 8080</h2>
-<div class="highlight"><pre class="chroma">calibre-server --userdb /var/lib/calibre/users.sqlite --enable-auth
-/var/lib/calibre/library</pre></div>
-<p>Accessing via <a href="http://192.168.5.33:8080">http://192.168.5.33:8080</a>.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">calibre-server --userdb /var/lib/calibre/users.sqlite --manage-users
+</code></pre></div><h2 id="test-running-the-server-on-port-8080">Test running the server on port 8080</h2>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">calibre-server --userdb /var/lib/calibre/users.sqlite --enable-auth
+/var/lib/calibre/library
+</code></pre></div><p>Accessing via <a href="http://192.168.5.33:8080">http://192.168.5.33:8080</a>.</p>
 <p>Should be greeted with a login prompt.</p>
-
-<p><img src="https://chipsenkbeil.com/img/post/calibre/calibre-auth.png" alt="Login Prompt" /></p>
-
+<p><img src="https://chipsenkbeil.com/img/post/calibre/calibre-auth.png" alt="Login Prompt"></p>
 <h2 id="configuring-jail-to-auto-start-calibre-server">Configuring jail to auto-start calibre-server</h2>
-
-<h3 id="write-etc-rc-d-calibre-server">Write /etc/rc.d/calibre_server</h3>
+<h3 id="write-etcrcdcalibre_server">Write /etc/rc.d/calibre_server</h3>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
 </span><span class="cp"></span>
 <span class="c1"># PROVIDE: calibre-server</span>
@@ -175,28 +157,23 @@ load_rc_config <span class="nv">$name</span>
 <span class="nv">calibre_server_enable</span><span class="o">=</span><span class="si">${</span><span class="nv">calibre_server_enable</span><span class="p">-</span><span class="s2">&#34;NO&#34;</span><span class="si">}</span>
 <span class="nv">pidfile</span><span class="o">=</span><span class="si">${</span><span class="nv">calibre_server_pidfile</span><span class="p">-</span><span class="s2">&#34;/var/run/calibre_server.pid&#34;</span><span class="si">}</span>
 
-run_rc_command <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span></code></pre></div>
-<p>Verify by running <code>/etc/rc.d/calibre_server onestart</code> to see that it
+run_rc_command <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+</code></pre></div><p>Verify by running <code>/etc/rc.d/calibre_server onestart</code> to see that it
 launches. Should still be able to access the website.</p>
-
-<h3 id="enable-the-server-in-etc-rc-conf">Enable the server in /etc/rc.conf</h3>
-<div class="highlight"><pre class="chroma"><code class="language-conf" data-lang="conf"># ...
+<h3 id="enable-the-server-in-etcrcconf">Enable the server in /etc/rc.conf</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"># ...
 
 # &lt;At bottom&gt;
 
 # Enable calibre server
-calibre_server_enable=&#34;YES&#34;</code></pre></div>
-<p>Validate by running <code>/etc/rc.d/calibre_server start</code> and accessing via <a href="http://192.168.5.33:8080">http://192.168.5.33:8080</a></p>
-
+calibre_server_enable=&#34;YES&#34;
+</code></pre></div><p>Validate by running <code>/etc/rc.d/calibre_server start</code> and accessing via http://192.168.5.33:8080</p>
 <p>Now, when the jail is restarted, the calibre server should start
 automatically.</p>
-
-<h2 id="configuring-for-external-access-via-nginx-letsencrypt">Configuring for external access via nginx &amp; letsencrypt</h2>
-
+<h2 id="configuring-for-external-access-via-nginx--letsencrypt">Configuring for external access via nginx &amp; letsencrypt</h2>
 <p>I already have a raspberry pi with nginx and letsencrypt setup. Traffic for
 port 80 and 443 go to the pi, which then routes to the appropriate
 device on my internal network.</p>
-
 <ol>
 <li>Create a new site under <code>/etc/nginx/sites-enabled/</code> named <strong>books</strong></li>
 </ol>
@@ -207,14 +184,18 @@ device on my internal network.</p>
     <span class="kn">include</span> <span class="s">/etc/nginx/include.d/location-common.conf</span>
     <span class="s">proxy_pass</span> <span class="s">http://192.168.5.33:8080</span><span class="p">;</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
-<ol>
-<li><p>Add a symlink from <code>/etc/nginx/sites-enabled/books</code> to
-<code>/etc/nginx/sites-available/books</code></p></li>
-
-<li><p>Run the <strong>certbot</strong> script for nginx and select the books site</p></li>
+<span class="p">}</span>
+</code></pre></div><ol start="2">
+<li>
+<p>Add a symlink from <code>/etc/nginx/sites-enabled/books</code> to
+<code>/etc/nginx/sites-available/books</code></p>
+</li>
+<li>
+<p>Run the <strong>certbot</strong> script for nginx and select the books site</p>
+</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx</code></pre></div><div class="highlight"><pre class="chroma">Which names would you like to activate HTTPS for?
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo certbot --nginx
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Which names would you like to activate HTTPS for?
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1: books.senkbeil.org
 2: ...
@@ -222,15 +203,16 @@ device on my internal network.</p>
 ...
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter &#39;c&#39; to cancel): 1</pre></div><div class="highlight"><pre class="chroma">Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+blank to select all options shown (Enter &#39;c&#39; to cancel): 1
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 1: No redirect - Make no further changes to the webserver configuration.
 2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
 new sites, or if you&#39;re confident your site works on HTTPS. You can undo this
 change by editing your web server&#39;s configuration.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel): 2</pre></div>
-<p>Should wind up with a config along the lines below which will forward
+Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel): 2
+</code></pre></div><p>Should wind up with a config along the lines below which will forward
 traffic to port 8080 from 443 externally. I needed to flush my browser cache
 as I still had support for <a href="http://books.senkbeil.org/">http://books.senkbeil.org/</a> not being redirected
 from an earlier test.</p>
@@ -257,7 +239,8 @@ from an earlier test.</p>
 
   <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
   <span class="kn">return</span> <span class="mi">404</span><span class="p">;</span> <span class="c1"># managed by Certbot
-</span><span class="c1"></span><span class="p">}</span></code></pre></div>
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div>
   </article>
 </section>
 

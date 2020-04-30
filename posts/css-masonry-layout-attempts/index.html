@@ -19,8 +19,8 @@ Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summa
 Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summaries across multiple columns. Furthermore, you can prevent page summaries from being broken up in the middle by using column-break-inside: avoid;. However, I had no way to order the page summaries dynamically such that the most recent summaries were at the top (from left to right) and older summaries were found further down." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/posts/css-masonry-layout-attempts/" />
-<meta property="article:published_time" content="2015-09-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2015-09-02T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2015-09-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-09-02T00:00:00+00:00" />
 
 
     
@@ -57,7 +57,7 @@ Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summa
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -128,14 +128,10 @@ Using CSS Columns CSS Columns enabled an easy, powerful way to spread page summa
       </header>
 
       <div>
-        
-
-<p>I spent two days investigating this and could not find a solution that worked.
+        <p>I spent two days investigating this and could not find a solution that worked.
 Eventually, I gave up and added the Masonry Javascript library. My two
 attempts were as follows:</p>
-
 <h3 id="using-css-columns">Using CSS Columns</h3>
-
 <p>CSS Columns enabled an easy, powerful way to spread page summaries across
 multiple columns. Furthermore, you can prevent page summaries from being
 broken up in the middle by using <code>column-break-inside: avoid;</code>. However, I had
@@ -162,16 +158,14 @@ left with older summaries going down the first column and into the second, etc.<
     <span class="n">column-break-inside</span><span class="p">:</span><span class="kc">avoid</span><span class="p">;</span>
     <span class="k">page-break-inside</span><span class="p">:</span> <span class="kc">avoid</span><span class="p">;</span>           <span class="c">/* Theoretically FF 20+ */</span>
     <span class="k">break-inside</span><span class="p">:</span> <span class="kc">avoid</span><span class="o">-</span><span class="kc">column</span><span class="p">;</span>         <span class="c">/* IE 11 */</span>
-<span class="p">}</span></code></pre></div>
-<h3 id="using-flexbox">Using Flexbox</h3>
-
+<span class="p">}</span>
+</code></pre></div><h3 id="using-flexbox">Using Flexbox</h3>
 <p>This involved using flexbox to simulate a Masonry layout by using
 <code>flex-flow: column wrap</code> to have items flow from top to bottom with no extra
 spacing (similar to Masonry). There were two issues with this approach: page
 summaries still flowed from top to bottom instead of left to right and
 I couldn&rsquo;t control wrapping the column into the next column without providing
 a fixed-height container.</p>
-
 <p>The first issue was able to be solved by swapping the order of the elements,
 which you can do in flexbox. Since the list page is using pagination (meaning
 that I can guarantee the total page summaries per page), ordering the elements
@@ -187,13 +181,12 @@ number of elements:</p>
 
 <span class="p">.</span><span class="nc">page-summary</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">)</span> <span class="p">{</span>
     <span class="k">order</span><span class="p">:</span> <span class="mi">3</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
-<p>Unfortunately, as I couldn&rsquo;t provide a fixed-height container, the column
+<span class="p">}</span>
+</code></pre></div><p>Unfortunately, as I couldn&rsquo;t provide a fixed-height container, the column
 approach did not work as all elements stayed in the first column. I could not
 find any working way to forcefully wrap flexbox elements after a certain
 element when using <em>column</em> as the flow instead of <em>row</em> (where you can set
 the row item to a width of <em>100%</em>).</p>
-
 <p>I could have forced a specific height for the page summaries as I know how big
 the text will be (roughly) if I use an ellipsis for overflow on the title (and
 the summary is always 70 words max). However, the optional image throws off my

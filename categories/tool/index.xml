@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tool on Chip Senkbeil</title>
@@ -18,7 +18,7 @@
       
       <guid>https://chipsenkbeil.com/posts/breaking-down-the-zsh-notes-function/</guid>
       <description>Earlier, I discussed my need to have method to jot down notes quickly and comfortably on a computer. I wanted the setup to be as painless as possible while also giving me the flexibility I desired to extend the note-taking method.
-Being a lightweight user of zsh - not leveraging many plugins or additional functionality - I decided to explore writing a zsh function to be exposed in my shell.</description>
+Being a lightweight user of zsh - not leveraging many plugins or additional functionality - I decided to explore writing a zsh function to be exposed in my shell. This function&amp;rsquo;s goal was to manage my notes, providing functionality to list existing notes, create new notes, and delete old notes.</description>
     </item>
     
     <item>

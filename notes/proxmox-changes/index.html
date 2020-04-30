@@ -17,8 +17,8 @@
 <meta property="og:description" content="Writeup about changes and additions made to proxmox installation" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/notes/proxmox-changes/" />
-<meta property="article:published_time" content="2018-01-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-14T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-01-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-14T00:00:00+00:00" />
 
 
     
@@ -55,7 +55,7 @@
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -101,16 +101,11 @@
       <h1>Proxmox Changes</h1>
     </header>
 
-    
-
-<h3 id="removing-subscription-notice">Removing subscription notice</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sed -i.bak <span class="s1">&#39;s/NotFound/Active/g&#39;</span> /usr/share/perl5/PVE/API2/Subscription.pm <span class="o">&amp;&amp;</span> systemctl restart pveproxy.service</code></pre></div>
-<h3 id="generating-let-s-encrypt-certs">Generating Let&rsquo;s Encrypt certs</h3>
-
+    <h3 id="removing-subscription-notice-">Removing subscription notice</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sed -i.bak <span class="s1">&#39;s/NotFound/Active/g&#39;</span> /usr/share/perl5/PVE/API2/Subscription.pm <span class="o">&amp;&amp;</span> systemctl restart pveproxy.service
+</code></pre></div><h3 id="generating-lets-encrypt-certs-">Generating Let&rsquo;s Encrypt certs</h3>
 <p><a href="https://pve.proxmox.com/wiki/HTTPS_Certificate_Configuration_(Version_4.x_and_newer)#Let.27s_Encrypt_using_acme.sh">https://pve.proxmox.com/wiki/HTTPS_Certificate_Configuration_(Version_4.x_and_newer)#Let.27s_Encrypt_using_acme.sh</a></p>
-
-<h3 id="supporting-port-80-443">Supporting port 80 &amp; 443</h3>
-
+<h3 id="supporting-port-80--443-">Supporting port 80 &amp; 443</h3>
 <p>By default, proxmox looks for traffic only on port 8006. Based on my readings
 online, forcefully changing the port - which is now hardcoded - can cause a lot
 of problems. Instead, the most recent and successful recommendation has been to
@@ -147,35 +142,33 @@ the files <code>/etc/nginx/conf.d/default</code> and <code>/etc/nginx/site-enabl
 		<span class="kn">proxy_send_timeout</span>  <span class="s">3600s</span><span class="p">;</span>
 		<span class="kn">send_timeout</span>  <span class="s">3600s</span><span class="p">;</span>
     <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
-<h3 id="set-local-root-to-full-ssd-and-lvm-thin-to-extra-hdd">Set local root to full SSD and lvm-thin to extra HDD</h3>
-
+<span class="p">}</span>
+</code></pre></div><h3 id="set-local-root-to-full-ssd-and-lvm-thin-to-extra-hdd-">Set local root to full SSD and lvm-thin to extra HDD</h3>
 <p>My situation was that I had my SSD split into a root and data partition
 and had nothing on my HDD. To remedy this, I began by removing the
 unused data partition via:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvremove /dev/pve/data</code></pre></div>
-<p>From there, I acquired a list of drives and available space:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pvs</code></pre></div>
-<p>I saw how much space was available on my primary SSD that I wanted
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvremove /dev/pve/data
+</code></pre></div><p>From there, I acquired a list of drives and available space:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pvs
+</code></pre></div><p>I saw how much space was available on my primary SSD that I wanted
 to merge back into the root partition. In my case, 75.79g of space.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvresize -L +75.79g /dev/pve/root</code></pre></div>
-<p>Finally, I resized the mapped partition:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">resize2fs /dev/mapper/pve-root</code></pre></div>
-<p>After that had completed, I wanted to add my HDD as a thin LVM.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">fdisk /dev/sda</code></pre></div>
-<p>Deleted all partitions via <code>d</code> and then wrote out the update via <code>w</code>.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvresize -L +75.79g /dev/pve/root
+</code></pre></div><p>Finally, I resized the mapped partition:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">resize2fs /dev/mapper/pve-root
+</code></pre></div><p>After that had completed, I wanted to add my HDD as a thin LVM.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">fdisk /dev/sda
+</code></pre></div><p>Deleted all partitions via <code>d</code> and then wrote out the update via <code>w</code>.</p>
 <p>From there, I used <code>fdisk</code> on the same disk again with <code>n</code> and primary partition 1,
 selecting the <em>Linux LVM</em> partition type. While most docs said it would be <em>8e</em>, mine
 ended up being <em>31</em>. I finalized the change via <code>w</code>.</p>
-
 <p>After that, I created a physical volume via:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pvcreate /dev/sda1</code></pre></div>
-<p>And then proceeded to extend my extending volume group of pve via:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">vgextend <span class="s2">&#34;pve&#34;</span> /dev/sda1</code></pre></div>
-<p>Once I had added the new drive to my pve volume group, I could allocate the
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pvcreate /dev/sda1
+</code></pre></div><p>And then proceeded to extend my extending volume group of pve via:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">vgextend <span class="s2">&#34;pve&#34;</span> /dev/sda1
+</code></pre></div><p>Once I had added the new drive to my pve volume group, I could allocate the
 rest of the available space to a thin LVM partition called data:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvcreate -l <span class="m">100</span>%FREE -T -n data pve</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">lvcreate -l 100%FREE -T -n data pve
+</code></pre></div>
   </article>
 </section>
 

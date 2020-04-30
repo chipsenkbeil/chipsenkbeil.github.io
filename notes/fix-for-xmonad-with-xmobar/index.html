@@ -12,19 +12,19 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fix for XMonad with XMobar"/>
 <meta name="twitter:description" content="When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar.
-E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum.
+E.g. Opening a terminal or Vivaldi took up the entire screen.  The solution I found was, conveniently, located in a post on the ArchLinux forum.
 Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig.
--- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &lt;&#43;&gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &#34;LG3D&#34; , terminal = &#34;urxvtcd&#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &#34;blue&#34; }"/>
+-- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &lt;&#43;&gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &#34;LG3D&#34; , terminal = &#34;urxvtcd&#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &#34;blue&#34; } "/>
 
     <meta property="og:title" content="Fix for XMonad with XMobar" />
 <meta property="og:description" content="When I updated XMonad late last year (2015), I noticed a bug where any application that I opened on my first workspace would cover XMobar.
-E.g. Opening a terminal or Vivaldi took up the entire screen. The solution I found was, conveniently, located in a post on the ArchLinux forum.
+E.g. Opening a terminal or Vivaldi took up the entire screen.  The solution I found was, conveniently, located in a post on the ArchLinux forum.
 Essentially, you just need to add a handleEventHook with docksEventHook and handleEventHook defaultConfig.
--- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &lt;&#43;&gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &#34;LG3D&#34; , terminal = &#34;urxvtcd&#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &#34;blue&#34; }" />
+-- My overall config that is used elsewhere myConfig = defaultConfig { manageHook = manageDocks &lt;&#43;&gt; manageHook defaultConfig , layoutHook = avoidStruts $ layoutHook defaultConfig , handleEventHook = mconcat [ docksEventHook , handleEventHook defaultConfig ] , startupHook = setWMName &#34;LG3D&#34; , terminal = &#34;urxvtcd&#34; , modMask = mod1Mask , borderWidth = 1 , focusedBorderColor = &#34;blue&#34; } " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/notes/fix-for-xmonad-with-xmobar/" />
-<meta property="article:published_time" content="2016-02-17T07:49:30-06:00"/>
-<meta property="article:modified_time" content="2016-02-17T07:49:30-06:00"/>
+<meta property="article:published_time" content="2016-02-17T07:49:30-06:00" />
+<meta property="article:modified_time" content="2016-02-17T07:49:30-06:00" />
 
 
     
@@ -61,7 +61,7 @@ Essentially, you just need to add a handleEventHook with docksEventHook and hand
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -109,25 +109,26 @@ Essentially, you just need to add a handleEventHook with docksEventHook and hand
 
     <p>When I updated XMonad late last year (2015), I noticed a bug where any
 application that I opened on my first workspace would cover XMobar.</p>
-<div class="highlight"><pre class="chroma">E.g. Opening a terminal or Vivaldi took up the entire screen.</pre></div>
+<pre><code>E.g. Opening a terminal or Vivaldi took up the entire screen.
+</code></pre>
 <p>The solution I found was, conveniently, located in a <a href="https://bbs.archlinux.org/viewtopic.php?id=206890">post on the ArchLinux
 forum</a>.</p>
-
 <p>Essentially, you just need to add a <code>handleEventHook</code> with <code>docksEventHook</code>
 and <code>handleEventHook defaultConfig</code>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-haskell" data-lang="haskell"><span class="c1">-- My overall config that is used elsewhere</span>
-<span class="nf">myConfig</span> <span class="ow">=</span> <span class="nf">defaultConfig</span>
-    <span class="p">{</span> <span class="nf">manageHook</span> <span class="ow">=</span> <span class="nf">manageDocks</span> <span class="o">&lt;+&gt;</span> <span class="nf">manageHook</span> <span class="nf">defaultConfig</span>
-    <span class="p">,</span> <span class="nf">layoutHook</span> <span class="ow">=</span> <span class="nf">avoidStruts</span> <span class="o">$</span> <span class="nf">layoutHook</span> <span class="nf">defaultConfig</span>
-    <span class="p">,</span> <span class="nf">handleEventHook</span> <span class="ow">=</span> <span class="nf">mconcat</span>
-                        <span class="p">[</span> <span class="nf">docksEventHook</span>
-                        <span class="p">,</span> <span class="nf">handleEventHook</span> <span class="nf">defaultConfig</span> <span class="p">]</span>
-    <span class="p">,</span> <span class="nf">startupHook</span> <span class="ow">=</span> <span class="nf">setWMName</span> <span class="s">&#34;LG3D&#34;</span>
-    <span class="p">,</span> <span class="nf">terminal</span> <span class="ow">=</span> <span class="s">&#34;urxvtcd&#34;</span>
-    <span class="p">,</span> <span class="nf">modMask</span> <span class="ow">=</span> <span class="nf">mod1Mask</span>
-    <span class="p">,</span> <span class="nf">borderWidth</span> <span class="ow">=</span> <span class="mi">1</span>
-    <span class="p">,</span> <span class="nf">focusedBorderColor</span> <span class="ow">=</span> <span class="s">&#34;blue&#34;</span>
-    <span class="p">}</span></code></pre></div>
+<span class="nf">myConfig</span> <span class="ow">=</span> <span class="n">defaultConfig</span>
+    <span class="p">{</span> <span class="n">manageHook</span> <span class="ow">=</span> <span class="n">manageDocks</span> <span class="o">&lt;+&gt;</span> <span class="n">manageHook</span> <span class="n">defaultConfig</span>
+    <span class="p">,</span> <span class="n">layoutHook</span> <span class="ow">=</span> <span class="n">avoidStruts</span> <span class="o">$</span> <span class="n">layoutHook</span> <span class="n">defaultConfig</span>
+    <span class="p">,</span> <span class="n">handleEventHook</span> <span class="ow">=</span> <span class="n">mconcat</span>
+                        <span class="p">[</span> <span class="n">docksEventHook</span>
+                        <span class="p">,</span> <span class="n">handleEventHook</span> <span class="n">defaultConfig</span> <span class="p">]</span>
+    <span class="p">,</span> <span class="n">startupHook</span> <span class="ow">=</span> <span class="n">setWMName</span> <span class="s">&#34;LG3D&#34;</span>
+    <span class="p">,</span> <span class="n">terminal</span> <span class="ow">=</span> <span class="s">&#34;urxvtcd&#34;</span>
+    <span class="p">,</span> <span class="n">modMask</span> <span class="ow">=</span> <span class="n">mod1Mask</span>
+    <span class="p">,</span> <span class="n">borderWidth</span> <span class="ow">=</span> <span class="mi">1</span>
+    <span class="p">,</span> <span class="n">focusedBorderColor</span> <span class="ow">=</span> <span class="s">&#34;blue&#34;</span>
+    <span class="p">}</span>
+</code></pre></div>
   </article>
 </section>
 

@@ -19,8 +19,8 @@ blkid -o list -c /dev/null What this does is tell the program to output the info
 blkid -o list -c /dev/null What this does is tell the program to output the information in a user-friendly list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c /dev/null." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/notes/blkid/" />
-<meta property="article:published_time" content="2012-03-07T12:31:47-05:00"/>
-<meta property="article:modified_time" content="2012-03-07T12:31:47-05:00"/>
+<meta property="article:published_time" content="2012-03-07T12:31:47-05:00" />
+<meta property="article:modified_time" content="2012-03-07T12:31:47-05:00" />
 
 
     
@@ -57,7 +57,7 @@ blkid -o list -c /dev/null What this does is tell the program to output the info
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -107,29 +107,26 @@ blkid -o list -c /dev/null What this does is tell the program to output the info
 computer so that I know what to type for the pmount program, which is really
 handy to have! The program [i]blkid[/i] is capable of doing this; however, I
 didn&rsquo;t care for the default output and found myself using this format:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">blkid -o list -c /dev/null</code></pre></div>
-<p><img src="https://chipsenkbeil.com/img/post/blkid.jpg" alt="Example of usage" /></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">blkid -o list -c /dev/null
+</code></pre></div><p><img src="https://chipsenkbeil.com/img/post/blkid.jpg" alt="Example of usage"></p>
 <p>What this does is tell the program to output the information in a user-friendly
 list of devices through &lsquo;-o list&rsquo; and not report previous devices using &lsquo;-c
 /dev/null.&rsquo;</p>
-
 <p>As you can imagine, this is very annoying to type out each time. It is also
 annoying to include &lsquo;sudo&rsquo; in front of it when I am not the root user. The
 program will still output some information, but to display everything I want,
 it needs root permissions.</p>
-
 <p>So, to make this as painless as possible, I wrote a very small wrapper script
 that does this task for me:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#! /bin/sh
 </span><span class="cp"></span>
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$UID</span> !<span class="o">=</span> <span class="m">0</span><span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$UID</span> !<span class="o">=</span> 0<span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
     <span class="nb">echo</span> <span class="s2">&#34;This script requires root privileges to run:&#34;</span>
     <span class="nb">echo</span> <span class="s2">&#34;sudo </span><span class="nv">$0</span><span class="s2"> </span><span class="nv">$*</span><span class="s2">&#34;</span>
 <span class="k">fi</span>
 
-blkid -o list -c /dev/null</code></pre></div>
-<p>Sticking that in the file list_devices.sh, giving it proper permissions for
+blkid -o list -c /dev/null
+</code></pre></div><p>Sticking that in the file list_devices.sh, giving it proper permissions for
 execution using chmod +x list_devices.sh, and sticking it in my /usr/bin
 directory did wonders for me. Hopefully it&rsquo;ll help someone else out there as
 well!</p>

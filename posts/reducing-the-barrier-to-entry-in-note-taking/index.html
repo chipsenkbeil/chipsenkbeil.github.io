@@ -17,8 +17,8 @@
 <meta property="og:description" content="One of my biggest challenges to accomplishing something is the barrier to entry. Starting a project, exercising, and even writing this blog post take genuine effort for me to do. After realizing this as one of my biggest obstacles to getting things done, I&rsquo;ve dedicated quite a few cycles of my time toward figuring out ways to reduce the initial friction. For the case of taking notes, this involved both providing a quick way to get started as well as a comfortable environment to write notes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chipsenkbeil.com/posts/reducing-the-barrier-to-entry-in-note-taking/" />
-<meta property="article:published_time" content="2018-07-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-07-01T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-07-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-07-01T00:00:00+00:00" />
 
 
     
@@ -55,7 +55,7 @@
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://chipsenkbeil.com/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.69.2" />
   </head>
 
   <body class=" ">
@@ -126,35 +126,28 @@
       </header>
 
       <div>
-        
-
-<p>One of my biggest challenges to accomplishing something is the barrier to
+        <p>One of my biggest challenges to accomplishing something is the barrier to
 entry. Starting a project, exercising, and even writing this blog post take
 genuine effort for me to do. After realizing this as one of my biggest
 obstacles to getting things done, I&rsquo;ve dedicated quite a few cycles of my time
 toward figuring out ways to reduce the initial friction. For the case of taking
 notes, this involved both providing a quick way to get started as well as a
 comfortable environment to write notes.</p>
-
 <p>For me, the speed aspect revolved around having a simple interface to launch
 new notes and resume existing ones. Given that I often find myself in a
 terminal during work, my focus was on using a quick command like
 <code>notes blogpost</code> to start or resume a blog post.</p>
-
 <p>For comfort, I sought to use vim to edit my notes. I use it for my daily
 editing and prefer having the familiar modes of editing compared to launching a
 plain text editor. This meant that a command like <code>notes blogpost</code> should open
 vim to allow me to create/edit a file and exit in the same manner as I would
 any vim file.</p>
-
 <h2 id="the-solution">The Solution</h2>
-
 <p>Enter the zsh function: notes. I use zsh as my shell purely out of a desire for
 some more robust completion, file renaming, and prompt tweaking. Rather than
 creating a separate program that would need to be installed and added to my path
 on every computer I use, I decided that creating a function to be exposed by my
 shell would be the simplest way to have the functionality I wanted.</p>
-
 <p>The function needed to do two things: provide a standard place to store my note
 files and open those files using vim. To do this, I decided that my default
 location for my notes would be a hidden directory called <em>.notes</em> within my
@@ -170,17 +163,14 @@ markdown file (e.g. <em>blogpost.md</em>).</p>
   <span class="nb">local</span> <span class="nv">note_path</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$base_path</span><span class="s2">/</span><span class="nv">$note_file</span><span class="s2">&#34;</span>
 
   <span class="nv">$EDITOR</span> <span class="s2">&#34;</span><span class="nv">$note_path</span><span class="s2">&#34;</span>
-<span class="o">}</span></code></pre></div>
-<p>The above would create the <em>.notes</em> directory if it did not exist, convert the
+<span class="o">}</span>
+</code></pre></div><p>The above would create the <em>.notes</em> directory if it did not exist, convert the
 provided argument into a file name, and then open the file using my editor,
 which was configured earlier in my <em>.zshrc</em> file as <code>export EDITOR=&quot;nvim&quot;</code>.</p>
-
 <p>From here, I could quickly jump into vim without the need to navigate to a
 note-taking directory or specify the entire file including the extension. If I
 wanted to work on <em>post-1</em>, I could type <code>notes post-1</code> to open the file.</p>
-
 <h2 id="the-aftermath">The Aftermath</h2>
-
 <p>Since creating that tiny function, I began tweaking and expanding what it can
 do. This ranged from filling in a new file with a default header to being able
 to list existing notes. Given its complexity, I&rsquo;ve decided to extract the
